@@ -34,6 +34,16 @@ stable_so_version = abi_va.length() == 2 ? abi_va[0] : abi_va[0] + '.' + abi_va[
 experimental_abi_version = '0.' + ''.join(abi_va)
 experimental_so_version = '0.' + ''.join(stable_so_version.split('.'))
 
+# compatibility checks not available on windows
+compat_checks = disabler()
+if not is_windows
+	compat_checks = get_option('compat_checks')
+endif
+
+if not get_option('debug') and compat_checks.enabled()
+	error('Build type must have debug symbols when compat_checks=enabled')
+endif
+
 # extract all version information into the build configuration
 dpdk_conf.set('RTE_VER_YEAR', pver.get(0).to_int())
 dpdk_conf.set('RTE_VER_MONTH', pver.get(1).to_int())

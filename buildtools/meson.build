@@ -7,6 +7,9 @@ pmdinfo = find_program('gen-pmdinfo-cfile.sh')
 
 check_experimental_syms = find_program('check-experimental-syms.sh')
 
+abidiff = find_program('abidiff', required: compat_checks)
+abignore = files('dpdk.abignore')
+
 # set up map-to-def script using python, either built-in or external
 python3 = import('python').find_installation(required: false)
 if python3.found()

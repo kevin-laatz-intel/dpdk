@@ -128,3 +128,7 @@ foreach drv:dpdk_drvs_disabled
 	output_message += drv + ':\t' + reason + '\n\t'
 endforeach
 message(output_message + '\n')
+
+if compat_checks.auto() and not get_option('debug')
+	warning('Build type must be have debug symbols to run compatibility checks!\n')
+endif
