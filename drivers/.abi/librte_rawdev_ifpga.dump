@@ -1,0 +1,779 @@
+<abi-corpus path='gcc//drivers/librte_rawdev_ifpga.so.20.0' architecture='elf-amd-x86_64' soname='librte_rawdev_ifpga.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_rawdev.so.20.0'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_ethdev.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_meter.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_bus_pci.so.20.0'/>
+    <dependency name='librte_bus_vdev.so.20.0'/>
+    <dependency name='librte_bus_ifpga.so.20.0'/>
+    <dependency name='librte_pmd_i40e.so.20.0'/>
+    <dependency name='librte_hash.so.20.0'/>
+    <dependency name='librte_pmd_ipn3ke.so.20.0'/>
+    <dependency name='librte_sched.so.20.0'/>
+    <dependency name='libfdt.so.1'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_api.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='opae_accelerator_ops' size-in-bits='384' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='163' column='1' id='type-id-1'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='read' type-id='type-id-2' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='164' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='write' type-id='type-id-2' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='166' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='get_info' type-id='type-id-3' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='168' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='get_region_info' type-id='type-id-4' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='170' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='set_irq' type-id='type-id-5' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='172' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='get_uuid' type-id='type-id-6' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='174' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='int' size-in-bits='32' id='type-id-7'/>
+    <class-decl name='opae_accelerator' size-in-bits='512' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='137' column='1' id='type-id-8'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='node' type-id='type-id-9' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='name' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='139' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='index' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='140' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='br' type-id='type-id-11' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='141' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='mgr' type-id='type-id-12' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='142' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='ops' type-id='type-id-13' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='143' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='data' type-id='type-id-14' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='144' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='138' column='1' id='type-id-9'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-15' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-16' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='138' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-8' size-in-bits='64' id='type-id-15'/>
+    <pointer-type-def type-id='type-id-15' size-in-bits='64' id='type-id-16'/>
+    <type-decl name='char' size-in-bits='8' id='type-id-17'/>
+    <qualified-type-def type-id='type-id-17' const='yes' id='type-id-18'/>
+    <pointer-type-def type-id='type-id-18' size-in-bits='64' id='type-id-10'/>
+    <class-decl name='opae_bridge' size-in-bits='320' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='109' column='1' id='type-id-19'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='110' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='id' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='acc' type-id='type-id-15' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='ops' type-id='type-id-20' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='113' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='data' type-id='type-id-14' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='114' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='opae_bridge_ops' size-in-bits='64' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='117' column='1' id='type-id-21'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='reset' type-id='type-id-22' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='118' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-11'/>
+    <pointer-type-def type-id='type-id-23' size-in-bits='64' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-21' size-in-bits='64' id='type-id-20'/>
+    <type-decl name='void' id='type-id-24'/>
+    <pointer-type-def type-id='type-id-24' size-in-bits='64' id='type-id-14'/>
+    <class-decl name='opae_manager' size-in-bits='384' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='38' column='1' id='type-id-25'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='adapter' type-id='type-id-26' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='40' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ops' type-id='type-id-27' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='network_ops' type-id='type-id-28' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='42' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='sensor_list' type-id='type-id-29' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='data' type-id='type-id-14' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='44' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='opae_adapter' size-in-bits='384' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='268' column='1' id='type-id-30'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='269' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mgr' type-id='type-id-12' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='270' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='acc_list' type-id='type-id-31' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='271' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='ops' type-id='type-id-32' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='272' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='data' type-id='type-id-14' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='273' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-12'/>
+    <class-decl name='opae_accelerator_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='263' column='1' id='type-id-31'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='type-id-15' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='263' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='type-id-16' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='263' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='opae_adapter_ops' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='258' column='1' id='type-id-33'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='enumerate' type-id='type-id-34' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='259' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='destroy' type-id='type-id-35' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='260' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-30' size-in-bits='64' id='type-id-26'/>
+    <pointer-type-def type-id='type-id-36' size-in-bits='64' id='type-id-34'/>
+    <pointer-type-def type-id='type-id-37' size-in-bits='64' id='type-id-35'/>
+    <pointer-type-def type-id='type-id-33' size-in-bits='64' id='type-id-32'/>
+    <class-decl name='opae_manager_ops' size-in-bits='256' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='48' column='1' id='type-id-38'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flash' type-id='type-id-39' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='get_eth_group_region_info' type-id='type-id-40' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='get_sensor_value' type-id='type-id-41' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='get_board_info' type-id='type-id-42' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='56' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-43'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-43' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-44'/>
+    <typedef-decl name='uint32_t' type-id='type-id-44' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-45'/>
+    <typedef-decl name='u32' type-id='type-id-45' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='22' column='1' id='type-id-46'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-47'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-47' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-48'/>
+    <typedef-decl name='uint64_t' type-id='type-id-48' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-49'/>
+    <typedef-decl name='u64' type-id='type-id-49' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='24' column='1' id='type-id-50'/>
+    <pointer-type-def type-id='type-id-50' size-in-bits='64' id='type-id-51'/>
+    <pointer-type-def type-id='type-id-52' size-in-bits='64' id='type-id-39'/>
+    <class-decl name='opae_eth_group_region_info' size-in-bits='320' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='60' column='1' id='type-id-53'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='group_id' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='phys_addr' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='len' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='addr' type-id='type-id-55' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='mem_idx' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='65' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-56'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-56' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-57'/>
+    <typedef-decl name='uint8_t' type-id='type-id-57' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-58'/>
+    <typedef-decl name='u8' type-id='type-id-58' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='19' column='1' id='type-id-54'/>
+    <pointer-type-def type-id='type-id-54' size-in-bits='64' id='type-id-55'/>
+    <pointer-type-def type-id='type-id-53' size-in-bits='64' id='type-id-59'/>
+    <pointer-type-def type-id='type-id-60' size-in-bits='64' id='type-id-40'/>
+    <class-decl name='opae_sensor_info' size-in-bits='576' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='195' column='1' id='type-id-61'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='node' type-id='type-id-62' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='196' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='name' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='197' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='type' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='198' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='id' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='199' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='high_fatal' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='200' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='high_warn' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='201' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='low_fatal' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='202' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='low_warn' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='203' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='hysteresis' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='204' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='multiplier' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='205' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='flags' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='206' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='value' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='207' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='value_reg' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='208' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='196' column='1' id='type-id-62'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-63' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='196' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-64' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='196' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-61' size-in-bits='64' id='type-id-63'/>
+    <pointer-type-def type-id='type-id-63' size-in-bits='64' id='type-id-64'/>
+    <pointer-type-def type-id='type-id-43' size-in-bits='64' id='type-id-65'/>
+    <pointer-type-def type-id='type-id-66' size-in-bits='64' id='type-id-41'/>
+    <class-decl name='opae_board_info' size-in-bits='336' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1717' column='1' id='type-id-67'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='major' type-id='type-id-68' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1718' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='minor' type-id='type-id-69' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1719' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='type' type-id='type-id-70' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1720' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='fvl_bypass' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1723' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='104'>
+        <var-decl name='mac_lightweight' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1724' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='disaggregate' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1725' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='120'>
+        <var-decl name='lightweight' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1726' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='seu' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1727' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='136'>
+        <var-decl name='ptp' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1728' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='144'>
+        <var-decl name='max10_version' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1730' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='176'>
+        <var-decl name='nios_fw_version' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1731' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='208'>
+        <var-decl name='nums_of_retimer' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1732' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='240'>
+        <var-decl name='ports_per_retimer' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1733' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='272'>
+        <var-decl name='nums_of_fvl' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1734' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='304'>
+        <var-decl name='ports_per_fvl' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1735' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-71'/>
+    <enum-decl name='pac_major' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1705' column='1' id='type-id-68'>
+      <underlying-type type-id='type-id-71'/>
+      <enumerator name='VISTA_CREEK' value='0'/>
+      <enumerator name='RUSH_CREEK' value='1'/>
+      <enumerator name='DARBY_CREEK' value='2'/>
+    </enum-decl>
+    <enum-decl name='pac_minor' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1711' column='1' id='type-id-69'>
+      <underlying-type type-id='type-id-71'/>
+      <enumerator name='DCP_1_0' value='0'/>
+      <enumerator name='DCP_1_1' value='1'/>
+      <enumerator name='DCP_1_2' value='2'/>
+    </enum-decl>
+    <enum-decl name='board_interface' filepath='../drivers/raw/ifpga/base/ifpga_defines.h' line='1697' column='1' id='type-id-70'>
+      <underlying-type type-id='type-id-71'/>
+      <enumerator name='VC_8_10G' value='0'/>
+      <enumerator name='VC_4_25G' value='1'/>
+      <enumerator name='VC_2_1_25' value='2'/>
+      <enumerator name='VC_4_25G_2_25G' value='3'/>
+      <enumerator name='VC_2_2_25G' value='4'/>
+    </enum-decl>
+    <pointer-type-def type-id='type-id-67' size-in-bits='64' id='type-id-72'/>
+    <pointer-type-def type-id='type-id-72' size-in-bits='64' id='type-id-73'/>
+    <pointer-type-def type-id='type-id-74' size-in-bits='64' id='type-id-42'/>
+    <pointer-type-def type-id='type-id-38' size-in-bits='64' id='type-id-27'/>
+    <class-decl name='opae_manager_networking_ops' size-in-bits='512' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='61' column='1' id='type-id-75'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='read_mac_rom' type-id='type-id-76' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='write_mac_rom' type-id='type-id-76' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='get_eth_group_nums' type-id='type-id-77' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='get_eth_group_info' type-id='type-id-78' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='eth_group_reg_read' type-id='type-id-79' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='eth_group_reg_write' type-id='type-id-80' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='get_retimer_info' type-id='type-id-81' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='get_retimer_status' type-id='type-id-82' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='75' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-83' size-in-bits='64' id='type-id-76'/>
+    <pointer-type-def type-id='type-id-84' size-in-bits='64' id='type-id-77'/>
+    <class-decl name='opae_eth_group_info' size-in-bits='32' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='53' column='1' id='type-id-85'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='group_id' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='speed' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='nums_of_phy' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='24'>
+        <var-decl name='nums_of_mac' type-id='type-id-54' visibility='default' filepath='../drivers/raw/ifpga/base/opae_eth_group.h' line='57' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-85' size-in-bits='64' id='type-id-86'/>
+    <pointer-type-def type-id='type-id-87' size-in-bits='64' id='type-id-78'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-88'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-88' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-89'/>
+    <typedef-decl name='uint16_t' type-id='type-id-89' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-90'/>
+    <typedef-decl name='u16' type-id='type-id-90' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='21' column='1' id='type-id-91'/>
+    <pointer-type-def type-id='type-id-46' size-in-bits='64' id='type-id-92'/>
+    <pointer-type-def type-id='type-id-93' size-in-bits='64' id='type-id-79'/>
+    <pointer-type-def type-id='type-id-94' size-in-bits='64' id='type-id-80'/>
+    <class-decl name='opae_retimer_info' size-in-bits='160' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='56' column='1' id='type-id-95'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='nums_retimer' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ports_per_retimer' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='nums_fvl' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='ports_per_fvl' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='support_speed' type-id='type-id-96' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='61' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='retimer_speed' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='44' column='1' id='type-id-96'>
+      <underlying-type type-id='type-id-71'/>
+      <enumerator name='MXD_1GB' value='1'/>
+      <enumerator name='MXD_2_5GB' value='2'/>
+      <enumerator name='MXD_5GB' value='5'/>
+      <enumerator name='MXD_10GB' value='10'/>
+      <enumerator name='MXD_25GB' value='25'/>
+      <enumerator name='MXD_40GB' value='40'/>
+      <enumerator name='MXD_100GB' value='100'/>
+      <enumerator name='MXD_SPEED_UNKNOWN' value='101'/>
+    </enum-decl>
+    <pointer-type-def type-id='type-id-95' size-in-bits='64' id='type-id-97'/>
+    <pointer-type-def type-id='type-id-98' size-in-bits='64' id='type-id-81'/>
+    <class-decl name='opae_retimer_status' size-in-bits='64' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='65' column='1' id='type-id-99'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='speed' type-id='type-id-96' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='line_link_bitmap' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='79' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-99' size-in-bits='64' id='type-id-100'/>
+    <pointer-type-def type-id='type-id-101' size-in-bits='64' id='type-id-82'/>
+    <pointer-type-def type-id='type-id-75' size-in-bits='64' id='type-id-28'/>
+    <class-decl name='opae_sensor_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='30' column='1' id='type-id-102'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='type-id-63' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='30' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='type-id-64' visibility='default' filepath='../drivers/raw/ifpga/base/opae_intel_max10.h' line='30' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-102' size-in-bits='64' id='type-id-29'/>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-13'/>
+    <pointer-type-def type-id='type-id-103' size-in-bits='64' id='type-id-2'/>
+    <class-decl name='opae_acc_info' size-in-bits='64' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='147' column='1' id='type-id-104'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='num_regions' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='num_irqs' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='149' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-104' size-in-bits='64' id='type-id-105'/>
+    <pointer-type-def type-id='type-id-106' size-in-bits='64' id='type-id-3'/>
+    <class-decl name='opae_acc_region_info' size-in-bits='256' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='152' column='1' id='type-id-107'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='153' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='index' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='157' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='phys_addr' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='len' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='159' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='addr' type-id='type-id-55' visibility='default' filepath='../drivers/raw/ifpga/base/opae_hw_api.h' line='160' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-107' size-in-bits='64' id='type-id-108'/>
+    <pointer-type-def type-id='type-id-109' size-in-bits='64' id='type-id-4'/>
+    <typedef-decl name='__int32_t' type-id='type-id-7' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-110'/>
+    <typedef-decl name='int32_t' type-id='type-id-110' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-111'/>
+    <typedef-decl name='s32' type-id='type-id-111' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='23' column='1' id='type-id-112'/>
+    <pointer-type-def type-id='type-id-112' size-in-bits='64' id='type-id-113'/>
+    <pointer-type-def type-id='type-id-114' size-in-bits='64' id='type-id-5'/>
+    <class-decl name='uuid' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='27' column='1' id='type-id-115'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='b' type-id='type-id-116' visibility='default' filepath='../drivers/raw/ifpga/base/opae_osdep.h' line='28' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-54' size-in-bits='128' id='type-id-116'>
+      <subrange length='16' type-id='type-id-47' id='type-id-117'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-115' size-in-bits='64' id='type-id-118'/>
+    <pointer-type-def type-id='type-id-119' size-in-bits='64' id='type-id-6'/>
+    <var-decl name='ifpga_acc_ops' type-id='type-id-1' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_api.h' line='14' column='1'/>
+    <var-decl name='ifpga_br_ops' type-id='type-id-21' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_api.h' line='13' column='1'/>
+    <var-decl name='ifpga_mgr_ops' type-id='type-id-38' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_api.h' line='12' column='1'/>
+    <var-decl name='ifpga_mgr_network_ops' type-id='type-id-75' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_api.h' line='15' column='1'/>
+    <var-decl name='ifpga_adapter_ops' type-id='type-id-33' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_api.h' line='11' column='1'/>
+    <function-type size-in-bits='64' id='type-id-106'>
+      <parameter type-id='type-id-15'/>
+      <parameter type-id='type-id-105'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-109'>
+      <parameter type-id='type-id-15'/>
+      <parameter type-id='type-id-108'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-114'>
+      <parameter type-id='type-id-15'/>
+      <parameter type-id='type-id-46'/>
+      <parameter type-id='type-id-46'/>
+      <parameter type-id='type-id-113'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-103'>
+      <parameter type-id='type-id-15'/>
+      <parameter type-id='type-id-43'/>
+      <parameter type-id='type-id-50'/>
+      <parameter type-id='type-id-43'/>
+      <parameter type-id='type-id-14'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-119'>
+      <parameter type-id='type-id-15'/>
+      <parameter type-id='type-id-118'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-36'>
+      <parameter type-id='type-id-26'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-23'>
+      <parameter type-id='type-id-11'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-84'>
+      <parameter type-id='type-id-12'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-52'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-7'/>
+      <parameter type-id='type-id-10'/>
+      <parameter type-id='type-id-46'/>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-83'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-7'/>
+      <parameter type-id='type-id-14'/>
+      <parameter type-id='type-id-7'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-74'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-73'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-60'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-59'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-98'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-97'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-101'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-100'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-66'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-63'/>
+      <parameter type-id='type-id-65'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-87'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-86'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-94'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-91'/>
+      <parameter type-id='type-id-46'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-93'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-91'/>
+      <parameter type-id='type-id-92'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-37'>
+      <parameter type-id='type-id-26'/>
+      <return type-id='type-id-24'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_fme.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='ifpga_feature_ops' size-in-bits='320' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='52' column='1' id='type-id-120'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='init' type-id='type-id-121' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='uinit' type-id='type-id-122' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='get_prop' type-id='type-id-123' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='set_prop' type-id='type-id-123' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='set_irq' type-id='type-id-124' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='59' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ifpga_feature' size-in-bits='960' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='30' column='1' id='type-id-125'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-126' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='31' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='state' type-id='type-id-127' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='32' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='type' type-id='type-id-128' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='33' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='name' type-id='type-id-10' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='id' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='35' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='addr' type-id='type-id-55' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='phys_addr' type-id='type-id-49' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='37' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='size' type-id='type-id-46' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='revision' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='cap' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='40' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='vfio_dev_fd' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='ctx' type-id='type-id-129' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='42' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='ctx_num' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='parent' type-id='type-id-14' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='45' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='ops' type-id='type-id-130' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='47' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='vec_start' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='vec_cnt' type-id='type-id-43' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='49' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='31' column='1' id='type-id-126'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-131' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='31' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-132' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='31' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-125' size-in-bits='64' id='type-id-131'/>
+    <pointer-type-def type-id='type-id-131' size-in-bits='64' id='type-id-132'/>
+    <enum-decl name='ifpga_feature_state' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='15' column='1' id='type-id-127'>
+      <underlying-type type-id='type-id-71'/>
+      <enumerator name='IFPGA_FEATURE_UNUSED' value='0'/>
+      <enumerator name='IFPGA_FEATURE_ATTACHED' value='1'/>
+    </enum-decl>
+    <enum-decl name='feature_type' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='20' column='1' id='type-id-128'>
+      <underlying-type type-id='type-id-71'/>
+      <enumerator name='FEATURE_FME_TYPE' value='0'/>
+      <enumerator name='FEATURE_PORT_TYPE' value='1'/>
+    </enum-decl>
+    <class-decl name='feature_irq_ctx' size-in-bits='64' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='25' column='1' id='type-id-133'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='eventfd' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='26' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='idx' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_hw.h' line='27' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-133' size-in-bits='64' id='type-id-129'/>
+    <pointer-type-def type-id='type-id-120' size-in-bits='64' id='type-id-130'/>
+    <pointer-type-def type-id='type-id-134' size-in-bits='64' id='type-id-121'/>
+    <pointer-type-def type-id='type-id-135' size-in-bits='64' id='type-id-122'/>
+    <class-decl name='feature_prop' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/raw/ifpga/base/opae_ifpga_hw_api.h' line='16' column='1' id='type-id-136'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='feature_id' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_ifpga_hw_api.h' line='17' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='prop_id' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_ifpga_hw_api.h' line='18' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='data' type-id='type-id-50' visibility='default' filepath='../drivers/raw/ifpga/base/opae_ifpga_hw_api.h' line='19' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-136' size-in-bits='64' id='type-id-137'/>
+    <pointer-type-def type-id='type-id-138' size-in-bits='64' id='type-id-123'/>
+    <pointer-type-def type-id='type-id-139' size-in-bits='64' id='type-id-124'/>
+    <var-decl name='fme_hdr_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='167' column='1'/>
+    <var-decl name='fme_thermal_mgmt_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='168' column='1'/>
+    <var-decl name='fme_power_mgmt_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='169' column='1'/>
+    <var-decl name='fme_hssi_eth_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='174' column='1'/>
+    <var-decl name='fme_emif_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='175' column='1'/>
+    <var-decl name='fme_spi_master_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='176' column='1'/>
+    <var-decl name='fme_nios_spi_master_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='179' column='1'/>
+    <var-decl name='fme_i2c_master_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='177' column='1'/>
+    <var-decl name='fme_eth_group_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='178' column='1'/>
+    <function-type size-in-bits='64' id='type-id-134'>
+      <parameter type-id='type-id-131'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-138'>
+      <parameter type-id='type-id-131'/>
+      <parameter type-id='type-id-137'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-139'>
+      <parameter type-id='type-id-131'/>
+      <parameter type-id='type-id-14'/>
+      <return type-id='type-id-7'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-135'>
+      <parameter type-id='type-id-131'/>
+      <return type-id='type-id-24'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_fme_iperf.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='fme_global_iperf_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='172' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_fme_dperf.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='fme_global_dperf_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='173' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_fme_error.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='fme_global_err_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='170' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_port.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='ifpga_rawdev_port_hdr_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='195' column='1'/>
+    <var-decl name='ifpga_rawdev_port_stp_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='197' column='1'/>
+    <var-decl name='ifpga_rawdev_port_uint_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='198' column='1'/>
+    <var-decl name='ifpga_rawdev_port_afu_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='199' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_port_error.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='ifpga_rawdev_port_error_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='196' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/base/ifpga_fme_pr.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='fme_pr_mgmt_ops' type-id='type-id-120' visibility='default' filepath='../drivers/raw/ifpga/base/ifpga_feature_dev.h' line='171' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/raw/ifpga/ifpga_rawdev.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='ifpga_rawdev_logtype' type-id='type-id-7' visibility='default' filepath='../drivers/raw/ifpga/ifpga_rawdev.h' line='8' column='1'/>
+  </abi-instr>
+</abi-corpus>
