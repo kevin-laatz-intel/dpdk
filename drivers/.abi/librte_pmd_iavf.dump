@@ -1,0 +1,71 @@
+<abi-corpus path='gcc//drivers/librte_pmd_iavf.so.20.0' architecture='elf-amd-x86_64' soname='librte_pmd_iavf.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_ethdev.so.20.0'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_meter.so.20.0'/>
+    <dependency name='librte_bus_pci.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_bus_vdev.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <abi-instr version='1.0' address-size='64' path='../drivers/net/iavf/base/iavf_common.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='iavf_rx_ptype_decoded' size-in-bits='32' is-struct='yes' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='920' column='1' id='type-id-1'>
+      <data-member access='public' layout-offset-in-bits='24'>
+        <var-decl name='ptype' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='921' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='23'>
+        <var-decl name='known' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='922' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='22'>
+        <var-decl name='outer_ip' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='923' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='21'>
+        <var-decl name='outer_ip_ver' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='924' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='20'>
+        <var-decl name='outer_frag' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='925' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='17'>
+        <var-decl name='tunnel_type' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='926' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='15'>
+        <var-decl name='tunnel_end_prot' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='927' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='14'>
+        <var-decl name='tunnel_end_frag' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='928' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='10'>
+        <var-decl name='inner_prot' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='929' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='7'>
+        <var-decl name='payload_layer' type-id='type-id-2' visibility='default' filepath='../drivers/net/iavf/base/iavf_type.h' line='930' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-3'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-3' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-4'/>
+    <typedef-decl name='uint32_t' type-id='type-id-4' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-5'/>
+    <typedef-decl name='u32' type-id='type-id-5' filepath='../drivers/net/iavf/base/iavf_osdep.h' line='32' column='1' id='type-id-2'/>
+
+    <array-type-def dimensions='1' type-id='type-id-1' size-in-bits='infinite' id='type-id-6'>
+      <subrange length='infinite' id='type-id-7'/>
+
+    </array-type-def>
+    <var-decl name='iavf_ptype_lookup' type-id='type-id-6' visibility='default' filepath='../drivers/net/iavf/base/iavf_prototype.h' line='67' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/net/iavf/iavf_ethdev.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-8'/>
+    <var-decl name='iavf_logtype_init' type-id='type-id-8' visibility='default' filepath='../drivers/net/iavf/iavf_log.h' line='8' column='1'/>
+    <var-decl name='iavf_logtype_driver' type-id='type-id-8' visibility='default' filepath='../drivers/net/iavf/iavf_log.h' line='14' column='1'/>
+  </abi-instr>
+</abi-corpus>

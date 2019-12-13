@@ -1,0 +1,1296 @@
+<abi-corpus path='gcc//drivers/librte_pmd_atlantic.so.20.0' architecture='elf-amd-x86_64' soname='librte_pmd_atlantic.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_ethdev.so.20.0'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_meter.so.20.0'/>
+    <dependency name='librte_bus_pci.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_bus_vdev.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_pmd_atl_macsec_config_rxsc' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pmd_atl_macsec_config_txsc' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pmd_atl_macsec_disable' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pmd_atl_macsec_enable' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pmd_atl_macsec_select_rxsa' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pmd_atl_macsec_select_txsa' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../drivers/net/atlantic/atl_ethdev.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <var-decl name='atl_logtype_init' type-id='type-id-1' visibility='default' filepath='../drivers/net/atlantic/atl_logs.h' line='9' column='1'/>
+    <var-decl name='atl_logtype_driver' type-id='type-id-1' visibility='default' filepath='../drivers/net/atlantic/atl_logs.h' line='23' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/net/atlantic/hw_atl/hw_atl_utils_fw2x.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='aq_fw_ops' size-in-bits='1216' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='145' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='init' type-id='type-id-3' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='146' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='deinit' type-id='type-id-3' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='reset' type-id='type-id-3' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='150' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='get_mac_permanent' type-id='type-id-4' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='set_link_speed' type-id='type-id-5' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='set_state' type-id='type-id-6' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='156' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='update_link_status' type-id='type-id-3' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='159' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='update_stats' type-id='type-id-3' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='161' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='set_power' type-id='type-id-7' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='163' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='get_temp' type-id='type-id-8' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='166' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='get_cable_len' type-id='type-id-8' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='168' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='set_eee_rate' type-id='type-id-5' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='170' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='get_eee_rate' type-id='type-id-9' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='172' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='get_flow_control' type-id='type-id-10' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='175' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='set_flow_control' type-id='type-id-3' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='176' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='led_control' type-id='type-id-5' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='178' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='get_eeprom' type-id='type-id-11' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='180' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='set_eeprom' type-id='type-id-11' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='183' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='send_macsec_req' type-id='type-id-12' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='186' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='aq_hw_s' size-in-bits='15936' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='115' column='1' id='type-id-13'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='device_id' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='116' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='vendor_id' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='117' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='adapter_stopped' type-id='type-id-15' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='118' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='7'>
+        <var-decl name='rbl_enabled' type-id='type-id-16' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='120' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='aq_nic_cfg' type-id='type-id-17' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='121' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='aq_fw_ops' type-id='type-id-18' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='122' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='mmio' type-id='type-id-19' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='aq_link_status' type-id='type-id-20' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='125' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='is_autoneg' type-id='type-id-15' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='126' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='296'>
+        <var-decl name='mbox' type-id='type-id-21' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='128' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1416'>
+        <var-decl name='last_stats' type-id='type-id-22' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='129' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1920'>
+        <var-decl name='curr_stats' type-id='type-id-23' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='130' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3136'>
+        <var-decl name='caps_lo' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='132' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3200'>
+        <var-decl name='speed' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='134' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3264'>
+        <var-decl name='chip_features' type-id='type-id-26' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3296'>
+        <var-decl name='fw_ver_actual' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='136' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3328'>
+        <var-decl name='mbox_addr' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='137' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3360'>
+        <var-decl name='rpc_addr' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3392'>
+        <var-decl name='rpc_tid' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='139' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3424'>
+        <var-decl name='rpc' type-id='type-id-27' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='140' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='15616'>
+        <var-decl name='mbox_mutex' type-id='type-id-28' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='142' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-29'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-29' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-30'/>
+    <typedef-decl name='uint16_t' type-id='type-id-30' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-31'/>
+    <typedef-decl name='u16' type-id='type-id-31' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='17' column='1' id='type-id-14'/>
+    <type-decl name='bool' size-in-bits='8' id='type-id-15'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-32'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-32' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-33'/>
+    <typedef-decl name='uint8_t' type-id='type-id-33' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-34'/>
+    <typedef-decl name='u8' type-id='type-id-34' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='15' column='1' id='type-id-16'/>
+    <class-decl name='aq_hw_cfg_s' size-in-bits='3392' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='96' column='1' id='type-id-35'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='is_lro' type-id='type-id-15' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='is_rss' type-id='type-id-15' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='num_rss_queues' type-id='type-id-26' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='wol' type-id='type-id-1' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='100' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='link_speed_msk' type-id='type-id-1' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='irq_type' type-id='type-id-1' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='irq_mask' type-id='type-id-1' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='vecs' type-id='type-id-26' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='vlan_strip' type-id='type-id-15' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='107' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='vlan_filter' type-id='type-id-36' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='108' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='flow_control' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='109' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='aq_rss' type-id='type-id-38' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2656'>
+        <var-decl name='aq_macsec' type-id='type-id-39' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='112' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-26'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-26' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-40'/>
+    <typedef-decl name='uint32_t' type-id='type-id-40' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-37'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-41'/>
+
+    <array-type-def dimensions='1' type-id='type-id-37' size-in-bits='512' id='type-id-36'>
+      <subrange length='16' type-id='type-id-41' id='type-id-42'/>
+
+    </array-type-def>
+    <class-decl name='aq_rss_parameters' size-in-bits='1856' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='55' column='1' id='type-id-38'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='base_cpu_number' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='indirection_table_size' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='hash_secret_key_size' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='hash_secret_key' type-id='type-id-43' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='indirection_table' type-id='type-id-44' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='60' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='u32' type-id='type-id-37' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='19' column='1' id='type-id-24'/>
+
+    <array-type-def dimensions='1' type-id='type-id-24' size-in-bits='1280' id='type-id-43'>
+      <subrange length='40' type-id='type-id-41' id='type-id-45'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='512' id='type-id-44'>
+      <subrange length='64' type-id='type-id-41' id='type-id-46'/>
+
+    </array-type-def>
+    <class-decl name='aq_macsec_config' size-in-bits='736' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='64' column='1' id='type-id-39'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='common' type-id='type-id-47' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='txsc' type-id='type-id-48' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='txsa' type-id='type-id-49' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='rxsc' type-id='type-id-50' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='rxsa' type-id='type-id-49' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='93' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='96' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='65' column='1' id='type-id-47'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='macsec_enabled' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='encryption_enabled' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='replay_protection_enabled' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='68' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='96' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='71' column='1' id='type-id-48'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='idx' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='mac' type-id='type-id-51' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='73' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-24' size-in-bits='64' id='type-id-51'>
+      <subrange length='2' type-id='type-id-41' id='type-id-52'/>
+
+    </array-type-def>
+    <class-decl name='__anonymous_struct__' size-in-bits='224' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='76' column='1' id='type-id-49'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='idx' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='an' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pn' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='key' type-id='type-id-53' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='80' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-24' size-in-bits='128' id='type-id-53'>
+      <subrange length='4' type-id='type-id-41' id='type-id-54'/>
+
+    </array-type-def>
+    <class-decl name='__anonymous_struct__' size-in-bits='96' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='83' column='1' id='type-id-50'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='mac' type-id='type-id-51' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pi' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='85' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-35' size-in-bits='64' id='type-id-17'/>
+    <qualified-type-def type-id='type-id-2' const='yes' id='type-id-55'/>
+    <pointer-type-def type-id='type-id-55' size-in-bits='64' id='type-id-18'/>
+    <type-decl name='void' id='type-id-56'/>
+    <pointer-type-def type-id='type-id-56' size-in-bits='64' id='type-id-19'/>
+    <class-decl name='aq_hw_link_status_s' size-in-bits='32' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='29' column='1' id='type-id-20'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='mbps' type-id='type-id-26' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='30' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='hw_aq_atl_utils_mbox' size-in-bits='1120' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='249' column='1' id='type-id-21'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='header' type-id='type-id-57' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='250' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='stats' type-id='type-id-22' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='251' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='info' type-id='type-id-58' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='252' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='hw_aq_atl_utils_mbox_header' size-in-bits='96' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='231' column='1' id='type-id-57'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='version' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='232' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='transaction_id' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='233' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='error' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='234' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='hw_atl_stats_s' size-in-bits='480' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='94' column='1' id='type-id-22'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='uprc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='mprc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='bprc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='erpt' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='uptc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='mptc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='100' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='bptc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='erpr' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='mbtc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='bbtc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='mbrc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='bbrc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='ubrc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='107' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='ubtc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='108' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='dpc' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='109' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='hw_aq_info' size-in-bits='544' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='237' column='1' id='type-id-58'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='reserved' type-id='type-id-59' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='238' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='phy_fault_code' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='239' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='phy_temperature' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='240' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='cable_len' type-id='type-id-16' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='241' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='88'>
+        <var-decl name='reserved1' type-id='type-id-16' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='242' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='cable_diag_data' type-id='type-id-53' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='243' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='reserved2' type-id='type-id-60' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='244' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='caps_lo' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='245' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='caps_hi' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='246' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='48' id='type-id-59'>
+      <subrange length='6' type-id='type-id-41' id='type-id-61'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='256' id='type-id-60'>
+      <subrange length='32' type-id='type-id-41' id='type-id-62'/>
+
+    </array-type-def>
+    <class-decl name='aq_stats_s' size-in-bits='1216' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='33' column='1' id='type-id-23'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='uprc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mprc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='35' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='bprc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='erpt' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='37' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='uptc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='mptc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='bptc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='40' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='erpr' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='mbtc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='42' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='bbtc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='mbrc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='44' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='bbrc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='45' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='ubrc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='46' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='ubtc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='47' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='dpc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='dma_pkt_rc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='dma_pkt_tc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='50' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='dma_oct_rc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='dma_oct_tc' type-id='type-id-25' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='52' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint64_t' type-id='type-id-41' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-63'/>
+    <typedef-decl name='uint64_t' type-id='type-id-63' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-64'/>
+    <typedef-decl name='u64' type-id='type-id-64' filepath='../drivers/net/atlantic/hw_atl/../atl_types.h' line='21' column='1' id='type-id-25'/>
+    <class-decl name='hw_aq_atl_utils_fw_rpc' size-in-bits='12192' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='122' column='1' id='type-id-27'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='msg_id' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='' type-id='type-id-65' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='12160' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='125' column='1' id='type-id-65'>
+      <data-member access='private'>
+        <var-decl name='msg_ping' type-id='type-id-66' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='128' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_arp' type-id='type-id-67' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_inject' type-id='type-id-68' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='143' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_wol' type-id='type-id-69' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='183' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_msm_pfc_quantas' type-id='type-id-70' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='188' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_enable_wakeup' type-id='type-id-71' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='206' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_offload' type-id='type-id-72' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='222' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='msg_del_id' type-id='type-id-73' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='226' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='126' column='1' id='type-id-66'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='pong' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='127' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='352' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='130' column='1' id='type-id-67'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='mac_addr' type-id='type-id-59' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='131' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ip_addr_cnt' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='132' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='ip' type-id='type-id-74' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='137' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='134' column='1' id='type-id-75'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='addr' type-id='type-id-76' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='mask' type-id='type-id-76' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='136' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='ip_addr' size-in-bits='128' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='112' column='1' id='type-id-76'>
+      <data-member access='private'>
+        <var-decl name='v6' type-id='type-id-77' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='115' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='v4' type-id='type-id-78' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='119' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='113' column='1' id='type-id-77'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='addr' type-id='type-id-79' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='114' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='128' id='type-id-79'>
+      <subrange length='16' type-id='type-id-41' id='type-id-42'/>
+
+    </array-type-def>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='116' column='1' id='type-id-78'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='padding' type-id='type-id-80' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='117' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='addr' type-id='type-id-81' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='118' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='96' id='type-id-80'>
+      <subrange length='12' type-id='type-id-41' id='type-id-82'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='32' id='type-id-81'>
+      <subrange length='4' type-id='type-id-41' id='type-id-54'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-75' size-in-bits='256' id='type-id-74'>
+      <subrange length='1' type-id='type-id-41' id='type-id-83'/>
+
+    </array-type-def>
+    <class-decl name='__anonymous_struct__' size-in-bits='12160' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='140' column='1' id='type-id-68'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='len' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='141' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='packet' type-id='type-id-84' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='142' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='12112' id='type-id-84'>
+      <subrange length='1514' type-id='type-id-41' id='type-id-85'/>
+
+    </array-type-def>
+    <class-decl name='__anonymous_struct__' size-in-bits='448' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='145' column='1' id='type-id-69'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='priority' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='146' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='wol_packet_type' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='147' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pattern_id' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='next_wol_pattern_offset' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='149' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='wol_pattern' type-id='type-id-86' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='182' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='320' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='150' column='1' id='type-id-86'>
+      <data-member access='private'>
+        <var-decl name='ipv4_tcp_syn_parameters' type-id='type-id-87' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='157' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='ipv6_tcp_syn_parameters' type-id='type-id-88' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='165' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='eapol_request_id_message_parameters' type-id='type-id-89' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='169' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='wol_bit_map_pattern' type-id='type-id-90' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='177' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='wol_magic_packet_pattern' type-id='type-id-91' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='180' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='151' column='1' id='type-id-87'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ipv4_source_address' type-id='type-id-81' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='153' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ipv4_dest_address' type-id='type-id-81' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='tcp_source_port_number' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='155' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='tcp_dest_port_number' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='156' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='159' column='1' id='type-id-88'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='160' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ipv6_source_address' type-id='type-id-79' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='161' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='ipv6_dest_address' type-id='type-id-79' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='162' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='tcp_source_port_number' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='163' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='304'>
+        <var-decl name='tcp_dest_port_number' type-id='type-id-14' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='164' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='167' column='1' id='type-id-89'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='168' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='160' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='171' column='1' id='type-id-90'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='172' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='mask_offset' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='173' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mask_size' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='174' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='pattern_offset' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='175' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='pattern_size' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='176' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='48' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='178' column='1' id='type-id-91'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='mac_addr' type-id='type-id-59' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='179' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='185' column='1' id='type-id-70'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tc_quanta' type-id='type-id-92' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='186' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tc_threshold' type-id='type-id-92' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='187' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-14' size-in-bits='128' id='type-id-92'>
+      <subrange length='8' type-id='type-id-41' id='type-id-93'/>
+
+    </array-type-def>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='190' column='1' id='type-id-71'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='' type-id='type-id-94' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='32' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='191' column='1' id='type-id-94'>
+      <data-member access='private'>
+        <var-decl name='pattern_mask' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='192' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='' type-id='type-id-95' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='193' column='1' id='type-id-95'>
+      <data-member access='public' layout-offset-in-bits='31'>
+        <var-decl name='aq_pm_wol_reason_arp_v4_pkt' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='194' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='30'>
+        <var-decl name='aq_pm_wol_reason_ipv4_ping_pkt' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='195' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='29'>
+        <var-decl name='aq_pm_wol_reason_ipv6_ns_pkt' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='196' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='28'>
+        <var-decl name='aq_pm_wol_reason_ipv6_ping_pkt' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='197' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='27'>
+        <var-decl name='aq_pm_wol_reason_link_up' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='198' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='26'>
+        <var-decl name='aq_pm_wol_reason_link_down' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='199' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='25'>
+        <var-decl name='aq_pm_wol_reason_maximum' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='200' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='288' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='208' column='1' id='type-id-72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='priority' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='209' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='protocol_offload_type' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='210' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='protocol_offload_id' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='211' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='next_protocol_offload_offset' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='212' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-96' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='160' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='214' column='1' id='type-id-96'>
+      <data-member access='private'>
+        <var-decl name='ipv4_arp_params' type-id='type-id-97' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='220' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='160' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='215' column='1' id='type-id-97'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='216' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='remote_ipv4_addr' type-id='type-id-81' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='217' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='host_ipv4_addr' type-id='type-id-81' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='218' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='mac_addr' type-id='type-id-59' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='219' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='224' column='1' id='type-id-73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='id' type-id='type-id-24' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='225' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='320' is-anonymous='yes' visibility='default' filepath='/usr/include/bits/pthreadtypes.h' line='67' column='1' id='type-id-98'>
+      <data-member access='private'>
+        <var-decl name='__data' type-id='type-id-99' visibility='default' filepath='/usr/include/bits/pthreadtypes.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='__size' type-id='type-id-100' visibility='default' filepath='/usr/include/bits/pthreadtypes.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='__align' type-id='type-id-101' visibility='default' filepath='/usr/include/bits/pthreadtypes.h' line='71' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__pthread_mutex_s' size-in-bits='320' is-struct='yes' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='118' column='1' id='type-id-99'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='__lock' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='120' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='__count' type-id='type-id-26' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='121' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='__owner' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='122' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='__nusers' type-id='type-id-26' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='124' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='__kind' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='__spins' type-id='type-id-102' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='176'>
+        <var-decl name='__elision' type-id='type-id-102' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='__list' type-id='type-id-103' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='155' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='short int' size-in-bits='16' id='type-id-102'/>
+    <class-decl name='__pthread_internal_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='82' column='1' id='type-id-104'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='__prev' type-id='type-id-105' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='__next' type-id='type-id-105' visibility='default' filepath='/usr/include/bits/thread-shared-types.h' line='85' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-104' size-in-bits='64' id='type-id-105'/>
+    <typedef-decl name='__pthread_list_t' type-id='type-id-104' filepath='/usr/include/bits/thread-shared-types.h' line='86' column='1' id='type-id-103'/>
+    <type-decl name='char' size-in-bits='8' id='type-id-106'/>
+
+    <array-type-def dimensions='1' type-id='type-id-106' size-in-bits='320' id='type-id-100'>
+      <subrange length='40' type-id='type-id-41' id='type-id-45'/>
+
+    </array-type-def>
+    <type-decl name='long int' size-in-bits='64' id='type-id-101'/>
+    <typedef-decl name='pthread_mutex_t' type-id='type-id-98' filepath='/usr/include/bits/pthreadtypes.h' line='72' column='1' id='type-id-28'/>
+    <pointer-type-def type-id='type-id-13' size-in-bits='64' id='type-id-107'/>
+    <pointer-type-def type-id='type-id-108' size-in-bits='64' id='type-id-3'/>
+    <pointer-type-def type-id='type-id-16' size-in-bits='64' id='type-id-109'/>
+    <pointer-type-def type-id='type-id-110' size-in-bits='64' id='type-id-4'/>
+    <pointer-type-def type-id='type-id-111' size-in-bits='64' id='type-id-5'/>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-112'/>
+    <enum-decl name='hal_atl_utils_fw_state_e' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='507' column='1' id='type-id-113'>
+      <underlying-type type-id='type-id-112'/>
+      <enumerator name='MPI_DEINIT' value='0'/>
+      <enumerator name='MPI_RESET' value='1'/>
+      <enumerator name='MPI_INIT' value='2'/>
+      <enumerator name='MPI_POWER' value='4'/>
+    </enum-decl>
+    <pointer-type-def type-id='type-id-114' size-in-bits='64' id='type-id-6'/>
+    <pointer-type-def type-id='type-id-115' size-in-bits='64' id='type-id-7'/>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-116'/>
+    <pointer-type-def type-id='type-id-117' size-in-bits='64' id='type-id-8'/>
+    <pointer-type-def type-id='type-id-24' size-in-bits='64' id='type-id-118'/>
+    <pointer-type-def type-id='type-id-119' size-in-bits='64' id='type-id-9'/>
+    <pointer-type-def type-id='type-id-120' size-in-bits='64' id='type-id-10'/>
+    <pointer-type-def type-id='type-id-121' size-in-bits='64' id='type-id-11'/>
+    <class-decl name='macsec_msg_fw_request' size-in-bits='608' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='476' column='1' id='type-id-122'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='offset' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='477' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='msg_type' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='478' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='' type-id='type-id-123' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='544' is-anonymous='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='480' column='1' id='type-id-123'>
+      <data-member access='private'>
+        <var-decl name='cfg' type-id='type-id-124' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='481' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='rxsc' type-id='type-id-125' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='482' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='txsc' type-id='type-id-126' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='483' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='rxsa' type-id='type-id-127' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='484' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='txsa' type-id='type-id-128' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='485' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='stats' type-id='type-id-129' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='486' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='macsec_cfg' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='356' column='1' id='type-id-124'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='enabled' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='357' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='egress_threshold' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='358' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ingress_threshold' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='359' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='interrupts_enabled' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='360' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='add_rx_sc' size-in-bits='544' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='363' column='1' id='type-id-125'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='364' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='pi' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='365' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='sci' type-id='type-id-130' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='366' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sci_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='367' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='tci' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='368' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tci_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='369' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='mac_sa' type-id='type-id-130' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='370' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='sa_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='371' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='mac_da' type-id='type-id-130' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='372' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='da_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='373' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='validate_frames' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='374' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='replay_protect' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='375' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='anti_replay_window' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='376' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='an_rol' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='378' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-37' size-in-bits='64' id='type-id-130'>
+      <subrange length='2' type-id='type-id-41' id='type-id-52'/>
+
+    </array-type-def>
+    <class-decl name='add_tx_sc' size-in-bits='480' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='381' column='1' id='type-id-126'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='382' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='pi' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='383' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='sci' type-id='type-id-130' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='384' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sci_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='385' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='tci' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='386' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tci_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='387' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='mac_sa' type-id='type-id-130' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='388' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='sa_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='389' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='mac_da' type-id='type-id-130' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='390' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='da_mask' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='391' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='protect' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='392' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='curr_an' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='393' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='add_rx_sa' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='396' column='1' id='type-id-127'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='397' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='next_pn' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='398' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key' type-id='type-id-131' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='399' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-37' size-in-bits='128' id='type-id-131'>
+      <subrange length='4' type-id='type-id-41' id='type-id-54'/>
+
+    </array-type-def>
+    <class-decl name='add_tx_sa' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='402' column='1' id='type-id-128'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='403' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='next_pn' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='404' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key' type-id='type-id-131' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='405' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='get_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='408' column='1' id='type-id-129'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='version_only' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='409' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ingress_sa_index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='410' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='egress_sa_index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='411' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='egress_sc_index' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='412' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-122' size-in-bits='64' id='type-id-132'/>
+    <class-decl name='macsec_msg_fw_response' size-in-bits='2880' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='490' column='1' id='type-id-133'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='result' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='491' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='stats' type-id='type-id-134' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='492' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='macsec_stats' size-in-bits='2848' is-struct='yes' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='415' column='1' id='type-id-134'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='api_version' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='416' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='in_ctl_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='418' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='in_tagged_miss_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='419' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='in_untagged_miss_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='420' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='in_notag_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='421' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='in_untagged_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='422' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='in_bad_tag_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='423' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='in_no_sci_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='424' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='in_unknown_sci_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='425' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='in_ctrl_prt_pass_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='426' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='in_unctrl_prt_pass_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='427' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='in_ctrl_prt_fail_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='428' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='736'>
+        <var-decl name='in_unctrl_prt_fail_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='429' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='in_too_long_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='430' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='864'>
+        <var-decl name='in_igpoc_ctl_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='431' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='in_ecc_error_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='432' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='992'>
+        <var-decl name='in_unctrl_hit_drop_redir' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='433' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1056'>
+        <var-decl name='out_ctl_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='436' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1120'>
+        <var-decl name='out_unknown_sa_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='437' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1184'>
+        <var-decl name='out_untagged_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='438' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1248'>
+        <var-decl name='out_too_long' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='439' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1312'>
+        <var-decl name='out_ecc_error_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='440' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1376'>
+        <var-decl name='out_unctrl_hit_drop_redir' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='441' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1440'>
+        <var-decl name='in_untagged_hit_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='444' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1504'>
+        <var-decl name='in_ctrl_hit_drop_redir_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='445' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1568'>
+        <var-decl name='in_not_using_sa' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='446' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1632'>
+        <var-decl name='in_unused_sa' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='447' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1696'>
+        <var-decl name='in_not_valid_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='448' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1760'>
+        <var-decl name='in_invalid_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='449' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1824'>
+        <var-decl name='in_ok_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='450' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1888'>
+        <var-decl name='in_late_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='451' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1952'>
+        <var-decl name='in_delayed_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='452' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2016'>
+        <var-decl name='in_unchecked_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='453' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2080'>
+        <var-decl name='in_validated_octets' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='454' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2144'>
+        <var-decl name='in_decrypted_octets' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='455' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2208'>
+        <var-decl name='out_sa_hit_drop_redirect' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='458' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2272'>
+        <var-decl name='out_sa_protected2_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='459' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2336'>
+        <var-decl name='out_sa_protected_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='460' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2400'>
+        <var-decl name='out_sa_encrypted_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='461' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2464'>
+        <var-decl name='out_sc_protected_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='464' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2528'>
+        <var-decl name='out_sc_encrypted_pkts' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='465' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2592'>
+        <var-decl name='out_sc_protected_octets' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='466' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2656'>
+        <var-decl name='out_sc_encrypted_octets' type-id='type-id-64' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='467' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2720'>
+        <var-decl name='egress_threshold_expired' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='470' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2752'>
+        <var-decl name='ingress_threshold_expired' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='471' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2784'>
+        <var-decl name='egress_expired' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='472' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2816'>
+        <var-decl name='ingress_expired' type-id='type-id-37' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='473' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-133' size-in-bits='64' id='type-id-135'/>
+    <pointer-type-def type-id='type-id-136' size-in-bits='64' id='type-id-12'/>
+    <var-decl name='aq_fw_2x_ops' type-id='type-id-55' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='652' column='1'/>
+    <function-type size-in-bits='64' id='type-id-108'>
+      <parameter type-id='type-id-107'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-114'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-113'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-117'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-116'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-121'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-1'/>
+      <parameter type-id='type-id-118'/>
+      <parameter type-id='type-id-24'/>
+      <parameter type-id='type-id-24'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-136'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-132'/>
+      <parameter type-id='type-id-135'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-111'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-24'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-120'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-118'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-119'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-118'/>
+      <parameter type-id='type-id-118'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-110'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-109'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-115'>
+      <parameter type-id='type-id-107'/>
+      <parameter type-id='type-id-26'/>
+      <parameter type-id='type-id-109'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/net/atlantic/hw_atl/hw_atl_utils.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='aq_fw_1x_ops' type-id='type-id-55' visibility='default' filepath='../drivers/net/atlantic/hw_atl/../hw_atl/hw_atl_utils.h' line='651' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/net/atlantic/rte_pmd_atlantic.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <pointer-type-def type-id='type-id-34' size-in-bits='64' id='type-id-137'/>
+    <function-decl name='rte_pmd_atl_macsec_select_rxsa' mangled-name='rte_pmd_atl_macsec_select_rxsa' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pmd_atl_macsec_select_rxsa@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='port' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1'/>
+      <parameter type-id='type-id-34' name='idx' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1'/>
+      <parameter type-id='type-id-34' name='an' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1'/>
+      <parameter type-id='type-id-37' name='pn' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='90' column='1'/>
+      <parameter type-id='type-id-137' name='key' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='90' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pmd_atl_macsec_select_txsa' mangled-name='rte_pmd_atl_macsec_select_txsa' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='73' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pmd_atl_macsec_select_txsa@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='port' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1'/>
+      <parameter type-id='type-id-34' name='idx' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1'/>
+      <parameter type-id='type-id-34' name='an' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='89' column='1'/>
+      <parameter type-id='type-id-37' name='pn' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='90' column='1'/>
+      <parameter type-id='type-id-137' name='key' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='90' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pmd_atl_macsec_config_rxsc' mangled-name='rte_pmd_atl_macsec_config_rxsc' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='58' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pmd_atl_macsec_config_rxsc@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='port' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='58' column='1'/>
+      <parameter type-id='type-id-137' name='mac' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='58' column='1'/>
+      <parameter type-id='type-id-31' name='pi' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='58' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pmd_atl_macsec_config_txsc' mangled-name='rte_pmd_atl_macsec_config_txsc' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='43' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pmd_atl_macsec_config_txsc@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='port' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='43' column='1'/>
+      <parameter type-id='type-id-137' name='mac' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='43' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pmd_atl_macsec_disable' mangled-name='rte_pmd_atl_macsec_disable' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='28' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pmd_atl_macsec_disable@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='port' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='28' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pmd_atl_macsec_enable' mangled-name='rte_pmd_atl_macsec_enable' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='12' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pmd_atl_macsec_enable@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='port' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='12' column='1'/>
+      <parameter type-id='type-id-34' name='encr' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='13' column='1'/>
+      <parameter type-id='type-id-34' name='repl_prot' filepath='../drivers/net/atlantic/rte_pmd_atlantic.c' line='13' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>
