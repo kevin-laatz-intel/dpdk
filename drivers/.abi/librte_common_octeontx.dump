@@ -1,0 +1,77 @@
+<abi-corpus path='gcc//drivers/librte_common_octeontx.so.20.0' architecture='elf-amd-x86_64' soname='librte_common_octeontx.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='octeontx_get_global_domain' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='octeontx_mbox_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='octeontx_mbox_send' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='octeontx_mbox_set_ram_mbox_base' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='octeontx_mbox_set_reg' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <elf-variable-symbols>
+    <elf-symbol name='octeontx_logtype_mbox' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-variable-symbols>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/octeontx/octeontx_mbox.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <var-decl name='octeontx_logtype_mbox' type-id='type-id-1' mangled-name='octeontx_logtype_mbox' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='28' column='1' elf-symbol-id='octeontx_logtype_mbox@@DPDK_20.0'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-2'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-2' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-3'/>
+    <typedef-decl name='uint16_t' type-id='type-id-3' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-4'/>
+    <function-decl name='octeontx_get_global_domain' mangled-name='octeontx_get_global_domain' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='352' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='octeontx_get_global_domain@@DPDK_20.0'>
+      <return type-id='type-id-4'/>
+    </function-decl>
+    <function-decl name='octeontx_mbox_init' mangled-name='octeontx_mbox_init' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='313' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='octeontx_mbox_init@@DPDK_20.0'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='octeontx_mbox_hdr' size-in-bits='48' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='30' column='1' id='type-id-5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='vfid' type-id='type-id-4' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='31' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='coproc' type-id='type-id-6' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='32' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='24'>
+        <var-decl name='msg' type-id='type-id-6' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='33' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='oob' type-id='type-id-6' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='40'>
+        <var-decl name='res_code' type-id='type-id-6' visibility='default' filepath='../drivers/common/octeontx/octeontx_mbox.h' line='35' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-7'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-7' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-8'/>
+    <typedef-decl name='uint8_t' type-id='type-id-8' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-6'/>
+    <pointer-type-def type-id='type-id-5' size-in-bits='64' id='type-id-9'/>
+    <type-decl name='void' id='type-id-10'/>
+    <pointer-type-def type-id='type-id-10' size-in-bits='64' id='type-id-11'/>
+    <function-decl name='octeontx_mbox_send' mangled-name='octeontx_mbox_send' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='250' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='octeontx_mbox_send@@DPDK_20.0'>
+      <parameter type-id='type-id-9' name='hdr' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='250' column='1'/>
+      <parameter type-id='type-id-11' name='txdata' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='250' column='1'/>
+      <parameter type-id='type-id-4' name='txlen' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='251' column='1'/>
+      <parameter type-id='type-id-11' name='rxdata' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='251' column='1'/>
+      <parameter type-id='type-id-4' name='rxlen' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='251' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-6' size-in-bits='64' id='type-id-12'/>
+    <function-decl name='octeontx_mbox_set_reg' mangled-name='octeontx_mbox_set_reg' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='226' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='octeontx_mbox_set_reg@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='reg' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='226' column='1'/>
+      <parameter type-id='type-id-4' name='domain' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='226' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='octeontx_mbox_set_ram_mbox_base' mangled-name='octeontx_mbox_set_ram_mbox_base' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='202' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='octeontx_mbox_set_ram_mbox_base@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='reg' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='226' column='1'/>
+      <parameter type-id='type-id-4' name='domain' filepath='../drivers/common/octeontx/octeontx_mbox.c' line='226' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

@@ -1,0 +1,177 @@
+<abi-corpus path='gcc//drivers/librte_common_dpaax.so.20.0' architecture='elf-amd-x86_64' soname='librte_common_dpaax.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='dpaax_iova_table_depopulate' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='dpaax_iova_table_dump' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='dpaax_iova_table_populate' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='dpaax_iova_table_update' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_device_is_available' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_device_is_compatible' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_find_compatible_node' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_find_node_by_phandle' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_get_address' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_get_mac_address' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_get_next_child' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_get_parent' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_get_property' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_init_path' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_n_addr_cells' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='of_translate_address' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <elf-variable-symbols>
+    <elf-symbol name='dpaax_iova_table_p' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-variable-symbols>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/dpaax/dpaax_iova_table.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <var-decl name='dpaax_logger' type-id='type-id-1' visibility='default' filepath='../drivers/common/dpaax/dpaax_logs.h' line='10' column='1'/>
+    <class-decl name='dpaax_iova_table' size-in-bits='64' is-struct='yes' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='33' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='count' type-id='type-id-3' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='entries' type-id='type-id-4' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='35' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-3'/>
+    <class-decl name='dpaax_iovat_element' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='27' column='1' id='type-id-5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='start' type-id='type-id-6' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='type-id-7' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='29' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='pages' type-id='type-id-8' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='30' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-9'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-9' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-10'/>
+    <typedef-decl name='uint64_t' type-id='type-id-10' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-11'/>
+    <typedef-decl name='phys_addr_t' type-id='type-id-11' filepath='../lib/librte_eal/common/include/rte_common.h' line='325' column='1' id='type-id-6'/>
+    <typedef-decl name='size_t' type-id='type-id-9' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-7'/>
+    <pointer-type-def type-id='type-id-11' size-in-bits='64' id='type-id-8'/>
+
+    <array-type-def dimensions='1' type-id='type-id-5' size-in-bits='infinite' id='type-id-4'>
+      <subrange length='infinite' type-id='type-id-9' id='type-id-12'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-13'/>
+    <var-decl name='dpaax_iova_table_p' type-id='type-id-13' mangled-name='dpaax_iova_table_p' visibility='default' filepath='../drivers/common/dpaax/dpaax_iova_table.h' line='42' column='1' elf-symbol-id='dpaax_iova_table_p@@DPDK_20.0'/>
+    <type-decl name='void' id='type-id-14'/>
+    <function-decl name='dpaax_iova_table_dump' mangled-name='dpaax_iova_table_dump' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='357' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='dpaax_iova_table_dump@@DPDK_20.0'>
+      <return type-id='type-id-14'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-14' size-in-bits='64' id='type-id-15'/>
+    <function-decl name='dpaax_iova_table_update' mangled-name='dpaax_iova_table_update' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='271' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='dpaax_iova_table_update@@DPDK_20.0'>
+      <parameter type-id='type-id-6' name='paddr' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='271' column='1'/>
+      <parameter type-id='type-id-15' name='vaddr' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='271' column='1'/>
+      <parameter type-id='type-id-7' name='length' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='271' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='dpaax_iova_table_depopulate' mangled-name='dpaax_iova_table_depopulate' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='259' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='dpaax_iova_table_depopulate@@DPDK_20.0'>
+      <return type-id='type-id-14'/>
+    </function-decl>
+    <function-decl name='dpaax_iova_table_populate' mangled-name='dpaax_iova_table_populate' filepath='../drivers/common/dpaax/dpaax_iova_table.c' line='158' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='dpaax_iova_table_populate@@DPDK_20.0'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/dpaax/dpaa_of.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='device_node' size-in-bits='34808' is-struct='yes' visibility='default' filepath='../drivers/common/dpaax/dpaa_of.h' line='66' column='1' id='type-id-16'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-17' visibility='default' filepath='../drivers/common/dpaax/dpaa_of.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2040'>
+        <var-decl name='full_name' type-id='type-id-18' visibility='default' filepath='../drivers/common/dpaax/dpaa_of.h' line='68' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-19'/>
+
+    <array-type-def dimensions='1' type-id='type-id-19' size-in-bits='2040' id='type-id-17'>
+      <subrange length='255' type-id='type-id-9' id='type-id-20'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-19' size-in-bits='32768' id='type-id-18'>
+      <subrange length='4096' type-id='type-id-9' id='type-id-21'/>
+
+    </array-type-def>
+    <qualified-type-def type-id='type-id-16' const='yes' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-22' size-in-bits='64' id='type-id-23'/>
+    <function-decl name='of_get_mac_address' mangled-name='of_get_mac_address' filepath='../drivers/common/dpaax/dpaa_of.c' line='576' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_get_mac_address@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='np' filepath='../drivers/common/dpaax/dpaa_of.c' line='576' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <type-decl name='bool' size-in-bits='8' id='type-id-24'/>
+    <qualified-type-def type-id='type-id-19' const='yes' id='type-id-25'/>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-26'/>
+    <function-decl name='of_device_is_compatible' mangled-name='of_device_is_compatible' filepath='../drivers/common/dpaax/dpaa_of.c' line='537' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_device_is_compatible@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='537' column='1'/>
+      <parameter type-id='type-id-26' name='compatible' filepath='../drivers/common/dpaax/dpaa_of.c' line='538' column='1'/>
+      <return type-id='type-id-24'/>
+    </function-decl>
+    <typedef-decl name='__uint32_t' type-id='type-id-3' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-27'/>
+    <typedef-decl name='uint32_t' type-id='type-id-27' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-28'/>
+    <qualified-type-def type-id='type-id-28' const='yes' id='type-id-29'/>
+    <pointer-type-def type-id='type-id-29' size-in-bits='64' id='type-id-30'/>
+    <function-decl name='of_translate_address' mangled-name='of_translate_address' filepath='../drivers/common/dpaax/dpaa_of.c' line='491' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_translate_address@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='491' column='1'/>
+      <parameter type-id='type-id-30' name='addr' filepath='../drivers/common/dpaax/dpaa_of.c' line='492' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-28' size-in-bits='64' id='type-id-31'/>
+    <function-decl name='of_get_address' mangled-name='of_get_address' filepath='../drivers/common/dpaax/dpaa_of.c' line='462' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_get_address@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='462' column='1'/>
+      <parameter type-id='type-id-7' name='idx' filepath='../drivers/common/dpaax/dpaa_of.c' line='462' column='1'/>
+      <parameter type-id='type-id-8' name='size' filepath='../drivers/common/dpaax/dpaa_of.c' line='463' column='1'/>
+      <parameter type-id='type-id-31' name='flags' filepath='../drivers/common/dpaax/dpaa_of.c' line='463' column='1'/>
+      <return type-id='type-id-30'/>
+    </function-decl>
+    <function-decl name='of_n_addr_cells' mangled-name='of_n_addr_cells' filepath='../drivers/common/dpaax/dpaa_of.c' line='418' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_n_addr_cells@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='418' column='1'/>
+      <return type-id='type-id-28'/>
+    </function-decl>
+    <function-decl name='of_get_next_child' mangled-name='of_get_next_child' filepath='../drivers/common/dpaax/dpaa_of.c' line='389' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_get_next_child@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='389' column='1'/>
+      <parameter type-id='type-id-23' name='prev' filepath='../drivers/common/dpaax/dpaa_of.c' line='390' column='1'/>
+      <return type-id='type-id-23'/>
+    </function-decl>
+    <function-decl name='of_get_parent' mangled-name='of_get_parent' filepath='../drivers/common/dpaax/dpaa_of.c' line='374' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_get_parent@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='374' column='1'/>
+      <return type-id='type-id-23'/>
+    </function-decl>
+    <function-decl name='of_find_node_by_phandle' mangled-name='of_find_node_by_phandle' filepath='../drivers/common/dpaax/dpaa_of.c' line='361' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_find_node_by_phandle@@DPDK_20.0'>
+      <parameter type-id='type-id-11' name='ph' filepath='../drivers/common/dpaax/dpaa_of.c' line='361' column='1'/>
+      <return type-id='type-id-23'/>
+    </function-decl>
+    <function-decl name='of_device_is_available' mangled-name='of_device_is_available' filepath='../drivers/common/dpaax/dpaa_of.c' line='345' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_device_is_available@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='dev_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='345' column='1'/>
+      <return type-id='type-id-24'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-7' size-in-bits='64' id='type-id-32'/>
+    <function-decl name='of_get_property' mangled-name='of_get_property' filepath='../drivers/common/dpaax/dpaa_of.c' line='326' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_get_property@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='from' filepath='../drivers/common/dpaax/dpaa_of.c' line='326' column='1'/>
+      <parameter type-id='type-id-26' name='name' filepath='../drivers/common/dpaax/dpaa_of.c' line='326' column='1'/>
+      <parameter type-id='type-id-32' name='lenp' filepath='../drivers/common/dpaax/dpaa_of.c' line='327' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <function-decl name='of_find_compatible_node' mangled-name='of_find_compatible_node' filepath='../drivers/common/dpaax/dpaa_of.c' line='301' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_find_compatible_node@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='from' filepath='../drivers/common/dpaax/dpaa_of.c' line='301' column='1'/>
+      <parameter type-id='type-id-26' name='type' filepath='../drivers/common/dpaax/dpaa_of.c' line='302' column='1'/>
+      <parameter type-id='type-id-26' name='compatible' filepath='../drivers/common/dpaax/dpaa_of.c' line='303' column='1'/>
+      <return type-id='type-id-23'/>
+    </function-decl>
+    <function-decl name='of_init_path' mangled-name='of_init_path' filepath='../drivers/common/dpaax/dpaa_of.c' line='217' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='of_init_path@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='dt_path' filepath='../drivers/common/dpaax/dpaa_of.c' line='217' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

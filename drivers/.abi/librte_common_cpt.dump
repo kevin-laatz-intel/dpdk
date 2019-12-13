@@ -1,0 +1,36 @@
+<abi-corpus path='gcc//drivers/librte_common_cpt.so.20.0' architecture='elf-amd-x86_64' soname='librte_common_cpt.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_cryptodev.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='cpt_pmd_ops_helper_asym_get_mlen' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cpt_pmd_ops_helper_get_mlen_direct_mode' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cpt_pmd_ops_helper_get_mlen_sg_mode' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/cpt/cpt_pmd_ops_helper.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <function-decl name='cpt_pmd_ops_helper_asym_get_mlen' mangled-name='cpt_pmd_ops_helper_asym_get_mlen' filepath='../drivers/common/cpt/cpt_pmd_ops_helper.c' line='46' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cpt_pmd_ops_helper_asym_get_mlen@@DPDK_20.0'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cpt_pmd_ops_helper_get_mlen_sg_mode' mangled-name='cpt_pmd_ops_helper_get_mlen_sg_mode' filepath='../drivers/common/cpt/cpt_pmd_ops_helper.c' line='32' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cpt_pmd_ops_helper_get_mlen_sg_mode@@DPDK_20.0'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <typedef-decl name='__int32_t' type-id='type-id-1' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-2'/>
+    <typedef-decl name='int32_t' type-id='type-id-2' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-3'/>
+    <function-decl name='cpt_pmd_ops_helper_get_mlen_direct_mode' mangled-name='cpt_pmd_ops_helper_get_mlen_direct_mode' filepath='../drivers/common/cpt/cpt_pmd_ops_helper.c' line='18' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cpt_pmd_ops_helper_get_mlen_direct_mode@@DPDK_20.0'>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

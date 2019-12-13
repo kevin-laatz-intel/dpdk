@@ -1,0 +1,988 @@
+<abi-corpus path='gcc//drivers/librte_common_octeontx2.so.20.0' architecture='elf-amd-x86_64' soname='librte_common_octeontx2.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_ethdev.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_meter.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='otx2_dev_active_vfs' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_dev_fini' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_dev_priv_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_disable_irqs' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_intra_dev_get_cfg' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_mbox_alloc_msg_rsp' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_mbox_get_rsp' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_mbox_get_rsp_tmo' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_mbox_id2name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_mbox_msg_send' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_mbox_wait_for_rsp' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_npa_lf_active' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_npa_lf_obj_get' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_npa_lf_obj_ref' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_npa_pf_func_get' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_npa_set_defaults' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_register_irq' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_sso_pf_func_get' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_sso_pf_func_set' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_unregister_irq' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <elf-variable-symbols>
+    <elf-symbol name='otx2_logtype_base' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_dpi' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_mbox' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_nix' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_npa' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_npc' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_sso' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_tim' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='otx2_logtype_tm' size='4' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-variable-symbols>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/octeontx2/otx2_dev.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='void' id='type-id-1'/>
+    <class-decl name='rte_pci_device' size-in-bits='428736' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='57' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-3' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='device' type-id='type-id-4' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='addr' type-id='type-id-5' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='id' type-id='type-id-6' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='mem_resource' type-id='type-id-7' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1920'>
+        <var-decl name='intr_handle' type-id='type-id-8' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='215168'>
+        <var-decl name='driver' type-id='type-id-9' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='215232'>
+        <var-decl name='max_vfs' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='215264'>
+        <var-decl name='kdrv' type-id='type-id-11' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='215296'>
+        <var-decl name='name' type-id='type-id-12' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='215488'>
+        <var-decl name='vfio_req_intr_handle' type-id='type-id-8' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='69' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='58' column='1' id='type-id-3'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-13' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-14' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='58' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-13'/>
+    <pointer-type-def type-id='type-id-13' size-in-bits='64' id='type-id-14'/>
+    <class-decl name='rte_device' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='104' column='1' id='type-id-4'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-15' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='name' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='driver' type-id='type-id-17' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='107' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='bus' type-id='type-id-18' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='108' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='numa_node' type-id='type-id-19' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='109' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='devargs' type-id='type-id-20' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='110' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='105' column='1' id='type-id-15'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-21' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-22' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='105' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-4' size-in-bits='64' id='type-id-21'/>
+    <pointer-type-def type-id='type-id-21' size-in-bits='64' id='type-id-22'/>
+    <type-decl name='char' size-in-bits='8' id='type-id-23'/>
+    <qualified-type-def type-id='type-id-23' const='yes' id='type-id-24'/>
+    <pointer-type-def type-id='type-id-24' size-in-bits='64' id='type-id-16'/>
+    <class-decl name='rte_driver' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='89' column='1' id='type-id-25'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-26' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='name' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='alias' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='92' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='90' column='1' id='type-id-26'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-27' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-28' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='90' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-27'/>
+    <pointer-type-def type-id='type-id-27' size-in-bits='64' id='type-id-28'/>
+    <qualified-type-def type-id='type-id-25' const='yes' id='type-id-29'/>
+    <pointer-type-def type-id='type-id-29' size-in-bits='64' id='type-id-17'/>
+    <class-decl name='rte_bus' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='246' column='1' id='type-id-30'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-31' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='247' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='name' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='248' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='scan' type-id='type-id-32' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='249' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='probe' type-id='type-id-33' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='250' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='find_device' type-id='type-id-34' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='251' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='plug' type-id='type-id-35' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='252' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='unplug' type-id='type-id-36' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='253' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='parse' type-id='type-id-37' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='254' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='dma_map' type-id='type-id-38' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='255' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='dma_unmap' type-id='type-id-39' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='256' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='conf' type-id='type-id-40' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='257' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='get_iommu_class' type-id='type-id-41' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='258' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='dev_iterate' type-id='type-id-42' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='259' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='hot_unplug_handler' type-id='type-id-43' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='260' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='sigbus_handler' type-id='type-id-44' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='262' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='247' column='1' id='type-id-31'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-45' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='247' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-46' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='247' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-30' size-in-bits='64' id='type-id-45'/>
+    <pointer-type-def type-id='type-id-45' size-in-bits='64' id='type-id-46'/>
+    <type-decl name='int' size-in-bits='32' id='type-id-19'/>
+    <pointer-type-def type-id='type-id-47' size-in-bits='64' id='type-id-48'/>
+    <typedef-decl name='rte_bus_scan_t' type-id='type-id-48' filepath='../lib/librte_eal/common/include/rte_bus.h' line='56' column='1' id='type-id-32'/>
+    <typedef-decl name='rte_bus_probe_t' type-id='type-id-48' filepath='../lib/librte_eal/common/include/rte_bus.h' line='68' column='1' id='type-id-33'/>
+    <qualified-type-def type-id='type-id-4' const='yes' id='type-id-49'/>
+    <pointer-type-def type-id='type-id-49' size-in-bits='64' id='type-id-50'/>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-51'/>
+    <pointer-type-def type-id='type-id-52' size-in-bits='64' id='type-id-53'/>
+    <typedef-decl name='rte_dev_cmp_t' type-id='type-id-53' filepath='../lib/librte_eal/common/include/rte_dev.h' line='202' column='1' id='type-id-54'/>
+    <pointer-type-def type-id='type-id-55' size-in-bits='64' id='type-id-56'/>
+    <typedef-decl name='rte_bus_find_device_t' type-id='type-id-56' filepath='../lib/librte_eal/common/include/rte_bus.h' line='93' column='1' id='type-id-34'/>
+    <pointer-type-def type-id='type-id-57' size-in-bits='64' id='type-id-58'/>
+    <typedef-decl name='rte_bus_plug_t' type-id='type-id-58' filepath='../lib/librte_eal/common/include/rte_bus.h' line='107' column='1' id='type-id-35'/>
+    <typedef-decl name='rte_bus_unplug_t' type-id='type-id-58' filepath='../lib/librte_eal/common/include/rte_bus.h' line='120' column='1' id='type-id-36'/>
+    <pointer-type-def type-id='type-id-59' size-in-bits='64' id='type-id-60'/>
+    <typedef-decl name='rte_bus_parse_t' type-id='type-id-60' filepath='../lib/librte_eal/common/include/rte_bus.h' line='140' column='1' id='type-id-37'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-61'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-61' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-62'/>
+    <typedef-decl name='uint64_t' type-id='type-id-62' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-63'/>
+    <typedef-decl name='size_t' type-id='type-id-61' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-64'/>
+    <pointer-type-def type-id='type-id-65' size-in-bits='64' id='type-id-66'/>
+    <typedef-decl name='rte_dev_dma_map_t' type-id='type-id-66' filepath='../lib/librte_eal/common/include/rte_bus.h' line='160' column='1' id='type-id-38'/>
+    <typedef-decl name='rte_dev_dma_unmap_t' type-id='type-id-66' filepath='../lib/librte_eal/common/include/rte_bus.h' line='181' column='1' id='type-id-39'/>
+    <class-decl name='rte_bus_conf' size-in-bits='32' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='225' column='1' id='type-id-40'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='scan_mode' type-id='type-id-67' visibility='default' filepath='../lib/librte_eal/common/include/rte_bus.h' line='226' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-68'/>
+    <enum-decl name='rte_bus_scan_mode' filepath='../lib/librte_eal/common/include/rte_bus.h' line='216' column='1' id='type-id-67'>
+      <underlying-type type-id='type-id-68'/>
+      <enumerator name='RTE_BUS_SCAN_UNDEFINED' value='0'/>
+      <enumerator name='RTE_BUS_SCAN_WHITELIST' value='1'/>
+      <enumerator name='RTE_BUS_SCAN_BLACKLIST' value='2'/>
+    </enum-decl>
+    <enum-decl name='rte_iova_mode' filepath='../lib/librte_eal/common/include/rte_bus.h' line='39' column='1' id='type-id-69'>
+      <underlying-type type-id='type-id-68'/>
+      <enumerator name='RTE_IOVA_DC' value='0'/>
+      <enumerator name='RTE_IOVA_PA' value='1'/>
+      <enumerator name='RTE_IOVA_VA' value='2'/>
+    </enum-decl>
+    <pointer-type-def type-id='type-id-70' size-in-bits='64' id='type-id-71'/>
+    <typedef-decl name='rte_bus_get_iommu_class_t' type-id='type-id-71' filepath='../lib/librte_eal/common/include/rte_bus.h' line='240' column='1' id='type-id-41'/>
+    <class-decl name='rte_dev_iterator' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='250' column='1' id='type-id-72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='dev_str' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='251' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='bus_str' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='252' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cls_str' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='253' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='bus' type-id='type-id-45' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='254' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='cls' type-id='type-id-73' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='255' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='device' type-id='type-id-21' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='256' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='class_device' type-id='type-id-51' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='257' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_class' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-74'/>
+    <pointer-type-def type-id='type-id-74' size-in-bits='64' id='type-id-73'/>
+    <qualified-type-def type-id='type-id-72' const='yes' id='type-id-75'/>
+    <pointer-type-def type-id='type-id-75' size-in-bits='64' id='type-id-76'/>
+    <pointer-type-def type-id='type-id-77' size-in-bits='64' id='type-id-78'/>
+    <typedef-decl name='rte_dev_iterate_t' type-id='type-id-78' filepath='../lib/librte_eal/common/include/rte_dev.h' line='288' column='1' id='type-id-42'/>
+    <typedef-decl name='rte_bus_hot_unplug_handler_t' type-id='type-id-58' filepath='../lib/librte_eal/common/include/rte_bus.h' line='196' column='1' id='type-id-43'/>
+    <pointer-type-def type-id='type-id-79' size-in-bits='64' id='type-id-80'/>
+    <typedef-decl name='rte_bus_sigbus_handler_t' type-id='type-id-80' filepath='../lib/librte_eal/common/include/rte_bus.h' line='211' column='1' id='type-id-44'/>
+    <qualified-type-def type-id='type-id-30' const='yes' id='type-id-81'/>
+    <pointer-type-def type-id='type-id-81' size-in-bits='64' id='type-id-18'/>
+    <class-decl name='rte_devargs' size-in-bits='1088' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='47' column='1' id='type-id-82'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-83' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='type' type-id='type-id-84' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='policy' type-id='type-id-85' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='name' type-id='type-id-86' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='' type-id='type-id-87' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='bus' type-id='type-id-45' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='cls' type-id='type-id-73' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='bus_str' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='cls_str' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='data' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='66' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='49' column='1' id='type-id-83'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-20' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-88' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='49' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-82' size-in-bits='64' id='type-id-20'/>
+    <pointer-type-def type-id='type-id-20' size-in-bits='64' id='type-id-88'/>
+    <enum-decl name='rte_devtype' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='31' column='1' id='type-id-84'>
+      <underlying-type type-id='type-id-68'/>
+      <enumerator name='RTE_DEVTYPE_WHITELISTED_PCI' value='0'/>
+      <enumerator name='RTE_DEVTYPE_BLACKLISTED_PCI' value='1'/>
+      <enumerator name='RTE_DEVTYPE_VIRTUAL' value='2'/>
+    </enum-decl>
+    <enum-decl name='rte_dev_policy' filepath='../lib/librte_eal/common/include/rte_dev.h' line='72' column='1' id='type-id-85'>
+      <underlying-type type-id='type-id-68'/>
+      <enumerator name='RTE_DEV_WHITELISTED' value='0'/>
+      <enumerator name='RTE_DEV_BLACKLISTED' value='1'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-23' size-in-bits='512' id='type-id-86'>
+      <subrange length='64' type-id='type-id-61' id='type-id-89'/>
+
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='57' column='1' id='type-id-87'>
+      <data-member access='private'>
+        <var-decl name='args' type-id='type-id-90' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='drv_str' type-id='type-id-16' visibility='default' filepath='../lib/librte_eal/common/include/rte_devargs.h' line='60' column='1'/>
+      </data-member>
+    </union-decl>
+    <pointer-type-def type-id='type-id-23' size-in-bits='64' id='type-id-90'/>
+    <class-decl name='rte_pci_addr' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='61' column='1' id='type-id-5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='domain' type-id='type-id-91' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='bus' type-id='type-id-92' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='40'>
+        <var-decl name='devid' type-id='type-id-92' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='function' type-id='type-id-92' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='65' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-93'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-93' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-94'/>
+    <typedef-decl name='uint32_t' type-id='type-id-94' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-91'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-95'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-95' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-96'/>
+    <typedef-decl name='uint8_t' type-id='type-id-96' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-92'/>
+    <class-decl name='rte_pci_id' size-in-bits='96' is-struct='yes' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='50' column='1' id='type-id-6'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='class_id' type-id='type-id-91' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='vendor_id' type-id='type-id-10' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='device_id' type-id='type-id-10' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='subsystem_vendor_id' type-id='type-id-10' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='subsystem_device_id' type-id='type-id-10' visibility='default' filepath='../lib/librte_pci/rte_pci.h' line='55' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-97'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-97' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-98'/>
+    <typedef-decl name='uint16_t' type-id='type-id-98' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-10'/>
+    <class-decl name='rte_mem_resource' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='80' column='1' id='type-id-99'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='phys_addr' type-id='type-id-63' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='type-id-63' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='82' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='addr' type-id='type-id-51' visibility='default' filepath='../lib/librte_eal/common/include/rte_dev.h' line='83' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-99' size-in-bits='1152' id='type-id-7'>
+      <subrange length='6' type-id='type-id-61' id='type-id-100'/>
+
+    </array-type-def>
+    <class-decl name='rte_intr_handle' size-in-bits='213248' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='69' column='1' id='type-id-8'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='' type-id='type-id-101' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='fd' type-id='type-id-19' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='type' type-id='type-id-102' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='76' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='max_intr' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='nb_efd' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='efd_counter_size' type-id='type-id-92' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='efds' type-id='type-id-103' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='80' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16576'>
+        <var-decl name='elist' type-id='type-id-104' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='213184'>
+        <var-decl name='intr_vec' type-id='type-id-105' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='83' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='32' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='71' column='1' id='type-id-101'>
+      <data-member access='private'>
+        <var-decl name='vfio_dev_fd' type-id='type-id-19' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='uio_cfg_fd' type-id='type-id-19' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='73' column='1'/>
+      </data-member>
+    </union-decl>
+    <enum-decl name='rte_intr_handle_type' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='27' column='1' id='type-id-102'>
+      <underlying-type type-id='type-id-68'/>
+      <enumerator name='RTE_INTR_HANDLE_UNKNOWN' value='0'/>
+      <enumerator name='RTE_INTR_HANDLE_UIO' value='1'/>
+      <enumerator name='RTE_INTR_HANDLE_UIO_INTX' value='2'/>
+      <enumerator name='RTE_INTR_HANDLE_VFIO_LEGACY' value='3'/>
+      <enumerator name='RTE_INTR_HANDLE_VFIO_MSI' value='4'/>
+      <enumerator name='RTE_INTR_HANDLE_VFIO_MSIX' value='5'/>
+      <enumerator name='RTE_INTR_HANDLE_ALARM' value='6'/>
+      <enumerator name='RTE_INTR_HANDLE_EXT' value='7'/>
+      <enumerator name='RTE_INTR_HANDLE_VDEV' value='8'/>
+      <enumerator name='RTE_INTR_HANDLE_DEV_EVENT' value='9'/>
+      <enumerator name='RTE_INTR_HANDLE_VFIO_REQ' value='10'/>
+      <enumerator name='RTE_INTR_HANDLE_MAX' value='11'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-19' size-in-bits='16384' id='type-id-103'>
+      <subrange length='512' type-id='type-id-61' id='type-id-106'/>
+
+    </array-type-def>
+    <class-decl name='rte_epoll_event' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='61' column='1' id='type-id-107'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='status' type-id='type-id-108' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='fd' type-id='type-id-19' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='epfd' type-id='type-id-19' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='epdata' type-id='type-id-109' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='65' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-91' volatile='yes' id='type-id-108'/>
+    <class-decl name='rte_epoll_data' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='47' column='1' id='type-id-109'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='event' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='data' type-id='type-id-51' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cb_fun' type-id='type-id-110' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='50' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='cb_arg' type-id='type-id-51' visibility='default' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='51' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-111' size-in-bits='64' id='type-id-112'/>
+    <typedef-decl name='rte_intr_event_cb_t' type-id='type-id-112' filepath='../lib/librte_eal/common/include/rte_eal_interrupts.h' line='45' column='1' id='type-id-110'/>
+
+    <array-type-def dimensions='1' type-id='type-id-107' size-in-bits='196608' id='type-id-104'>
+      <subrange length='512' type-id='type-id-61' id='type-id-106'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-105'/>
+    <class-decl name='rte_pci_driver' size-in-bits='832' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='157' column='1' id='type-id-113'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-114' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='driver' type-id='type-id-25' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='159' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='bus' type-id='type-id-115' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='160' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='probe' type-id='type-id-116' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='161' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='remove' type-id='type-id-117' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='162' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='dma_map' type-id='type-id-118' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='163' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='dma_unmap' type-id='type-id-119' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='164' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='id_table' type-id='type-id-120' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='165' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='drv_flags' type-id='type-id-91' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='166' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='158' column='1' id='type-id-114'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='type-id-9' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='type-id-121' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='158' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-113' size-in-bits='64' id='type-id-9'/>
+    <pointer-type-def type-id='type-id-9' size-in-bits='64' id='type-id-121'/>
+    <class-decl name='rte_pci_bus' size-in-bits='1280' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='172' column='1' id='type-id-122'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='bus' type-id='type-id-30' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='173' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='device_list' type-id='type-id-123' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='174' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='driver_list' type-id='type-id-124' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='175' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_pci_device_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='41' column='1' id='type-id-123'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='type-id-13' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='type-id-14' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='41' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_pci_driver_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='43' column='1' id='type-id-124'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='type-id-9' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='type-id-121' visibility='default' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='43' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-122' size-in-bits='64' id='type-id-115'/>
+    <typedef-decl name='pci_probe_t' type-id='type-id-125' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='109' column='1' id='type-id-126'/>
+    <pointer-type-def type-id='type-id-126' size-in-bits='64' id='type-id-116'/>
+    <typedef-decl name='pci_remove_t' type-id='type-id-127' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='114' column='1' id='type-id-128'/>
+    <pointer-type-def type-id='type-id-128' size-in-bits='64' id='type-id-117'/>
+    <typedef-decl name='pci_dma_map_t' type-id='type-id-129' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='132' column='1' id='type-id-130'/>
+    <pointer-type-def type-id='type-id-130' size-in-bits='64' id='type-id-118'/>
+    <typedef-decl name='pci_dma_unmap_t' type-id='type-id-129' filepath='../drivers/common/octeontx2/../../bus/pci/rte_bus_pci.h' line='151' column='1' id='type-id-131'/>
+    <pointer-type-def type-id='type-id-131' size-in-bits='64' id='type-id-119'/>
+    <qualified-type-def type-id='type-id-6' const='yes' id='type-id-132'/>
+    <pointer-type-def type-id='type-id-132' size-in-bits='64' id='type-id-120'/>
+    <enum-decl name='rte_kernel_driver' filepath='../lib/librte_eal/common/include/rte_dev.h' line='60' column='1' id='type-id-11'>
+      <underlying-type type-id='type-id-68'/>
+      <enumerator name='RTE_KDRV_UNKNOWN' value='0'/>
+      <enumerator name='RTE_KDRV_IGB_UIO' value='1'/>
+      <enumerator name='RTE_KDRV_VFIO' value='2'/>
+      <enumerator name='RTE_KDRV_UIO_GENERIC' value='3'/>
+      <enumerator name='RTE_KDRV_NIC_UIO' value='4'/>
+      <enumerator name='RTE_KDRV_NONE' value='5'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-23' size-in-bits='144' id='type-id-12'>
+      <subrange length='18' type-id='type-id-61' id='type-id-133'/>
+
+    </array-type-def>
+    <function-decl name='otx2_dev_fini' mangled-name='otx2_dev_fini' filepath='../drivers/common/octeontx2/otx2_dev.c' line='1006' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_dev_fini@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='pci_dev' filepath='../drivers/common/octeontx2/otx2_dev.c' line='1006' column='1'/>
+      <parameter type-id='type-id-51' name='otx2_dev' filepath='../drivers/common/octeontx2/otx2_dev.c' line='1006' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='otx2_dev_priv_init' mangled-name='otx2_dev_priv_init' filepath='../drivers/common/octeontx2/otx2_dev.c' line='899' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_dev_priv_init@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='pci_dev' filepath='../drivers/common/octeontx2/otx2_dev.c' line='899' column='1'/>
+      <parameter type-id='type-id-51' name='otx2_dev' filepath='../drivers/common/octeontx2/otx2_dev.c' line='899' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='otx2_dev_active_vfs' mangled-name='otx2_dev_active_vfs' filepath='../drivers/common/octeontx2/otx2_dev.c' line='866' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_dev_active_vfs@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='otx2_dev' filepath='../drivers/common/octeontx2/otx2_dev.c' line='866' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-70'>
+      <return type-id='type-id-69'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-47'>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-59'>
+      <parameter type-id='type-id-16'/>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-52'>
+      <parameter type-id='type-id-50'/>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-57'>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-65'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-51'/>
+      <parameter type-id='type-id-63'/>
+      <parameter type-id='type-id-64'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-127'>
+      <parameter type-id='type-id-13'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-129'>
+      <parameter type-id='type-id-13'/>
+      <parameter type-id='type-id-51'/>
+      <parameter type-id='type-id-63'/>
+      <parameter type-id='type-id-64'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-125'>
+      <parameter type-id='type-id-9'/>
+      <parameter type-id='type-id-13'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-79'>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-19'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-55'>
+      <parameter type-id='type-id-50'/>
+      <parameter type-id='type-id-54'/>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-21'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-111'>
+      <parameter type-id='type-id-19'/>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-77'>
+      <parameter type-id='type-id-51'/>
+      <parameter type-id='type-id-16'/>
+      <parameter type-id='type-id-76'/>
+      <return type-id='type-id-51'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/octeontx2/otx2_irq.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <pointer-type-def type-id='type-id-8' size-in-bits='64' id='type-id-134'/>
+    <pointer-type-def type-id='type-id-135' size-in-bits='64' id='type-id-136'/>
+    <typedef-decl name='rte_intr_callback_fn' type-id='type-id-136' filepath='../lib/librte_eal/common/include/rte_interrupts.h' line='26' column='1' id='type-id-137'/>
+    <function-decl name='otx2_unregister_irq' mangled-name='otx2_unregister_irq' filepath='../drivers/common/octeontx2/otx2_irq.c' line='192' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_unregister_irq@@DPDK_20.0'>
+      <parameter type-id='type-id-134' name='intr_handle' filepath='../drivers/common/octeontx2/otx2_irq.c' line='192' column='1'/>
+      <parameter type-id='type-id-137' name='cb' filepath='../drivers/common/octeontx2/otx2_irq.c' line='193' column='1'/>
+      <parameter type-id='type-id-51' name='data' filepath='../drivers/common/octeontx2/otx2_irq.c' line='193' column='1'/>
+      <parameter type-id='type-id-93' name='vec' filepath='../drivers/common/octeontx2/otx2_irq.c' line='193' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='otx2_register_irq' mangled-name='otx2_register_irq' filepath='../drivers/common/octeontx2/otx2_irq.c' line='143' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_register_irq@@DPDK_20.0'>
+      <parameter type-id='type-id-134' name='intr_handle' filepath='../drivers/common/octeontx2/otx2_irq.c' line='143' column='1'/>
+      <parameter type-id='type-id-137' name='cb' filepath='../drivers/common/octeontx2/otx2_irq.c' line='144' column='1'/>
+      <parameter type-id='type-id-51' name='data' filepath='../drivers/common/octeontx2/otx2_irq.c' line='144' column='1'/>
+      <parameter type-id='type-id-93' name='vec' filepath='../drivers/common/octeontx2/otx2_irq.c' line='144' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='otx2_disable_irqs' mangled-name='otx2_disable_irqs' filepath='../drivers/common/octeontx2/otx2_irq.c' line='131' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_disable_irqs@@DPDK_20.0'>
+      <parameter type-id='type-id-134' name='intr_handle' filepath='../drivers/common/octeontx2/otx2_irq.c' line='131' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-135'>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/octeontx2/otx2_mbox.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='otx2_mbox_id2name' mangled-name='otx2_mbox_id2name' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='400' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_mbox_id2name@@DPDK_20.0'>
+      <parameter type-id='type-id-10' name='id' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='400' column='1'/>
+      <return type-id='type-id-16'/>
+    </function-decl>
+    <class-decl name='otx2_mbox' size-in-bits='512' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='65' column='1' id='type-id-138'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='hwbase' type-id='type-id-139' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='reg_base' type-id='type-id-139' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='trigger' type-id='type-id-63' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tr_shift' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='rx_start' type-id='type-id-63' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='tx_start' type-id='type-id-63' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='rx_size' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='400'>
+        <var-decl name='tx_size' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='ndevs' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='dev' type-id='type-id-140' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='75' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='uintptr_t' type-id='type-id-61' filepath='/usr/include/stdint.h' line='90' column='1' id='type-id-139'/>
+    <class-decl name='otx2_mbox_dev' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='56' column='1' id='type-id-141'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='mbase' type-id='type-id-51' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mbox_lock' type-id='type-id-142' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='msg_size' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='rsp_size' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='num_msgs' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='144'>
+        <var-decl name='msgs_acked' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='62' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-142' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_spinlock.h' line='30' column='1' id='type-id-143'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='locked' type-id='type-id-144' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_spinlock.h' line='31' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-19' volatile='yes' id='type-id-144'/>
+    <typedef-decl name='rte_spinlock_t' type-id='type-id-143' filepath='../lib/librte_eal/common/include/generic/rte_spinlock.h' line='32' column='1' id='type-id-142'/>
+    <pointer-type-def type-id='type-id-141' size-in-bits='64' id='type-id-140'/>
+    <pointer-type-def type-id='type-id-138' size-in-bits='64' id='type-id-145'/>
+    <function-decl name='otx2_mbox_wait_for_rsp' mangled-name='otx2_mbox_wait_for_rsp' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='336' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_mbox_wait_for_rsp@@DPDK_20.0'>
+      <parameter type-id='type-id-145' name='mbox' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='336' column='1'/>
+      <parameter type-id='type-id-19' name='devid' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='336' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-51' size-in-bits='64' id='type-id-146'/>
+    <function-decl name='otx2_mbox_get_rsp_tmo' mangled-name='otx2_mbox_get_rsp_tmo' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='252' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_mbox_get_rsp_tmo@@DPDK_20.0'>
+      <parameter type-id='type-id-145' name='mbox' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='252' column='1'/>
+      <parameter type-id='type-id-19' name='devid' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='252' column='1'/>
+      <parameter type-id='type-id-146' name='msg' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='252' column='1'/>
+      <parameter type-id='type-id-91' name='tmo' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='253' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='otx2_mbox_get_rsp' mangled-name='otx2_mbox_get_rsp' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='225' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_mbox_get_rsp@@DPDK_20.0'>
+      <parameter type-id='type-id-145' name='mbox' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='225' column='1'/>
+      <parameter type-id='type-id-19' name='devid' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='225' column='1'/>
+      <parameter type-id='type-id-146' name='msg' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='225' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='otx2_mbox_msg_send' mangled-name='otx2_mbox_msg_send' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='190' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_mbox_msg_send@@DPDK_20.0'>
+      <parameter type-id='type-id-145' name='mbox' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='190' column='1'/>
+      <parameter type-id='type-id-19' name='devid' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='190' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='mbox_msghdr' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='85' column='1' id='type-id-147'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='pcifunc' type-id='type-id-148' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='id' type-id='type-id-148' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='sig' type-id='type-id-148' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='ver' type-id='type-id-148' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='next_msgoff' type-id='type-id-148' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='rc' type-id='type-id-144' visibility='default' filepath='../drivers/common/octeontx2/otx2_mbox.h' line='97' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-10' volatile='yes' id='type-id-148'/>
+    <pointer-type-def type-id='type-id-147' size-in-bits='64' id='type-id-149'/>
+    <function-decl name='otx2_mbox_alloc_msg_rsp' mangled-name='otx2_mbox_alloc_msg_rsp' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='151' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_mbox_alloc_msg_rsp@@DPDK_20.0'>
+      <parameter type-id='type-id-145' name='mbox' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='151' column='1'/>
+      <parameter type-id='type-id-19' name='devid' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='151' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='151' column='1'/>
+      <parameter type-id='type-id-19' name='size_rsp' filepath='../drivers/common/octeontx2/otx2_mbox.c' line='152' column='1'/>
+      <return type-id='type-id-149'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/octeontx2/otx2_common.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='otx2_logtype_base' type-id='type-id-19' mangled-name='otx2_logtype_base' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='79' column='1' elf-symbol-id='otx2_logtype_base@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_mbox' type-id='type-id-19' mangled-name='otx2_logtype_mbox' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='80' column='1' elf-symbol-id='otx2_logtype_mbox@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_npa' type-id='type-id-19' mangled-name='otx2_logtype_npa' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='81' column='1' elf-symbol-id='otx2_logtype_npa@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_nix' type-id='type-id-19' mangled-name='otx2_logtype_nix' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='82' column='1' elf-symbol-id='otx2_logtype_nix@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_npc' type-id='type-id-19' mangled-name='otx2_logtype_npc' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='84' column='1' elf-symbol-id='otx2_logtype_npc@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_tm' type-id='type-id-19' mangled-name='otx2_logtype_tm' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='85' column='1' elf-symbol-id='otx2_logtype_tm@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_sso' type-id='type-id-19' mangled-name='otx2_logtype_sso' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='83' column='1' elf-symbol-id='otx2_logtype_sso@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_tim' type-id='type-id-19' mangled-name='otx2_logtype_tim' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='86' column='1' elf-symbol-id='otx2_logtype_tim@@DPDK_20.0'/>
+    <var-decl name='otx2_logtype_dpi' type-id='type-id-19' mangled-name='otx2_logtype_dpi' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='87' column='1' elf-symbol-id='otx2_logtype_dpi@@DPDK_20.0'/>
+    <function-decl name='otx2_npa_lf_obj_ref' mangled-name='otx2_npa_lf_obj_ref' filepath='../drivers/common/octeontx2/otx2_common.c' line='146' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_npa_lf_obj_ref@@DPDK_20.0'>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='otx2_npa_lf_active' mangled-name='otx2_npa_lf_active' filepath='../drivers/common/octeontx2/otx2_common.c' line='129' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_npa_lf_active@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='otx2_dev' filepath='../drivers/common/octeontx2/otx2_common.c' line='129' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <class-decl name='otx2_npa_lf' size-in-bits='768' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='37' column='1' id='type-id-150'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='qints' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='base' type-id='type-id-139' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='aura_sz' type-id='type-id-92' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='40' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='144'>
+        <var-decl name='pf_func' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='nr_pools' type-id='type-id-91' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='42' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='npa_bmp_mem' type-id='type-id-51' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='npa_qint_mem' type-id='type-id-51' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='44' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='npa_msixoff' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='45' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='mbox' type-id='type-id-145' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='46' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='stack_pg_ptrs' type-id='type-id-91' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='47' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='stack_pg_bytes' type-id='type-id-91' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='npa_bmp' type-id='type-id-151' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='aura_lim' type-id='type-id-152' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='50' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='pci_dev' type-id='type-id-13' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='intr_handle' type-id='type-id-134' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='52' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_bitmap' size-in-bits='320' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='61' column='1' id='type-id-153'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='array1' type-id='type-id-154' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='array2' type-id='type-id-154' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='array1_size' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='array2_size' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='index1' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='offset1' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='index2' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='go2' type-id='type-id-91' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='memory' type-id='type-id-155' visibility='default' filepath='../lib/librte_eal/common/include/rte_bitmap.h' line='75' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-63' size-in-bits='64' id='type-id-154'/>
+
+    <array-type-def dimensions='1' type-id='type-id-92' size-in-bits='infinite' id='type-id-155'>
+      <subrange length='infinite' type-id='type-id-61' id='type-id-156'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-153' size-in-bits='64' id='type-id-151'/>
+    <class-decl name='npa_aura_lim' size-in-bits='128' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='32' column='1' id='type-id-157'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ptr_start' type-id='type-id-63' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='33' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ptr_end' type-id='type-id-63' visibility='default' filepath='../drivers/common/octeontx2/../../mempool/octeontx2/otx2_mempool.h' line='34' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-157' size-in-bits='64' id='type-id-152'/>
+    <pointer-type-def type-id='type-id-150' size-in-bits='64' id='type-id-158'/>
+    <function-decl name='otx2_npa_lf_obj_get' mangled-name='otx2_npa_lf_obj_get' filepath='../drivers/common/octeontx2/otx2_common.c' line='112' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_npa_lf_obj_get@@DPDK_20.0'>
+      <return type-id='type-id-158'/>
+    </function-decl>
+    <function-decl name='otx2_npa_pf_func_get' mangled-name='otx2_npa_pf_func_get' filepath='../drivers/common/octeontx2/otx2_common.c' line='93' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_npa_pf_func_get@@DPDK_20.0'>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <function-decl name='otx2_sso_pf_func_set' mangled-name='otx2_sso_pf_func_set' filepath='../drivers/common/octeontx2/otx2_common.c' line='76' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_sso_pf_func_set@@DPDK_20.0'>
+      <parameter type-id='type-id-10' name='sso_pf_func' filepath='../drivers/common/octeontx2/otx2_common.c' line='76' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='otx2_sso_pf_func_get' mangled-name='otx2_sso_pf_func_get' filepath='../drivers/common/octeontx2/otx2_common.c' line='57' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_sso_pf_func_get@@DPDK_20.0'>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <class-decl name='otx2_idev_cfg' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='58' column='1' id='type-id-159'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='sso_pf_func' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='npa_pf_func' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='npa_lf' type-id='type-id-158' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-160' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='16' is-anonymous='yes' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='63' column='1' id='type-id-160'>
+      <data-member access='private'>
+        <var-decl name='npa_refcnt' type-id='type-id-161' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='npa_refcnt_u16' type-id='type-id-10' visibility='default' filepath='../drivers/common/octeontx2/otx2_common.h' line='65' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='16' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-161' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='223' column='1' id='type-id-162'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-163' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='224' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='short int' size-in-bits='16' id='type-id-164'/>
+    <typedef-decl name='__int16_t' type-id='type-id-164' filepath='/usr/include/bits/types.h' line='39' column='1' id='type-id-165'/>
+    <typedef-decl name='int16_t' type-id='type-id-165' filepath='/usr/include/bits/stdint-intn.h' line='25' column='1' id='type-id-166'/>
+    <qualified-type-def type-id='type-id-166' volatile='yes' id='type-id-163'/>
+    <typedef-decl name='rte_atomic16_t' type-id='type-id-162' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='225' column='1' id='type-id-161'/>
+    <pointer-type-def type-id='type-id-159' size-in-bits='64' id='type-id-167'/>
+    <function-decl name='otx2_intra_dev_get_cfg' mangled-name='otx2_intra_dev_get_cfg' filepath='../drivers/common/octeontx2/otx2_common.c' line='29' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_intra_dev_get_cfg@@DPDK_20.0'>
+      <return type-id='type-id-167'/>
+    </function-decl>
+    <function-decl name='otx2_npa_set_defaults' mangled-name='otx2_npa_set_defaults' filepath='../drivers/common/octeontx2/otx2_common.c' line='18' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='otx2_npa_set_defaults@@DPDK_20.0'>
+      <parameter type-id='type-id-167' name='idev' filepath='../drivers/common/octeontx2/otx2_common.c' line='18' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>
