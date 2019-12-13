@@ -1,0 +1,319 @@
+<abi-corpus path='gcc//lib/librte_efd.so.20.0' architecture='elf-amd-x86_64' soname='librte_efd.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_hash.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_efd_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_efd_delete' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_efd_find_existing' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_efd_free' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_efd_lookup' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_efd_lookup_bulk' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_efd_update' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_efd/rte_efd.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='void' id='type-id-1'/>
+    <class-decl name='rte_efd_table' size-in-bits='896' is-struct='yes' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='231' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-3' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='232' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='key_len' type-id='type-id-4' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='234' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='max_num_rules' type-id='type-id-4' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='236' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='num_rules' type-id='type-id-4' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='239' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='num_chunks' type-id='type-id-4' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='242' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='num_chunks_shift' type-id='type-id-4' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='245' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='lookup_fn' type-id='type-id-5' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='248' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='chunks' type-id='type-id-6' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='251' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='offline_chunks' type-id='type-id-7' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='254' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='free_slots' type-id='type-id-8' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='257' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='keys' type-id='type-id-9' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='260' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-10'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-11'/>
+
+    <array-type-def dimensions='1' type-id='type-id-10' size-in-bits='256' id='type-id-3'>
+      <subrange length='32' type-id='type-id-11' id='type-id-12'/>
+
+    </array-type-def>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-13'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-13' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-14'/>
+    <typedef-decl name='uint32_t' type-id='type-id-14' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-4'/>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-15'/>
+    <enum-decl name='efd_lookup_internal_function' filepath='../lib/librte_efd/rte_efd.c' line='77' column='1' id='type-id-5'>
+      <underlying-type type-id='type-id-15'/>
+      <enumerator name='EFD_LOOKUP_SCALAR' value='0'/>
+      <enumerator name='EFD_LOOKUP_AVX2' value='1'/>
+      <enumerator name='EFD_LOOKUP_NEON' value='2'/>
+      <enumerator name='EFD_LOOKUP_NUM' value='3'/>
+    </enum-decl>
+    <class-decl name='efd_online_chunk' size-in-bits='16896' is-struct='yes' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='216' column='1' id='type-id-16'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='bin_choice_list' type-id='type-id-17' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='217' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='groups' type-id='type-id-18' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='224' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-19'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-19' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-20'/>
+    <typedef-decl name='uint8_t' type-id='type-id-20' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-21'/>
+
+    <array-type-def dimensions='1' type-id='type-id-21' size-in-bits='512' id='type-id-17'>
+      <subrange length='64' type-id='type-id-11' id='type-id-22'/>
+
+    </array-type-def>
+    <class-decl name='efd_online_group_entry' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='207' column='1' id='type-id-23'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='hash_idx' type-id='type-id-24' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='208' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='lookup_table' type-id='type-id-25' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='209' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-26'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-26' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-27'/>
+    <typedef-decl name='uint16_t' type-id='type-id-27' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-28'/>
+    <typedef-decl name='efd_hashfunc_t' type-id='type-id-28' filepath='../lib/librte_efd/rte_efd.h' line='117' column='1' id='type-id-29'/>
+
+    <array-type-def dimensions='1' type-id='type-id-29' size-in-bits='128' id='type-id-24'>
+      <subrange length='8' type-id='type-id-11' id='type-id-30'/>
+
+    </array-type-def>
+    <typedef-decl name='efd_lookuptbl_t' type-id='type-id-28' filepath='../lib/librte_efd/rte_efd.h' line='116' column='1' id='type-id-31'/>
+
+    <array-type-def dimensions='1' type-id='type-id-31' size-in-bits='128' id='type-id-25'>
+      <subrange length='8' type-id='type-id-11' id='type-id-30'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-23' size-in-bits='16384' id='type-id-18'>
+      <subrange length='64' type-id='type-id-11' id='type-id-22'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-16' size-in-bits='64' id='type-id-32'/>
+
+    <array-type-def dimensions='1' type-id='type-id-32' size-in-bits='256' id='type-id-6'>
+      <subrange length='4' type-id='type-id-11' id='type-id-33'/>
+
+    </array-type-def>
+    <class-decl name='efd_offline_chunk_rules' size-in-bits='88096' is-struct='yes' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='192' column='1' id='type-id-34'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='num_rules' type-id='type-id-28' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='193' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='group_rules' type-id='type-id-35' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='198' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='efd_offline_group_rules' size-in-bits='1376' is-struct='yes' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='174' column='1' id='type-id-36'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='num_rules' type-id='type-id-4' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='175' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='key_idx' type-id='type-id-37' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='178' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='value' type-id='type-id-38' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='180' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='bin_id' type-id='type-id-39' visibility='default' filepath='../lib/librte_efd/rte_efd.c' line='183' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-4' size-in-bits='896' id='type-id-37'>
+      <subrange length='28' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+    <typedef-decl name='efd_value_t' type-id='type-id-21' filepath='../lib/librte_efd/rte_efd.h' line='106' column='1' id='type-id-41'/>
+
+    <array-type-def dimensions='1' type-id='type-id-41' size-in-bits='224' id='type-id-38'>
+      <subrange length='28' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-21' size-in-bits='224' id='type-id-39'>
+      <subrange length='28' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-36' size-in-bits='88064' id='type-id-35'>
+      <subrange length='64' type-id='type-id-11' id='type-id-22'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-34' size-in-bits='64' id='type-id-7'/>
+    <class-decl name='rte_ring' size-in-bits='3072' is-struct='yes' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='81' column='1' id='type-id-42'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-3' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='flags' type-id='type-id-43' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='memzone' type-id='type-id-44' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='size' type-id='type-id-4' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='mask' type-id='type-id-4' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='capacity' type-id='type-id-4' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='pad0' type-id='type-id-10' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='prod' type-id='type-id-45' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='pad1' type-id='type-id-10' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2048'>
+        <var-decl name='cons' type-id='type-id-45' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2560'>
+        <var-decl name='pad2' type-id='type-id-10' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='103' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='int' size-in-bits='32' id='type-id-43'/>
+    <class-decl name='rte_memzone' size-in-bits='576' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='49' column='1' id='type-id-46'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-3' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-47' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='len' type-id='type-id-48' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='hugepage_sz' type-id='type-id-49' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='socket_id' type-id='type-id-50' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='flags' type-id='type-id-4' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='70' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='55' column='1' id='type-id-47'>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-51' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-52' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='57' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='__uint64_t' type-id='type-id-11' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-53'/>
+    <typedef-decl name='uint64_t' type-id='type-id-53' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-49'/>
+    <typedef-decl name='phys_addr_t' type-id='type-id-49' filepath='../lib/librte_eal/common/include/rte_common.h' line='325' column='1' id='type-id-51'/>
+    <typedef-decl name='rte_iova_t' type-id='type-id-49' filepath='../lib/librte_eal/common/include/rte_common.h' line='335' column='1' id='type-id-52'/>
+    <typedef-decl name='size_t' type-id='type-id-11' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-48'/>
+    <typedef-decl name='__int32_t' type-id='type-id-43' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-54'/>
+    <typedef-decl name='int32_t' type-id='type-id-54' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-50'/>
+    <qualified-type-def type-id='type-id-46' const='yes' id='type-id-55'/>
+    <pointer-type-def type-id='type-id-55' size-in-bits='64' id='type-id-44'/>
+    <class-decl name='rte_ring_headtail' size-in-bits='96' is-struct='yes' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='65' column='1' id='type-id-45'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='head' type-id='type-id-56' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='tail' type-id='type-id-56' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='single' type-id='type-id-4' visibility='default' filepath='../lib/librte_ring/rte_ring.h' line='68' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-4' volatile='yes' id='type-id-56'/>
+    <pointer-type-def type-id='type-id-42' size-in-bits='64' id='type-id-8'/>
+    <pointer-type-def type-id='type-id-21' size-in-bits='64' id='type-id-9'/>
+    <qualified-type-def type-id='type-id-2' const='yes' id='type-id-57'/>
+    <pointer-type-def type-id='type-id-57' size-in-bits='64' id='type-id-58'/>
+    <qualified-type-def type-id='type-id-58' const='yes' id='type-id-59'/>
+    <qualified-type-def type-id='type-id-13' const='yes' id='type-id-60'/>
+    <qualified-type-def type-id='type-id-43' const='yes' id='type-id-61'/>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-62'/>
+    <pointer-type-def type-id='type-id-62' size-in-bits='64' id='type-id-63'/>
+    <pointer-type-def type-id='type-id-41' size-in-bits='64' id='type-id-64'/>
+    <qualified-type-def type-id='type-id-64' const='yes' id='type-id-65'/>
+    <function-decl name='rte_efd_lookup_bulk' mangled-name='rte_efd_lookup_bulk' filepath='../lib/librte_efd/rte_efd.c' line='1317' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_lookup_bulk@@DPDK_20.0'>
+      <parameter type-id='type-id-59' name='table' filepath='../lib/librte_efd/rte_efd.c' line='1317' column='1'/>
+      <parameter type-id='type-id-60' name='socket_id' filepath='../lib/librte_efd/rte_efd.c' line='1318' column='1'/>
+      <parameter type-id='type-id-61' name='num_keys' filepath='../lib/librte_efd/rte_efd.c' line='1318' column='1'/>
+      <parameter type-id='type-id-63' name='key_list' filepath='../lib/librte_efd/rte_efd.c' line='1319' column='1'/>
+      <parameter type-id='type-id-65' name='value_list' filepath='../lib/librte_efd/rte_efd.c' line='1319' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_efd_lookup' mangled-name='rte_efd_lookup' filepath='../lib/librte_efd/rte_efd.c' line='1297' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_lookup@@DPDK_20.0'>
+      <parameter type-id='type-id-59' name='table' filepath='../lib/librte_efd/rte_efd.c' line='1297' column='1'/>
+      <parameter type-id='type-id-60' name='socket_id' filepath='../lib/librte_efd/rte_efd.c' line='1298' column='1'/>
+      <parameter type-id='type-id-62' name='key' filepath='../lib/librte_efd/rte_efd.c' line='1298' column='1'/>
+      <return type-id='type-id-41'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-66'/>
+    <qualified-type-def type-id='type-id-66' const='yes' id='type-id-67'/>
+    <function-decl name='rte_efd_delete' mangled-name='rte_efd_delete' filepath='../lib/librte_efd/rte_efd.c' line='1181' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_delete@@DPDK_20.0'>
+      <parameter type-id='type-id-67' name='table' filepath='../lib/librte_efd/rte_efd.c' line='1181' column='1'/>
+      <parameter type-id='type-id-60' name='socket_id' filepath='../lib/librte_efd/rte_efd.c' line='1181' column='1'/>
+      <parameter type-id='type-id-62' name='key' filepath='../lib/librte_efd/rte_efd.c' line='1182' column='1'/>
+      <parameter type-id='type-id-65' name='prev_value' filepath='../lib/librte_efd/rte_efd.c' line='1182' column='1'/>
+      <return type-id='type-id-43'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-41' const='yes' id='type-id-68'/>
+    <function-decl name='rte_efd_update' mangled-name='rte_efd_update' filepath='../lib/librte_efd/rte_efd.c' line='1158' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_update@@DPDK_20.0'>
+      <parameter type-id='type-id-67' name='table' filepath='../lib/librte_efd/rte_efd.c' line='1158' column='1'/>
+      <parameter type-id='type-id-60' name='socket_id' filepath='../lib/librte_efd/rte_efd.c' line='1158' column='1'/>
+      <parameter type-id='type-id-62' name='key' filepath='../lib/librte_efd/rte_efd.c' line='1159' column='1'/>
+      <parameter type-id='type-id-68' name='value' filepath='../lib/librte_efd/rte_efd.c' line='1159' column='1'/>
+      <return type-id='type-id-43'/>
+    </function-decl>
+    <function-decl name='rte_efd_free' mangled-name='rte_efd_free' filepath='../lib/librte_efd/rte_efd.c' line='742' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_free@@DPDK_20.0'>
+      <parameter type-id='type-id-66' name='table' filepath='../lib/librte_efd/rte_efd.c' line='742' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-10' const='yes' id='type-id-69'/>
+    <pointer-type-def type-id='type-id-69' size-in-bits='64' id='type-id-70'/>
+    <function-decl name='rte_efd_find_existing' mangled-name='rte_efd_find_existing' filepath='../lib/librte_efd/rte_efd.c' line='716' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_find_existing@@DPDK_20.0'>
+      <parameter type-id='type-id-70' name='name' filepath='../lib/librte_efd/rte_efd.c' line='716' column='1'/>
+      <return type-id='type-id-66'/>
+    </function-decl>
+    <function-decl name='rte_efd_create' mangled-name='rte_efd_create' filepath='../lib/librte_efd/rte_efd.c' line='496' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_efd_create@@DPDK_20.0'>
+      <parameter type-id='type-id-70' name='name' filepath='../lib/librte_efd/rte_efd.c' line='496' column='1'/>
+      <parameter type-id='type-id-4' name='max_num_rules' filepath='../lib/librte_efd/rte_efd.c' line='496' column='1'/>
+      <parameter type-id='type-id-4' name='key_len' filepath='../lib/librte_efd/rte_efd.c' line='496' column='1'/>
+      <parameter type-id='type-id-21' name='online_cpu_socket_bitmask' filepath='../lib/librte_efd/rte_efd.c' line='497' column='1'/>
+      <parameter type-id='type-id-21' name='offline_cpu_socket' filepath='../lib/librte_efd/rte_efd.c' line='497' column='1'/>
+      <return type-id='type-id-66'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

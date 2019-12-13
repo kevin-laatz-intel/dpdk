@@ -1,0 +1,188 @@
+<abi-corpus path='gcc//lib/librte_cfgfile.so.20.0' architecture='elf-amd-x86_64' soname='librte_cfgfile.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_cfgfile_add_entry' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_add_section' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_close' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_get_entry' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_has_entry' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_has_section' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_load' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_load_with_params' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_num_sections' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_save' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_section_entries' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_section_entries_by_index' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_section_num_entries' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_sections' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_cfgfile_set_entry' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cfgfile/rte_cfgfile.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <class-decl name='rte_cfgfile' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='23' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='type-id-1' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='24' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='num_sections' type-id='type-id-1' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='25' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='allocated_sections' type-id='type-id-1' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='26' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sections' type-id='type-id-3' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='27' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_cfgfile_section' size-in-bits='640' is-struct='yes' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='16' column='1' id='type-id-4'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-5' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='17' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='num_entries' type-id='type-id-1' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='18' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='allocated_entries' type-id='type-id-1' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='19' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='entries' type-id='type-id-6' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='20' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-7'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-8'/>
+
+    <array-type-def dimensions='1' type-id='type-id-7' size-in-bits='512' id='type-id-5'>
+      <subrange length='64' type-id='type-id-8' id='type-id-9'/>
+
+    </array-type-def>
+    <class-decl name='rte_cfgfile_entry' size-in-bits='2560' is-struct='yes' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.h' line='35' column='1' id='type-id-10'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-5' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='value' type-id='type-id-11' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.h' line='37' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-7' size-in-bits='2048' id='type-id-11'>
+      <subrange length='256' type-id='type-id-8' id='type-id-12'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-10' size-in-bits='64' id='type-id-6'/>
+    <pointer-type-def type-id='type-id-4' size-in-bits='64' id='type-id-3'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-13'/>
+    <qualified-type-def type-id='type-id-7' const='yes' id='type-id-14'/>
+    <pointer-type-def type-id='type-id-14' size-in-bits='64' id='type-id-15'/>
+    <function-decl name='rte_cfgfile_has_entry' mangled-name='rte_cfgfile_has_entry' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='560' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_has_entry@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='560' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='560' column='1'/>
+      <parameter type-id='type-id-15' name='entryname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='561' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_get_entry' mangled-name='rte_cfgfile_get_entry' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='545' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_get_entry@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='545' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='545' column='1'/>
+      <parameter type-id='type-id-15' name='entryname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='546' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-7' size-in-bits='64' id='type-id-16'/>
+    <function-decl name='rte_cfgfile_section_entries_by_index' mangled-name='rte_cfgfile_section_entries_by_index' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='528' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_section_entries_by_index@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='528' column='1'/>
+      <parameter type-id='type-id-1' name='index' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='528' column='1'/>
+      <parameter type-id='type-id-16' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='529' column='1'/>
+      <parameter type-id='type-id-6' name='entries' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='530' column='1'/>
+      <parameter type-id='type-id-1' name='max_entries' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='530' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_section_entries' mangled-name='rte_cfgfile_section_entries' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='515' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_section_entries@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='515' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='515' column='1'/>
+      <parameter type-id='type-id-6' name='entries' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='516' column='1'/>
+      <parameter type-id='type-id-1' name='max_entries' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='516' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_section_num_entries' mangled-name='rte_cfgfile_section_num_entries' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='493' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_section_num_entries@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='493' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='494' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_has_section' mangled-name='rte_cfgfile_has_section' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='487' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_has_section@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='487' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='487' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-16' size-in-bits='64' id='type-id-17'/>
+    <function-decl name='rte_cfgfile_sections' mangled-name='rte_cfgfile_sections' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='475' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_sections@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='475' column='1'/>
+      <parameter type-id='type-id-17' name='sections' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='475' column='1'/>
+      <parameter type-id='type-id-1' name='max_sections' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='476' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <typedef-decl name='size_t' type-id='type-id-8' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-18'/>
+    <function-decl name='rte_cfgfile_num_sections' mangled-name='rte_cfgfile_num_sections' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='462' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_num_sections@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='462' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='462' column='1'/>
+      <parameter type-id='type-id-18' name='length' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='463' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_close' mangled-name='rte_cfgfile_close' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='438' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_close@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='438' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_save' mangled-name='rte_cfgfile_save' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='414' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_save@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='414' column='1'/>
+      <parameter type-id='type-id-15' name='filename' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='414' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_set_entry' mangled-name='rte_cfgfile_set_entry' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='386' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_set_entry@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='386' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='386' column='1'/>
+      <parameter type-id='type-id-15' name='entryname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='387' column='1'/>
+      <parameter type-id='type-id-15' name='entryvalue' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='387' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_add_entry' mangled-name='rte_cfgfile_add_entry' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='362' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_add_entry@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='362' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='363' column='1'/>
+      <parameter type-id='type-id-15' name='entryname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='363' column='1'/>
+      <parameter type-id='type-id-15' name='entryvalue' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='364' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_add_section' mangled-name='rte_cfgfile_add_section' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='322' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_add_section@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cfg' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='322' column='1'/>
+      <parameter type-id='type-id-15' name='sectionname' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='322' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_create' mangled-name='rte_cfgfile_create' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='270' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_create@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='flags' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='270' column='1'/>
+      <return type-id='type-id-13'/>
+    </function-decl>
+    <class-decl name='rte_cfgfile_parameters' size-in-bits='8' is-struct='yes' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.h' line='41' column='1' id='type-id-19'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='comment_character' type-id='type-id-7' visibility='default' filepath='../lib/librte_cfgfile/rte_cfgfile.h' line='43' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-19' const='yes' id='type-id-20'/>
+    <pointer-type-def type-id='type-id-20' size-in-bits='64' id='type-id-21'/>
+    <function-decl name='rte_cfgfile_load_with_params' mangled-name='rte_cfgfile_load_with_params' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='167' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_load_with_params@@DPDK_20.0'>
+      <parameter type-id='type-id-15' name='filename' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='167' column='1'/>
+      <parameter type-id='type-id-1' name='flags' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='167' column='1'/>
+      <parameter type-id='type-id-21' name='params' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='168' column='1'/>
+      <return type-id='type-id-13'/>
+    </function-decl>
+    <function-decl name='rte_cfgfile_load' mangled-name='rte_cfgfile_load' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='160' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_cfgfile_load@@DPDK_20.0'>
+      <parameter type-id='type-id-15' name='filename' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='160' column='1'/>
+      <parameter type-id='type-id-1' name='flags' filepath='../lib/librte_cfgfile/rte_cfgfile.c' line='160' column='1'/>
+      <return type-id='type-id-13'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

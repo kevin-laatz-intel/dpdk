@@ -1,0 +1,321 @@
+<abi-corpus path='gcc//lib/librte_timer.so.20.0' architecture='elf-amd-x86_64' soname='librte_timer.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_timer_alt_dump_stats' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_alt_manage' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_alt_reset' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_alt_stop' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_data_alloc' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_data_dealloc' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_dump_stats' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_manage' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_pending' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_reset' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_reset_sync' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_stop' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_stop_all' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_stop_sync' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_subsystem_finalize' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_timer_subsystem_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_timer/rte_timer.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <class-decl name='_IO_FILE' size-in-bits='1728' is-struct='yes' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='49' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='_flags' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='_IO_read_ptr' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='_IO_read_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='_IO_read_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='_IO_write_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='_IO_write_ptr' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='_IO_write_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='_IO_buf_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='_IO_buf_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='_IO_save_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='_IO_backup_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='_IO_save_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='_markers' type-id='type-id-4' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='_chain' type-id='type-id-5' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='_fileno' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='_flags2' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='_old_offset' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='_cur_column' type-id='type-id-7' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1040'>
+        <var-decl name='_vtable_offset' type-id='type-id-8' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1048'>
+        <var-decl name='_shortbuf' type-id='type-id-9' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='_lock' type-id='type-id-10' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='_offset' type-id='type-id-11' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='_codecvt' type-id='type-id-12' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1280'>
+        <var-decl name='_wide_data' type-id='type-id-13' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='_freeres_list' type-id='type-id-5' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='_freeres_buf' type-id='type-id-14' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1472'>
+        <var-decl name='__pad5' type-id='type-id-15' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='_mode' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1568'>
+        <var-decl name='_unused2' type-id='type-id-16' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='98' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-17'/>
+    <pointer-type-def type-id='type-id-17' size-in-bits='64' id='type-id-3'/>
+    <class-decl name='_IO_marker' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-18'/>
+    <pointer-type-def type-id='type-id-18' size-in-bits='64' id='type-id-4'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-5'/>
+    <type-decl name='long int' size-in-bits='64' id='type-id-19'/>
+    <typedef-decl name='__off_t' type-id='type-id-19' filepath='/usr/include/bits/types.h' line='152' column='1' id='type-id-6'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-7'/>
+    <type-decl name='signed char' size-in-bits='8' id='type-id-8'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-20'/>
+
+    <array-type-def dimensions='1' type-id='type-id-17' size-in-bits='8' id='type-id-9'>
+      <subrange length='1' type-id='type-id-20' id='type-id-21'/>
+
+    </array-type-def>
+    <typedef-decl name='_IO_lock_t' type-id='type-id-22' filepath='/usr/include/bits/types/struct_FILE.h' line='43' column='1' id='type-id-23'/>
+    <pointer-type-def type-id='type-id-23' size-in-bits='64' id='type-id-10'/>
+    <typedef-decl name='__off64_t' type-id='type-id-19' filepath='/usr/include/bits/types.h' line='153' column='1' id='type-id-11'/>
+    <class-decl name='_IO_codecvt' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-24'/>
+    <pointer-type-def type-id='type-id-24' size-in-bits='64' id='type-id-12'/>
+    <class-decl name='_IO_wide_data' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-25'/>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-13'/>
+    <type-decl name='void' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-22' size-in-bits='64' id='type-id-14'/>
+    <typedef-decl name='size_t' type-id='type-id-20' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-15'/>
+
+    <array-type-def dimensions='1' type-id='type-id-17' size-in-bits='160' id='type-id-16'>
+      <subrange length='20' type-id='type-id-20' id='type-id-26'/>
+
+    </array-type-def>
+    <typedef-decl name='FILE' type-id='type-id-2' filepath='/usr/include/bits/types/FILE.h' line='7' column='1' id='type-id-27'/>
+    <pointer-type-def type-id='type-id-27' size-in-bits='64' id='type-id-28'/>
+    <function-decl name='rte_timer_dump_stats' mangled-name='rte_timer_dump_stats' filepath='../lib/librte_timer/rte_timer.c' line='1008' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_dump_stats@@DPDK_20.0'>
+      <parameter type-id='type-id-28' name='f' filepath='../lib/librte_timer/rte_timer.c' line='1008' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_manage' mangled-name='rte_timer_manage' filepath='../lib/librte_timer/rte_timer.c' line='760' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_manage@@DPDK_20.0'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_timer' size-in-bits='960' is-struct='yes' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='100' column='1' id='type-id-29'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='expire' type-id='type-id-30' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='sl_next' type-id='type-id-31' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='status' type-id='type-id-32' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='period' type-id='type-id-30' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='f' type-id='type-id-33' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='arg' type-id='type-id-14' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='107' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint64_t' type-id='type-id-20' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-34'/>
+    <typedef-decl name='uint64_t' type-id='type-id-34' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-30'/>
+    <pointer-type-def type-id='type-id-29' size-in-bits='64' id='type-id-35'/>
+
+    <array-type-def dimensions='1' type-id='type-id-35' size-in-bits='640' id='type-id-31'>
+      <subrange length='10' type-id='type-id-20' id='type-id-36'/>
+
+    </array-type-def>
+    <union-decl name='rte_timer_status' size-in-bits='32' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='67' column='1' id='type-id-37'>
+      <data-member access='private'>
+        <var-decl name='' type-id='type-id-38' visibility='default'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='u32' type-id='type-id-39' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='73' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='69' column='1' id='type-id-38'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='state' type-id='type-id-40' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='owner' type-id='type-id-41' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='71' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint16_t' type-id='type-id-7' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-42'/>
+    <typedef-decl name='uint16_t' type-id='type-id-42' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-40'/>
+    <type-decl name='short int' size-in-bits='16' id='type-id-43'/>
+    <typedef-decl name='__int16_t' type-id='type-id-43' filepath='/usr/include/bits/types.h' line='39' column='1' id='type-id-44'/>
+    <typedef-decl name='int16_t' type-id='type-id-44' filepath='/usr/include/bits/stdint-intn.h' line='25' column='1' id='type-id-41'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-45'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-45' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-46'/>
+    <typedef-decl name='uint32_t' type-id='type-id-46' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-39'/>
+    <qualified-type-def type-id='type-id-37' volatile='yes' id='type-id-32'/>
+    <pointer-type-def type-id='type-id-47' size-in-bits='64' id='type-id-48'/>
+    <typedef-decl name='rte_timer_cb_t' type-id='type-id-48' filepath='../lib/librte_timer/rte_timer.h' line='93' column='1' id='type-id-33'/>
+    <function-decl name='rte_timer_pending' mangled-name='rte_timer_pending' filepath='../lib/librte_timer/rte_timer.c' line='635' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_pending@@DPDK_20.0'>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='635' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_stop_sync' mangled-name='rte_timer_stop_sync' filepath='../lib/librte_timer/rte_timer.c' line='627' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_stop_sync@@DPDK_20.0'>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='627' column='1'/>
+      <return type-id='type-id-22'/>
+    </function-decl>
+    <function-decl name='rte_timer_stop' mangled-name='rte_timer_stop' filepath='../lib/librte_timer/rte_timer.c' line='610' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_stop@@DPDK_20.0'>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='635' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-49'/>
+    <enum-decl name='rte_timer_type' filepath='../lib/librte_timer/rte_timer.h' line='58' column='1' id='type-id-50'>
+      <underlying-type type-id='type-id-49'/>
+      <enumerator name='SINGLE' value='0'/>
+      <enumerator name='PERIODICAL' value='1'/>
+    </enum-decl>
+    <function-decl name='rte_timer_reset_sync' mangled-name='rte_timer_reset_sync' filepath='../lib/librte_timer/rte_timer.c' line='563' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_reset_sync@@DPDK_20.0'>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='563' column='1'/>
+      <parameter type-id='type-id-30' name='ticks' filepath='../lib/librte_timer/rte_timer.c' line='563' column='1'/>
+      <parameter type-id='type-id-50' name='type' filepath='../lib/librte_timer/rte_timer.c' line='564' column='1'/>
+      <parameter type-id='type-id-45' name='tim_lcore' filepath='../lib/librte_timer/rte_timer.c' line='564' column='1'/>
+      <parameter type-id='type-id-33' name='fct' filepath='../lib/librte_timer/rte_timer.c' line='565' column='1'/>
+      <parameter type-id='type-id-14' name='arg' filepath='../lib/librte_timer/rte_timer.c' line='565' column='1'/>
+      <return type-id='type-id-22'/>
+    </function-decl>
+    <function-decl name='rte_timer_reset' mangled-name='rte_timer_reset' filepath='../lib/librte_timer/rte_timer.c' line='533' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_reset@@DPDK_20.0'>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='533' column='1'/>
+      <parameter type-id='type-id-30' name='ticks' filepath='../lib/librte_timer/rte_timer.c' line='533' column='1'/>
+      <parameter type-id='type-id-50' name='type' filepath='../lib/librte_timer/rte_timer.c' line='534' column='1'/>
+      <parameter type-id='type-id-45' name='tim_lcore' filepath='../lib/librte_timer/rte_timer.c' line='534' column='1'/>
+      <parameter type-id='type-id-33' name='fct' filepath='../lib/librte_timer/rte_timer.c' line='535' column='1'/>
+      <parameter type-id='type-id-14' name='arg' filepath='../lib/librte_timer/rte_timer.c' line='535' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_init' mangled-name='rte_timer_init' filepath='../lib/librte_timer/rte_timer.c' line='212' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_init@@DPDK_20.0'>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='212' column='1'/>
+      <return type-id='type-id-22'/>
+    </function-decl>
+    <function-decl name='rte_timer_subsystem_init' mangled-name='rte_timer_subsystem_init' filepath='../lib/librte_timer/rte_timer.c' line='138' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_subsystem_init@@DPDK_20.0'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_alt_dump_stats' mangled-name='rte_timer_alt_dump_stats' filepath='../lib/librte_timer/rte_timer.c' line='1014' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_alt_dump_stats@@EXPERIMENTAL'>
+      <parameter type-id='type-id-39' name='timer_data_id' filepath='../lib/librte_timer/rte_timer.c' line='1014' column='1'/>
+      <parameter type-id='type-id-28' name='f' filepath='../lib/librte_timer/rte_timer.c' line='1014' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-45' size-in-bits='64' id='type-id-51'/>
+    <typedef-decl name='rte_timer_stop_all_cb_t' type-id='type-id-48' filepath='../lib/librte_timer/rte_timer.h' line='471' column='1' id='type-id-52'/>
+    <function-decl name='rte_timer_stop_all' mangled-name='rte_timer_stop_all' filepath='../lib/librte_timer/rte_timer.c' line='945' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_stop_all@@EXPERIMENTAL'>
+      <parameter type-id='type-id-39' name='timer_data_id' filepath='../lib/librte_timer/rte_timer.c' line='945' column='1'/>
+      <parameter type-id='type-id-51' name='walk_lcores' filepath='../lib/librte_timer/rte_timer.c' line='945' column='1'/>
+      <parameter type-id='type-id-1' name='nb_walk_lcores' filepath='../lib/librte_timer/rte_timer.c' line='946' column='1'/>
+      <parameter type-id='type-id-52' name='f' filepath='../lib/librte_timer/rte_timer.c' line='947' column='1'/>
+      <parameter type-id='type-id-14' name='f_arg' filepath='../lib/librte_timer/rte_timer.c' line='947' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-53' size-in-bits='64' id='type-id-54'/>
+    <typedef-decl name='rte_timer_alt_manage_cb_t' type-id='type-id-54' filepath='../lib/librte_timer/rte_timer.h' line='433' column='1' id='type-id-55'/>
+    <function-decl name='rte_timer_alt_manage' mangled-name='rte_timer_alt_manage' filepath='../lib/librte_timer/rte_timer.c' line='772' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_alt_manage@@EXPERIMENTAL'>
+      <parameter type-id='type-id-39' name='timer_data_id' filepath='../lib/librte_timer/rte_timer.c' line='772' column='1'/>
+      <parameter type-id='type-id-51' name='poll_lcores' filepath='../lib/librte_timer/rte_timer.c' line='773' column='1'/>
+      <parameter type-id='type-id-1' name='nb_poll_lcores' filepath='../lib/librte_timer/rte_timer.c' line='774' column='1'/>
+      <parameter type-id='type-id-55' name='f' filepath='../lib/librte_timer/rte_timer.c' line='775' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_alt_stop' mangled-name='rte_timer_alt_stop' filepath='../lib/librte_timer/rte_timer.c' line='616' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_alt_stop@@EXPERIMENTAL'>
+      <parameter type-id='type-id-39' name='timer_data_id' filepath='../lib/librte_timer/rte_timer.c' line='616' column='1'/>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='616' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_alt_reset' mangled-name='rte_timer_alt_reset' filepath='../lib/librte_timer/rte_timer.c' line='542' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_alt_reset@@EXPERIMENTAL'>
+      <parameter type-id='type-id-39' name='timer_data_id' filepath='../lib/librte_timer/rte_timer.c' line='542' column='1'/>
+      <parameter type-id='type-id-35' name='tim' filepath='../lib/librte_timer/rte_timer.c' line='542' column='1'/>
+      <parameter type-id='type-id-30' name='ticks' filepath='../lib/librte_timer/rte_timer.c' line='543' column='1'/>
+      <parameter type-id='type-id-50' name='type' filepath='../lib/librte_timer/rte_timer.c' line='543' column='1'/>
+      <parameter type-id='type-id-45' name='tim_lcore' filepath='../lib/librte_timer/rte_timer.c' line='544' column='1'/>
+      <parameter type-id='type-id-33' name='fct' filepath='../lib/librte_timer/rte_timer.c' line='544' column='1'/>
+      <parameter type-id='type-id-14' name='arg' filepath='../lib/librte_timer/rte_timer.c' line='544' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_timer_subsystem_finalize' mangled-name='rte_timer_subsystem_finalize' filepath='../lib/librte_timer/rte_timer.c' line='195' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_subsystem_finalize@@EXPERIMENTAL'>
+      <return type-id='type-id-22'/>
+    </function-decl>
+    <function-decl name='rte_timer_data_dealloc' mangled-name='rte_timer_data_dealloc' filepath='../lib/librte_timer/rte_timer.c' line='121' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_data_dealloc@@EXPERIMENTAL'>
+      <parameter type-id='type-id-39' name='id' filepath='../lib/librte_timer/rte_timer.c' line='121' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-39' size-in-bits='64' id='type-id-56'/>
+    <function-decl name='rte_timer_data_alloc' mangled-name='rte_timer_data_alloc' filepath='../lib/librte_timer/rte_timer.c' line='97' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_timer_data_alloc@@EXPERIMENTAL'>
+      <parameter type-id='type-id-56' name='id_ptr' filepath='../lib/librte_timer/rte_timer.c' line='97' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-53'>
+      <parameter type-id='type-id-35'/>
+      <return type-id='type-id-22'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-47'>
+      <parameter type-id='type-id-35'/>
+      <parameter type-id='type-id-14'/>
+      <return type-id='type-id-22'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

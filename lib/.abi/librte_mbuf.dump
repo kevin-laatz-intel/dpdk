@@ -1,0 +1,745 @@
+<abi-corpus path='gcc//lib/librte_mbuf.so.20.0' architecture='elf-amd-x86_64' soname='librte_mbuf.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='__rte_pktmbuf_linearize' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='__rte_pktmbuf_read' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_inner_l2_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_inner_l3_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_inner_l4_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_l2_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_l3_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_l4_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_ptype_tunnel_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_rx_ol_flag_list' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_rx_ol_flag_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_tx_ol_flag_list' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_get_tx_ol_flag_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_best_mempool_ops' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_check' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dyn_dump' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dynfield_lookup' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dynfield_register' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dynfield_register_offset' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dynflag_lookup' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dynflag_register' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_dynflag_register_bitnum' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_platform_mempool_ops' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_sanity_check' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_set_platform_mempool_ops' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_set_user_mempool_ops' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_mbuf_user_mempool_ops' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_clone' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_copy' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_dump' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_free_bulk' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_pool_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_pool_create_by_ops' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pktmbuf_pool_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_mbuf/rte_mbuf.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-2'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-2' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-3'/>
+    <typedef-decl name='uint64_t' type-id='type-id-3' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-4'/>
+    <type-decl name='char' size-in-bits='8' id='type-id-5'/>
+    <pointer-type-def type-id='type-id-5' size-in-bits='64' id='type-id-6'/>
+    <typedef-decl name='size_t' type-id='type-id-2' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-7'/>
+    <function-decl name='rte_get_tx_ol_flag_list' mangled-name='rte_get_tx_ol_flag_list' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_tx_ol_flag_list@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='mask' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1'/>
+      <parameter type-id='type-id-6' name='buf' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1'/>
+      <parameter type-id='type-id-7' name='buflen' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-5' const='yes' id='type-id-8'/>
+    <pointer-type-def type-id='type-id-8' size-in-bits='64' id='type-id-9'/>
+    <function-decl name='rte_get_tx_ol_flag_name' mangled-name='rte_get_tx_ol_flag_name' filepath='../lib/librte_mbuf/rte_mbuf.c' line='646' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_tx_ol_flag_name@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='mask' filepath='../lib/librte_mbuf/rte_mbuf.c' line='646' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_rx_ol_flag_list' mangled-name='rte_get_rx_ol_flag_list' filepath='../lib/librte_mbuf/rte_mbuf.c' line='580' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_rx_ol_flag_list@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='mask' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1'/>
+      <parameter type-id='type-id-6' name='buf' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1'/>
+      <parameter type-id='type-id-7' name='buflen' filepath='../lib/librte_mbuf/rte_mbuf.c' line='681' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_get_rx_ol_flag_name' mangled-name='rte_get_rx_ol_flag_name' filepath='../lib/librte_mbuf/rte_mbuf.c' line='539' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_rx_ol_flag_name@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='mask' filepath='../lib/librte_mbuf/rte_mbuf.c' line='646' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <type-decl name='void' id='type-id-10'/>
+    <pointer-type-def type-id='type-id-10' size-in-bits='64' id='type-id-11'/>
+    <class-decl name='rte_mbuf' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='480' column='1' id='type-id-12'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cacheline0' type-id='type-id-13' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='481' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='buf_addr' type-id='type-id-11' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='483' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='' type-id='type-id-14' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='rearm_data' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='497' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='data_off' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='498' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='nb_segs' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='515' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='176'>
+        <var-decl name='port' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='520' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='ol_flags' type-id='type-id-4' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='522' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='rx_descriptor_fields1' type-id='type-id-13' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='525' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='pkt_len' type-id='type-id-17' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='561' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='data_len' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='562' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='336'>
+        <var-decl name='vlan_tci' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='564' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='vlan_tci_outer' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='601' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='432'>
+        <var-decl name='buf_len' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='603' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='timestamp' type-id='type-id-4' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='610' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='cacheline1' type-id='type-id-13' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='613' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='pool' type-id='type-id-18' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='621' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='next' type-id='type-id-19' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='622' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='priv_size' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='665' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='784'>
+        <var-decl name='timesync' type-id='type-id-16' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='668' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='seqn' type-id='type-id-17' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='671' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='shinfo' type-id='type-id-20' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='676' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='dynfield1' type-id='type-id-21' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='678' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-11' size-in-bits='infinite' id='type-id-22'>
+      <subrange length='infinite' type-id='type-id-2' id='type-id-23'/>
+
+    </array-type-def>
+    <typedef-decl name='MARKER' type-id='type-id-22' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='414' column='1' id='type-id-13'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='491' column='1' id='type-id-14'>
+      <data-member access='private'>
+        <var-decl name='buf_iova' type-id='type-id-24' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='492' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='buf_physaddr' type-id='type-id-24' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='493' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='rte_iova_t' type-id='type-id-4' filepath='../lib/librte_eal/common/include/rte_common.h' line='335' column='1' id='type-id-24'/>
+
+    <array-type-def dimensions='1' type-id='type-id-4' size-in-bits='infinite' id='type-id-25'>
+      <subrange length='infinite' type-id='type-id-2' id='type-id-23'/>
+
+    </array-type-def>
+    <typedef-decl name='MARKER64' type-id='type-id-25' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='420' column='1' id='type-id-15'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-26'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-26' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-27'/>
+    <typedef-decl name='uint16_t' type-id='type-id-27' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-16'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-28'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-28' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-29'/>
+    <typedef-decl name='uint32_t' type-id='type-id-29' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-17'/>
+    <class-decl name='rte_mempool' size-in-bits='1536' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='216' column='1' id='type-id-30'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-31' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='222' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-32' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='pool_config' type-id='type-id-11' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='228' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='mz' type-id='type-id-33' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='229' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='flags' type-id='type-id-28' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='230' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='socket_id' type-id='type-id-1' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='231' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='232' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='cache_size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='233' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='elt_size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='236' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='header_size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='237' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='trailer_size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='238' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='private_data_size' type-id='type-id-28' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='240' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='ops_index' type-id='type-id-34' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='248' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='local_cache' type-id='type-id-35' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='250' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='populated_size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='252' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='elt_list' type-id='type-id-36' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='253' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='nb_mem_chunks' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='254' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='mem_list' type-id='type-id-37' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='255' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-5' size-in-bits='256' id='type-id-31'>
+      <subrange length='32' type-id='type-id-2' id='type-id-38'/>
+
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='224' column='1' id='type-id-32'>
+      <data-member access='private'>
+        <var-decl name='pool_data' type-id='type-id-11' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='225' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='pool_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='226' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='rte_memzone' size-in-bits='576' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='49' column='1' id='type-id-39'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-31' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-40' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='len' type-id='type-id-7' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='hugepage_sz' type-id='type-id-4' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='socket_id' type-id='type-id-34' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='flags' type-id='type-id-17' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='70' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='55' column='1' id='type-id-40'>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-41' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-24' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='57' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='phys_addr_t' type-id='type-id-4' filepath='../lib/librte_eal/common/include/rte_common.h' line='325' column='1' id='type-id-41'/>
+    <typedef-decl name='__int32_t' type-id='type-id-1' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-42'/>
+    <typedef-decl name='int32_t' type-id='type-id-42' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-34'/>
+    <qualified-type-def type-id='type-id-39' const='yes' id='type-id-43'/>
+    <pointer-type-def type-id='type-id-43' size-in-bits='64' id='type-id-33'/>
+    <class-decl name='rte_mempool_cache' size-in-bits='98816' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='83' column='1' id='type-id-44'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='size' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='flushthresh' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='type-id-17' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='objs' type-id='type-id-45' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='91' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-11' size-in-bits='98304' id='type-id-45'>
+      <subrange length='1536' type-id='type-id-2' id='type-id-46'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-44' size-in-bits='64' id='type-id-35'/>
+    <class-decl name='rte_mempool_objhdr_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1' id='type-id-36'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqh_first' type-id='type-id-47' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='stqh_last' type-id='type-id-48' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_mempool_objhdr' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='136' column='1' id='type-id-49'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-50' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp' type-id='type-id-18' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-51' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1' id='type-id-50'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqe_next' type-id='type-id-47' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-49' size-in-bits='64' id='type-id-47'/>
+    <pointer-type-def type-id='type-id-30' size-in-bits='64' id='type-id-18'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='140' column='1' id='type-id-51'>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-24' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='141' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='physaddr' type-id='type-id-41' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='142' column='1'/>
+      </data-member>
+    </union-decl>
+    <pointer-type-def type-id='type-id-47' size-in-bits='64' id='type-id-48'/>
+    <class-decl name='rte_mempool_memhdr_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1' id='type-id-37'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqh_first' type-id='type-id-52' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='stqh_last' type-id='type-id-53' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_mempool_memhdr' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='185' column='1' id='type-id-54'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-55' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp' type-id='type-id-18' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='187' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='addr' type-id='type-id-11' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='188' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='' type-id='type-id-56' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='len' type-id='type-id-7' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='194' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='free_cb' type-id='type-id-57' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='195' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='opaque' type-id='type-id-11' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='196' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1' id='type-id-55'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqe_next' type-id='type-id-52' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-54' size-in-bits='64' id='type-id-52'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='190' column='1' id='type-id-56'>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-24' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='191' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-41' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='192' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='rte_mempool_memchunk_free_cb_t' type-id='type-id-58' filepath='../lib/librte_mempool/rte_mempool.h' line='176' column='1' id='type-id-59'/>
+    <pointer-type-def type-id='type-id-59' size-in-bits='64' id='type-id-57'/>
+    <pointer-type-def type-id='type-id-52' size-in-bits='64' id='type-id-53'/>
+    <pointer-type-def type-id='type-id-12' size-in-bits='64' id='type-id-19'/>
+    <class-decl name='rte_mbuf_ext_shared_info' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='689' column='1' id='type-id-60'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='free_cb' type-id='type-id-61' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='690' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='fcb_opaque' type-id='type-id-11' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='691' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='refcnt_atomic' type-id='type-id-62' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='692' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-63' size-in-bits='64' id='type-id-64'/>
+    <typedef-decl name='rte_mbuf_extbuf_free_callback_t' type-id='type-id-64' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='684' column='1' id='type-id-61'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='16' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-62' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='223' column='1' id='type-id-65'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-66' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='224' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='short int' size-in-bits='16' id='type-id-67'/>
+    <typedef-decl name='__int16_t' type-id='type-id-67' filepath='/usr/include/bits/types.h' line='39' column='1' id='type-id-68'/>
+    <typedef-decl name='int16_t' type-id='type-id-68' filepath='/usr/include/bits/stdint-intn.h' line='25' column='1' id='type-id-69'/>
+    <qualified-type-def type-id='type-id-69' volatile='yes' id='type-id-66'/>
+    <typedef-decl name='rte_atomic16_t' type-id='type-id-65' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='225' column='1' id='type-id-62'/>
+    <pointer-type-def type-id='type-id-60' size-in-bits='64' id='type-id-20'/>
+
+    <array-type-def dimensions='1' type-id='type-id-4' size-in-bits='128' id='type-id-21'>
+      <subrange length='2' type-id='type-id-2' id='type-id-70'/>
+
+    </array-type-def>
+    <qualified-type-def type-id='type-id-12' const='yes' id='type-id-71'/>
+    <pointer-type-def type-id='type-id-71' size-in-bits='64' id='type-id-72'/>
+    <function-decl name='__rte_pktmbuf_read' mangled-name='__rte_pktmbuf_read' filepath='../lib/librte_mbuf/rte_mbuf.c' line='502' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='__rte_pktmbuf_read@@DPDK_20.0'>
+      <parameter type-id='type-id-72' name='m' filepath='../lib/librte_mbuf/rte_mbuf.c' line='502' column='1'/>
+      <parameter type-id='type-id-17' name='off' filepath='../lib/librte_mbuf/rte_mbuf.c' line='502' column='1'/>
+      <parameter type-id='type-id-17' name='len' filepath='../lib/librte_mbuf/rte_mbuf.c' line='503' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_mbuf/rte_mbuf.c' line='503' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <class-decl name='_IO_FILE' size-in-bits='1728' is-struct='yes' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='49' column='1' id='type-id-73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='_flags' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='_IO_read_ptr' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='_IO_read_end' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='_IO_read_base' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='_IO_write_base' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='_IO_write_ptr' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='_IO_write_end' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='_IO_buf_base' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='_IO_buf_end' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='_IO_save_base' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='_IO_backup_base' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='_IO_save_end' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='_markers' type-id='type-id-74' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='_chain' type-id='type-id-75' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='_fileno' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='_flags2' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='_old_offset' type-id='type-id-76' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='_cur_column' type-id='type-id-26' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1040'>
+        <var-decl name='_vtable_offset' type-id='type-id-77' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1048'>
+        <var-decl name='_shortbuf' type-id='type-id-78' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='_lock' type-id='type-id-79' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='_offset' type-id='type-id-80' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='_codecvt' type-id='type-id-81' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1280'>
+        <var-decl name='_wide_data' type-id='type-id-82' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='_freeres_list' type-id='type-id-75' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='_freeres_buf' type-id='type-id-11' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1472'>
+        <var-decl name='__pad5' type-id='type-id-7' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='_mode' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1568'>
+        <var-decl name='_unused2' type-id='type-id-83' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='98' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='_IO_marker' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-84'/>
+    <pointer-type-def type-id='type-id-84' size-in-bits='64' id='type-id-74'/>
+    <pointer-type-def type-id='type-id-73' size-in-bits='64' id='type-id-75'/>
+    <type-decl name='long int' size-in-bits='64' id='type-id-85'/>
+    <typedef-decl name='__off_t' type-id='type-id-85' filepath='/usr/include/bits/types.h' line='152' column='1' id='type-id-76'/>
+    <type-decl name='signed char' size-in-bits='8' id='type-id-77'/>
+
+    <array-type-def dimensions='1' type-id='type-id-5' size-in-bits='8' id='type-id-78'>
+      <subrange length='1' type-id='type-id-2' id='type-id-86'/>
+
+    </array-type-def>
+    <typedef-decl name='_IO_lock_t' type-id='type-id-10' filepath='/usr/include/bits/types/struct_FILE.h' line='43' column='1' id='type-id-87'/>
+    <pointer-type-def type-id='type-id-87' size-in-bits='64' id='type-id-79'/>
+    <typedef-decl name='__off64_t' type-id='type-id-85' filepath='/usr/include/bits/types.h' line='153' column='1' id='type-id-80'/>
+    <class-decl name='_IO_codecvt' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-88'/>
+    <pointer-type-def type-id='type-id-88' size-in-bits='64' id='type-id-81'/>
+    <class-decl name='_IO_wide_data' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-89'/>
+    <pointer-type-def type-id='type-id-89' size-in-bits='64' id='type-id-82'/>
+
+    <array-type-def dimensions='1' type-id='type-id-5' size-in-bits='160' id='type-id-83'>
+      <subrange length='20' type-id='type-id-2' id='type-id-90'/>
+
+    </array-type-def>
+    <typedef-decl name='FILE' type-id='type-id-73' filepath='/usr/include/bits/types/FILE.h' line='7' column='1' id='type-id-91'/>
+    <pointer-type-def type-id='type-id-91' size-in-bits='64' id='type-id-92'/>
+    <function-decl name='rte_pktmbuf_dump' mangled-name='rte_pktmbuf_dump' filepath='../lib/librte_mbuf/rte_mbuf.c' line='471' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_dump@@DPDK_20.0'>
+      <parameter type-id='type-id-92' name='f' filepath='../lib/librte_mbuf/rte_mbuf.c' line='471' column='1'/>
+      <parameter type-id='type-id-72' name='m' filepath='../lib/librte_mbuf/rte_mbuf.c' line='471' column='1'/>
+      <parameter type-id='type-id-28' name='dump_len' filepath='../lib/librte_mbuf/rte_mbuf.c' line='471' column='1'/>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <function-decl name='__rte_pktmbuf_linearize' mangled-name='__rte_pktmbuf_linearize' filepath='../lib/librte_mbuf/rte_mbuf.c' line='357' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='__rte_pktmbuf_linearize@@DPDK_20.0'>
+      <parameter type-id='type-id-19' name='mbuf' filepath='../lib/librte_mbuf/rte_mbuf.c' line='357' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pktmbuf_clone' mangled-name='rte_pktmbuf_clone' filepath='../lib/librte_mbuf/rte_mbuf.c' line='318' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_clone@@DPDK_20.0'>
+      <parameter type-id='type-id-19' name='md' filepath='../lib/librte_mbuf/rte_mbuf.c' line='318' column='1'/>
+      <parameter type-id='type-id-18' name='mp' filepath='../lib/librte_mbuf/rte_mbuf.c' line='318' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_sanity_check' mangled-name='rte_mbuf_sanity_check' filepath='../lib/librte_mbuf/rte_mbuf.c' line='174' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_sanity_check@@DPDK_20.0'>
+      <parameter type-id='type-id-72' name='m' filepath='../lib/librte_mbuf/rte_mbuf.c' line='174' column='1'/>
+      <parameter type-id='type-id-1' name='is_header' filepath='../lib/librte_mbuf/rte_mbuf.c' line='174' column='1'/>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <function-decl name='rte_pktmbuf_pool_create' mangled-name='rte_pktmbuf_pool_create' filepath='../lib/librte_mbuf/rte_mbuf.c' line='164' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_pool_create@@DPDK_20.0'>
+      <parameter type-id='type-id-9' name='name' filepath='../lib/librte_mbuf/rte_mbuf.c' line='164' column='1'/>
+      <parameter type-id='type-id-28' name='n' filepath='../lib/librte_mbuf/rte_mbuf.c' line='164' column='1'/>
+      <parameter type-id='type-id-28' name='cache_size' filepath='../lib/librte_mbuf/rte_mbuf.c' line='165' column='1'/>
+      <parameter type-id='type-id-16' name='priv_size' filepath='../lib/librte_mbuf/rte_mbuf.c' line='165' column='1'/>
+      <parameter type-id='type-id-16' name='data_room_size' filepath='../lib/librte_mbuf/rte_mbuf.c' line='165' column='1'/>
+      <parameter type-id='type-id-1' name='socket_id' filepath='../lib/librte_mbuf/rte_mbuf.c' line='166' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-decl name='rte_pktmbuf_pool_create_by_ops' mangled-name='rte_pktmbuf_pool_create_by_ops' filepath='../lib/librte_mbuf/rte_mbuf.c' line='112' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_pool_create_by_ops@@DPDK_20.0'>
+      <parameter type-id='type-id-9' name='name' filepath='../lib/librte_mbuf/rte_mbuf.c' line='112' column='1'/>
+      <parameter type-id='type-id-28' name='n' filepath='../lib/librte_mbuf/rte_mbuf.c' line='112' column='1'/>
+      <parameter type-id='type-id-28' name='cache_size' filepath='../lib/librte_mbuf/rte_mbuf.c' line='113' column='1'/>
+      <parameter type-id='type-id-16' name='priv_size' filepath='../lib/librte_mbuf/rte_mbuf.c' line='113' column='1'/>
+      <parameter type-id='type-id-16' name='data_room_size' filepath='../lib/librte_mbuf/rte_mbuf.c' line='113' column='1'/>
+      <parameter type-id='type-id-1' name='socket_id' filepath='../lib/librte_mbuf/rte_mbuf.c' line='114' column='1'/>
+      <parameter type-id='type-id-9' name='ops_name' filepath='../lib/librte_mbuf/rte_mbuf.c' line='114' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-decl name='rte_pktmbuf_init' mangled-name='rte_pktmbuf_init' filepath='../lib/librte_mbuf/rte_mbuf.c' line='76' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_init@@DPDK_20.0'>
+      <parameter type-id='type-id-18' name='mp' filepath='../lib/librte_mbuf/rte_mbuf.c' line='76' column='1'/>
+      <parameter type-id='type-id-11' name='opaque_arg' filepath='../lib/librte_mbuf/rte_mbuf.c' line='77' column='1'/>
+      <parameter type-id='type-id-11' name='_m' filepath='../lib/librte_mbuf/rte_mbuf.c' line='78' column='1'/>
+      <parameter type-id='type-id-28' name='i' filepath='../lib/librte_mbuf/rte_mbuf.c' line='79' column='1'/>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <function-decl name='rte_pktmbuf_pool_init' mangled-name='rte_pktmbuf_pool_init' filepath='../lib/librte_mbuf/rte_mbuf.c' line='41' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_pool_init@@DPDK_20.0'>
+      <parameter type-id='type-id-18' name='mp' filepath='../lib/librte_mbuf/rte_mbuf.c' line='41' column='1'/>
+      <parameter type-id='type-id-11' name='opaque_arg' filepath='../lib/librte_mbuf/rte_mbuf.c' line='41' column='1'/>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <function-decl name='rte_pktmbuf_copy' mangled-name='rte_pktmbuf_copy' filepath='../lib/librte_mbuf/rte_mbuf.c' line='394' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_copy@@EXPERIMENTAL'>
+      <parameter type-id='type-id-72' name='m' filepath='../lib/librte_mbuf/rte_mbuf.c' line='394' column='1'/>
+      <parameter type-id='type-id-18' name='mp' filepath='../lib/librte_mbuf/rte_mbuf.c' line='394' column='1'/>
+      <parameter type-id='type-id-17' name='off' filepath='../lib/librte_mbuf/rte_mbuf.c' line='395' column='1'/>
+      <parameter type-id='type-id-17' name='len' filepath='../lib/librte_mbuf/rte_mbuf.c' line='395' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-93'/>
+    <function-decl name='rte_pktmbuf_free_bulk' mangled-name='rte_pktmbuf_free_bulk' filepath='../lib/librte_mbuf/rte_mbuf.c' line='291' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pktmbuf_free_bulk@@EXPERIMENTAL'>
+      <parameter type-id='type-id-93' name='mbufs' filepath='../lib/librte_mbuf/rte_mbuf.c' line='291' column='1'/>
+      <parameter type-id='type-id-28' name='count' filepath='../lib/librte_mbuf/rte_mbuf.c' line='291' column='1'/>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-9' size-in-bits='64' id='type-id-94'/>
+    <function-decl name='rte_mbuf_check' mangled-name='rte_mbuf_check' filepath='../lib/librte_mbuf/rte_mbuf.c' line='182' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_check@@EXPERIMENTAL'>
+      <parameter type-id='type-id-72' name='m' filepath='../lib/librte_mbuf/rte_mbuf.c' line='182' column='1'/>
+      <parameter type-id='type-id-1' name='is_header' filepath='../lib/librte_mbuf/rte_mbuf.c' line='182' column='1'/>
+      <parameter type-id='type-id-94' name='reason' filepath='../lib/librte_mbuf/rte_mbuf.c' line='183' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-58'>
+      <parameter type-id='type-id-52'/>
+      <parameter type-id='type-id-11'/>
+      <return type-id='type-id-10'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-63'>
+      <parameter type-id='type-id-11'/>
+      <parameter type-id='type-id-11'/>
+      <return type-id='type-id-10'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_mbuf/rte_mbuf_ptype.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='rte_get_ptype_name' mangled-name='rte_get_ptype_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='120' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='120' column='1'/>
+      <parameter type-id='type-id-6' name='buf' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='120' column='1'/>
+      <parameter type-id='type-id-7' name='buflen' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='120' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_inner_l4_name' mangled-name='rte_get_ptype_inner_l4_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_inner_l4_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_inner_l3_name' mangled-name='rte_get_ptype_inner_l3_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='90' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_inner_l3_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_inner_l2_name' mangled-name='rte_get_ptype_inner_l2_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='79' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_inner_l2_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_tunnel_name' mangled-name='rte_get_ptype_tunnel_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='58' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_tunnel_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_l4_name' mangled-name='rte_get_ptype_l4_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='43' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_l4_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_l3_name' mangled-name='rte_get_ptype_l3_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='29' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_l3_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_get_ptype_l2_name' mangled-name='rte_get_ptype_l2_name' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='11' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_get_ptype_l2_name@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='ptype' filepath='../lib/librte_mbuf/rte_mbuf_ptype.c' line='106' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_mbuf/rte_mbuf_pool_ops.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='rte_mbuf_best_mempool_ops' mangled-name='rte_mbuf_best_mempool_ops' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='83' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_best_mempool_ops@@DPDK_20.0'>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_user_mempool_ops' mangled-name='rte_mbuf_user_mempool_ops' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='71' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_user_mempool_ops@@DPDK_20.0'>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_set_user_mempool_ops' mangled-name='rte_mbuf_set_user_mempool_ops' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='50' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_set_user_mempool_ops@@DPDK_20.0'>
+      <parameter type-id='type-id-9' name='ops_name' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='50' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_platform_mempool_ops' mangled-name='rte_mbuf_platform_mempool_ops' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='39' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_platform_mempool_ops@@DPDK_20.0'>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_set_platform_mempool_ops' mangled-name='rte_mbuf_set_platform_mempool_ops' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='13' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_set_platform_mempool_ops@@DPDK_20.0'>
+      <parameter type-id='type-id-9' name='ops_name' filepath='../lib/librte_mbuf/rte_mbuf_pool_ops.c' line='50' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_mbuf/rte_mbuf_dyn.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='rte_mbuf_dyn_dump' mangled-name='rte_mbuf_dyn_dump' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='515' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dyn_dump@@EXPERIMENTAL'>
+      <parameter type-id='type-id-92' name='out' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='515' column='1'/>
+      <return type-id='type-id-10'/>
+    </function-decl>
+    <class-decl name='rte_mbuf_dynflag' size-in-bits='544' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='88' column='1' id='type-id-95'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-96' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='flags' type-id='type-id-28' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='90' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-5' size-in-bits='512' id='type-id-96'>
+      <subrange length='64' type-id='type-id-2' id='type-id-97'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-95' size-in-bits='64' id='type-id-98'/>
+    <function-decl name='rte_mbuf_dynflag_lookup' mangled-name='rte_mbuf_dynflag_lookup' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='375' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dynflag_lookup@@EXPERIMENTAL'>
+      <parameter type-id='type-id-9' name='name' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='375' column='1'/>
+      <parameter type-id='type-id-98' name='params' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='376' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-95' const='yes' id='type-id-99'/>
+    <pointer-type-def type-id='type-id-99' size-in-bits='64' id='type-id-100'/>
+    <function-decl name='rte_mbuf_dynflag_register_bitnum' mangled-name='rte_mbuf_dynflag_register_bitnum' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='491' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dynflag_register_bitnum@@EXPERIMENTAL'>
+      <parameter type-id='type-id-100' name='params' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='491' column='1'/>
+      <parameter type-id='type-id-28' name='req' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='492' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_dynflag_register' mangled-name='rte_mbuf_dynflag_register' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='510' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dynflag_register@@EXPERIMENTAL'>
+      <parameter type-id='type-id-100' name='params' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='510' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_mbuf_dynfield' size-in-bits='704' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='78' column='1' id='type-id-101'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-96' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='size' type-id='type-id-7' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='80' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='align' type-id='type-id-7' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='flags' type-id='type-id-28' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_dyn.h' line='82' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-101' size-in-bits='64' id='type-id-102'/>
+    <function-decl name='rte_mbuf_dynfield_lookup' mangled-name='rte_mbuf_dynfield_lookup' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='180' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dynfield_lookup@@EXPERIMENTAL'>
+      <parameter type-id='type-id-9' name='name' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='180' column='1'/>
+      <parameter type-id='type-id-102' name='params' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='180' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-101' const='yes' id='type-id-103'/>
+    <pointer-type-def type-id='type-id-103' size-in-bits='64' id='type-id-104'/>
+    <function-decl name='rte_mbuf_dynfield_register_offset' mangled-name='rte_mbuf_dynfield_register_offset' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='317' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dynfield_register_offset@@EXPERIMENTAL'>
+      <parameter type-id='type-id-104' name='params' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='317' column='1'/>
+      <parameter type-id='type-id-7' name='req' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='318' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_mbuf_dynfield_register' mangled-name='rte_mbuf_dynfield_register' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='343' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_mbuf_dynfield_register@@EXPERIMENTAL'>
+      <parameter type-id='type-id-104' name='params' filepath='../lib/librte_mbuf/rte_mbuf_dyn.c' line='343' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

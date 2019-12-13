@@ -1,0 +1,98 @@
+<abi-corpus path='gcc//lib/librte_kvargs.so.20.0' architecture='elf-amd-x86_64' soname='librte_kvargs.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_kvargs_count' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_kvargs_free' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_kvargs_parse' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_kvargs_parse_delim' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_kvargs_process' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_kvargs_strcmp' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_kvargs/rte_kvargs.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='rte_kvargs' size-in-bits='4224' is-struct='yes' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='49' column='1' id='type-id-1'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='str' type-id='type-id-2' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='50' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='count' type-id='type-id-3' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='pairs' type-id='type-id-4' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='52' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-5'/>
+    <pointer-type-def type-id='type-id-5' size-in-bits='64' id='type-id-2'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-3'/>
+    <class-decl name='rte_kvargs_pair' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='43' column='1' id='type-id-6'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='key' type-id='type-id-2' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='44' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='value' type-id='type-id-2' visibility='default' filepath='../lib/librte_kvargs/rte_kvargs.h' line='45' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-7'/>
+
+    <array-type-def dimensions='1' type-id='type-id-6' size-in-bits='4096' id='type-id-4'>
+      <subrange length='32' type-id='type-id-7' id='type-id-8'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-9'/>
+    <qualified-type-def type-id='type-id-5' const='yes' id='type-id-10'/>
+    <pointer-type-def type-id='type-id-10' size-in-bits='64' id='type-id-11'/>
+    <qualified-type-def type-id='type-id-11' const='yes' id='type-id-12'/>
+    <pointer-type-def type-id='type-id-12' size-in-bits='64' id='type-id-13'/>
+    <function-decl name='rte_kvargs_parse' mangled-name='rte_kvargs_parse' filepath='../lib/librte_kvargs/rte_kvargs.c' line='167' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_kvargs_parse@@DPDK_20.0'>
+      <parameter type-id='type-id-11' name='args' filepath='../lib/librte_kvargs/rte_kvargs.c' line='167' column='1'/>
+      <parameter type-id='type-id-13' name='valid_keys' filepath='../lib/librte_kvargs/rte_kvargs.c' line='167' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <type-decl name='void' id='type-id-14'/>
+    <function-decl name='rte_kvargs_free' mangled-name='rte_kvargs_free' filepath='../lib/librte_kvargs/rte_kvargs.c' line='152' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_kvargs_free@@DPDK_20.0'>
+      <parameter type-id='type-id-9' name='kvlist' filepath='../lib/librte_kvargs/rte_kvargs.c' line='152' column='1'/>
+      <return type-id='type-id-14'/>
+    </function-decl>
+    <type-decl name='int' size-in-bits='32' id='type-id-15'/>
+    <qualified-type-def type-id='type-id-1' const='yes' id='type-id-16'/>
+    <pointer-type-def type-id='type-id-16' size-in-bits='64' id='type-id-17'/>
+    <pointer-type-def type-id='type-id-14' size-in-bits='64' id='type-id-18'/>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-20'/>
+    <typedef-decl name='arg_handler_t' type-id='type-id-20' filepath='../lib/librte_kvargs/rte_kvargs.h' line='40' column='1' id='type-id-21'/>
+    <function-decl name='rte_kvargs_process' mangled-name='rte_kvargs_process' filepath='../lib/librte_kvargs/rte_kvargs.c' line='129' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_kvargs_process@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='kvlist' filepath='../lib/librte_kvargs/rte_kvargs.c' line='129' column='1'/>
+      <parameter type-id='type-id-11' name='key_match' filepath='../lib/librte_kvargs/rte_kvargs.c' line='130' column='1'/>
+      <parameter type-id='type-id-21' name='handler' filepath='../lib/librte_kvargs/rte_kvargs.c' line='131' column='1'/>
+      <parameter type-id='type-id-18' name='opaque_arg' filepath='../lib/librte_kvargs/rte_kvargs.c' line='132' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <function-decl name='rte_kvargs_count' mangled-name='rte_kvargs_count' filepath='../lib/librte_kvargs/rte_kvargs.c' line='110' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_kvargs_count@@DPDK_20.0'>
+      <parameter type-id='type-id-17' name='kvlist' filepath='../lib/librte_kvargs/rte_kvargs.c' line='110' column='1'/>
+      <parameter type-id='type-id-11' name='key_match' filepath='../lib/librte_kvargs/rte_kvargs.c' line='110' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='rte_kvargs_strcmp' mangled-name='rte_kvargs_strcmp' filepath='../lib/librte_kvargs/rte_kvargs.c' line='214' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_kvargs_strcmp@@EXPERIMENTAL'>
+      <parameter type-id='type-id-11' name='key' filepath='../lib/librte_kvargs/rte_kvargs.c' line='214' column='1'/>
+      <parameter type-id='type-id-11' name='value' filepath='../lib/librte_kvargs/rte_kvargs.c' line='215' column='1'/>
+      <parameter type-id='type-id-18' name='opaque' filepath='../lib/librte_kvargs/rte_kvargs.c' line='215' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <function-decl name='rte_kvargs_parse_delim' mangled-name='rte_kvargs_parse_delim' filepath='../lib/librte_kvargs/rte_kvargs.c' line='190' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_kvargs_parse_delim@@EXPERIMENTAL'>
+      <parameter type-id='type-id-11' name='args' filepath='../lib/librte_kvargs/rte_kvargs.c' line='190' column='1'/>
+      <parameter type-id='type-id-13' name='valid_keys' filepath='../lib/librte_kvargs/rte_kvargs.c' line='190' column='1'/>
+      <parameter type-id='type-id-11' name='valid_ends' filepath='../lib/librte_kvargs/rte_kvargs.c' line='191' column='1'/>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-19'>
+      <parameter type-id='type-id-11'/>
+      <parameter type-id='type-id-11'/>
+      <parameter type-id='type-id-18'/>
+      <return type-id='type-id-15'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

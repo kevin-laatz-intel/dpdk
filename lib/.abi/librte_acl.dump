@@ -1,0 +1,329 @@
+<abi-corpus path='gcc//lib/librte_acl.so.20.0' architecture='elf-amd-x86_64' soname='librte_acl.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_acl_add_rules' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_build' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_classify' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_classify_alg' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_classify_scalar' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_dump' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_find_existing' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_free' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_list_dump' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_reset' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_reset_rules' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_acl_set_ctx_classify' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_acl/acl_bld.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <class-decl name='rte_acl_ctx' size-in-bits='7232' is-struct='yes' visibility='default' filepath='../lib/librte_acl/acl.h' line='159' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-3' visibility='default' filepath='../lib/librte_acl/acl.h' line='160' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='socket_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_acl/acl.h' line='162' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='alg' type-id='type-id-5' visibility='default' filepath='../lib/librte_acl/acl.h' line='164' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='rules' type-id='type-id-6' visibility='default' filepath='../lib/librte_acl/acl.h' line='165' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='max_rules' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='166' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='rule_sz' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='167' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='num_rules' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='168' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='num_categories' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='169' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='num_tries' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='170' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='match_index' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='171' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='no_match' type-id='type-id-8' visibility='default' filepath='../lib/librte_acl/acl.h' line='172' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='idle' type-id='type-id-8' visibility='default' filepath='../lib/librte_acl/acl.h' line='173' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='trans_table' type-id='type-id-9' visibility='default' filepath='../lib/librte_acl/acl.h' line='174' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='data_indexes' type-id='type-id-10' visibility='default' filepath='../lib/librte_acl/acl.h' line='175' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='trie' type-id='type-id-11' visibility='default' filepath='../lib/librte_acl/acl.h' line='176' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2880'>
+        <var-decl name='mem' type-id='type-id-6' visibility='default' filepath='../lib/librte_acl/acl.h' line='177' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2944'>
+        <var-decl name='mem_sz' type-id='type-id-12' visibility='default' filepath='../lib/librte_acl/acl.h' line='178' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3008'>
+        <var-decl name='config' type-id='type-id-13' visibility='default' filepath='../lib/librte_acl/acl.h' line='179' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-14'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-15'/>
+
+    <array-type-def dimensions='1' type-id='type-id-14' size-in-bits='256' id='type-id-3'>
+      <subrange length='32' type-id='type-id-15' id='type-id-16'/>
+
+    </array-type-def>
+    <typedef-decl name='__int32_t' type-id='type-id-1' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-17'/>
+    <typedef-decl name='int32_t' type-id='type-id-17' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-4'/>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-18'/>
+    <enum-decl name='rte_acl_classify_alg' filepath='../lib/librte_acl/rte_acl.h' line='237' column='1' id='type-id-5'>
+      <underlying-type type-id='type-id-18'/>
+      <enumerator name='RTE_ACL_CLASSIFY_DEFAULT' value='0'/>
+      <enumerator name='RTE_ACL_CLASSIFY_SCALAR' value='1'/>
+      <enumerator name='RTE_ACL_CLASSIFY_SSE' value='2'/>
+      <enumerator name='RTE_ACL_CLASSIFY_AVX2' value='3'/>
+      <enumerator name='RTE_ACL_CLASSIFY_NEON' value='4'/>
+      <enumerator name='RTE_ACL_CLASSIFY_ALTIVEC' value='5'/>
+      <enumerator name='RTE_ACL_CLASSIFY_NUM' value='6'/>
+    </enum-decl>
+    <type-decl name='void' id='type-id-19'/>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-6'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-20'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-20' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-21'/>
+    <typedef-decl name='uint32_t' type-id='type-id-21' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-7'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-15' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-22'/>
+    <typedef-decl name='uint64_t' type-id='type-id-22' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-8'/>
+    <pointer-type-def type-id='type-id-8' size-in-bits='64' id='type-id-9'/>
+    <pointer-type-def type-id='type-id-7' size-in-bits='64' id='type-id-10'/>
+    <class-decl name='rte_acl_trie' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_acl/acl.h' line='147' column='1' id='type-id-23'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='count' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='149' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='root_index' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='150' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='data_index' type-id='type-id-24' visibility='default' filepath='../lib/librte_acl/acl.h' line='151' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='num_data_indexes' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/acl.h' line='152' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-7' const='yes' id='type-id-25'/>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-24'/>
+
+    <array-type-def dimensions='1' type-id='type-id-23' size-in-bits='2048' id='type-id-11'>
+      <subrange length='8' type-id='type-id-15' id='type-id-26'/>
+
+    </array-type-def>
+    <typedef-decl name='size_t' type-id='type-id-15' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-12'/>
+    <class-decl name='rte_acl_config' size-in-bits='4224' is-struct='yes' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='63' column='1' id='type-id-13'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='num_categories' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='num_fields' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='defs' type-id='type-id-27' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4160'>
+        <var-decl name='max_size' type-id='type-id-12' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='68' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_acl_field_def' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='51' column='1' id='type-id-28'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='type-id-29' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='size' type-id='type-id-29' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='field_index' type-id='type-id-29' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='24'>
+        <var-decl name='input_index' type-id='type-id-29' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='offset' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='56' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-30'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-30' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-31'/>
+    <typedef-decl name='uint8_t' type-id='type-id-31' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-29'/>
+
+    <array-type-def dimensions='1' type-id='type-id-28' size-in-bits='4096' id='type-id-27'>
+      <subrange length='64' type-id='type-id-15' id='type-id-32'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-33'/>
+    <qualified-type-def type-id='type-id-13' const='yes' id='type-id-34'/>
+    <pointer-type-def type-id='type-id-34' size-in-bits='64' id='type-id-35'/>
+    <function-decl name='rte_acl_build' mangled-name='rte_acl_build' filepath='../lib/librte_acl/acl_bld.c' line='1521' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_build@@DPDK_20.0'>
+      <parameter type-id='type-id-33' name='ctx' filepath='../lib/librte_acl/acl_bld.c' line='1521' column='1'/>
+      <parameter type-id='type-id-35' name='cfg' filepath='../lib/librte_acl/acl_bld.c' line='1521' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_acl/acl_run_scalar.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <qualified-type-def type-id='type-id-2' const='yes' id='type-id-36'/>
+    <pointer-type-def type-id='type-id-36' size-in-bits='64' id='type-id-37'/>
+    <qualified-type-def type-id='type-id-29' const='yes' id='type-id-38'/>
+    <pointer-type-def type-id='type-id-38' size-in-bits='64' id='type-id-39'/>
+    <pointer-type-def type-id='type-id-39' size-in-bits='64' id='type-id-40'/>
+    <function-decl name='rte_acl_classify_scalar' mangled-name='rte_acl_classify_scalar' filepath='../lib/librte_acl/acl_run_scalar.c' line='110' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_classify_scalar@@DPDK_20.0'>
+      <parameter type-id='type-id-37' name='ctx' filepath='../lib/librte_acl/acl_run_scalar.c' line='110' column='1'/>
+      <parameter type-id='type-id-40' name='data' filepath='../lib/librte_acl/acl_run_scalar.c' line='110' column='1'/>
+      <parameter type-id='type-id-10' name='results' filepath='../lib/librte_acl/acl_run_scalar.c' line='111' column='1'/>
+      <parameter type-id='type-id-7' name='num' filepath='../lib/librte_acl/acl_run_scalar.c' line='111' column='1'/>
+      <parameter type-id='type-id-7' name='categories' filepath='../lib/librte_acl/acl_run_scalar.c' line='111' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_acl/rte_acl.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='rte_acl_list_dump' mangled-name='rte_acl_list_dump' filepath='../lib/librte_acl/rte_acl.c' line='375' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_list_dump@@DPDK_20.0'>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='rte_acl_dump' mangled-name='rte_acl_dump' filepath='../lib/librte_acl/rte_acl.c' line='357' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_dump@@DPDK_20.0'>
+      <parameter type-id='type-id-37' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='357' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='rte_acl_reset' mangled-name='rte_acl_reset' filepath='../lib/librte_acl/rte_acl.c' line='345' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_reset@@DPDK_20.0'>
+      <parameter type-id='type-id-33' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='345' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='rte_acl_reset_rules' mangled-name='rte_acl_reset_rules' filepath='../lib/librte_acl/rte_acl.c' line='335' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_reset_rules@@DPDK_20.0'>
+      <parameter type-id='type-id-33' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='345' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <class-decl name='rte_acl_rule' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='116' column='1' id='type-id-41'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='data' type-id='type-id-42' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='116' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='field' type-id='type-id-43' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='116' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_acl_rule_data' size-in-bits='96' is-struct='yes' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='100' column='1' id='type-id-42'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='category_mask' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='priority' type-id='type-id-4' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='userdata' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='103' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_acl_field' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='75' column='1' id='type-id-44'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='value' type-id='type-id-45' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='76' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mask_range' type-id='type-id-45' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='78' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='rte_acl_field_types' size-in-bits='64' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='27' column='1' id='type-id-45'>
+      <data-member access='private'>
+        <var-decl name='u8' type-id='type-id-29' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='u16' type-id='type-id-46' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='29' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='u32' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='30' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='u64' type-id='type-id-8' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='31' column='1'/>
+      </data-member>
+    </union-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-47'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-47' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-48'/>
+    <typedef-decl name='uint16_t' type-id='type-id-48' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-46'/>
+
+    <array-type-def dimensions='1' type-id='type-id-44' size-in-bits='infinite' id='type-id-43'>
+      <subrange length='infinite' type-id='type-id-15' id='type-id-49'/>
+
+    </array-type-def>
+    <qualified-type-def type-id='type-id-41' const='yes' id='type-id-50'/>
+    <pointer-type-def type-id='type-id-50' size-in-bits='64' id='type-id-51'/>
+    <function-decl name='rte_acl_add_rules' mangled-name='rte_acl_add_rules' filepath='../lib/librte_acl/rte_acl.c' line='306' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_add_rules@@DPDK_20.0'>
+      <parameter type-id='type-id-33' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='306' column='1'/>
+      <parameter type-id='type-id-51' name='rules' filepath='../lib/librte_acl/rte_acl.c' line='306' column='1'/>
+      <parameter type-id='type-id-7' name='num' filepath='../lib/librte_acl/rte_acl.c' line='307' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_acl_param' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='128' column='1' id='type-id-52'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-53' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='129' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='socket_id' type-id='type-id-1' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='130' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='rule_size' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='131' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='max_rule_num' type-id='type-id-7' visibility='default' filepath='../lib/librte_acl/rte_acl.h' line='132' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-14' const='yes' id='type-id-54'/>
+    <pointer-type-def type-id='type-id-54' size-in-bits='64' id='type-id-53'/>
+    <qualified-type-def type-id='type-id-52' const='yes' id='type-id-55'/>
+    <pointer-type-def type-id='type-id-55' size-in-bits='64' id='type-id-56'/>
+    <function-decl name='rte_acl_create' mangled-name='rte_acl_create' filepath='../lib/librte_acl/rte_acl.c' line='210' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_create@@DPDK_20.0'>
+      <parameter type-id='type-id-56' name='param' filepath='../lib/librte_acl/rte_acl.c' line='210' column='1'/>
+      <return type-id='type-id-33'/>
+    </function-decl>
+    <function-decl name='rte_acl_free' mangled-name='rte_acl_free' filepath='../lib/librte_acl/rte_acl.c' line='178' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_free@@DPDK_20.0'>
+      <parameter type-id='type-id-33' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='178' column='1'/>
+      <return type-id='type-id-19'/>
+    </function-decl>
+    <function-decl name='rte_acl_find_existing' mangled-name='rte_acl_find_existing' filepath='../lib/librte_acl/rte_acl.c' line='154' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_find_existing@@DPDK_20.0'>
+      <parameter type-id='type-id-53' name='name' filepath='../lib/librte_acl/rte_acl.c' line='154' column='1'/>
+      <return type-id='type-id-33'/>
+    </function-decl>
+    <function-decl name='rte_acl_classify' mangled-name='rte_acl_classify' filepath='../lib/librte_acl/rte_acl.c' line='146' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_classify@@DPDK_20.0'>
+      <parameter type-id='type-id-37' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='146' column='1'/>
+      <parameter type-id='type-id-40' name='data' filepath='../lib/librte_acl/rte_acl.c' line='146' column='1'/>
+      <parameter type-id='type-id-10' name='results' filepath='../lib/librte_acl/rte_acl.c' line='147' column='1'/>
+      <parameter type-id='type-id-7' name='num' filepath='../lib/librte_acl/rte_acl.c' line='147' column='1'/>
+      <parameter type-id='type-id-7' name='categories' filepath='../lib/librte_acl/rte_acl.c' line='147' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_acl_classify_alg' mangled-name='rte_acl_classify_alg' filepath='../lib/librte_acl/rte_acl.c' line='134' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_classify_alg@@DPDK_20.0'>
+      <parameter type-id='type-id-37' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='134' column='1'/>
+      <parameter type-id='type-id-40' name='data' filepath='../lib/librte_acl/rte_acl.c' line='134' column='1'/>
+      <parameter type-id='type-id-10' name='results' filepath='../lib/librte_acl/rte_acl.c' line='135' column='1'/>
+      <parameter type-id='type-id-7' name='num' filepath='../lib/librte_acl/rte_acl.c' line='135' column='1'/>
+      <parameter type-id='type-id-7' name='categories' filepath='../lib/librte_acl/rte_acl.c' line='135' column='1'/>
+      <parameter type-id='type-id-5' name='alg' filepath='../lib/librte_acl/rte_acl.c' line='136' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_acl_set_ctx_classify' mangled-name='rte_acl_set_ctx_classify' filepath='../lib/librte_acl/rte_acl.c' line='93' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_acl_set_ctx_classify@@DPDK_20.0'>
+      <parameter type-id='type-id-33' name='ctx' filepath='../lib/librte_acl/rte_acl.c' line='93' column='1'/>
+      <parameter type-id='type-id-5' name='alg' filepath='../lib/librte_acl/rte_acl.c' line='93' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

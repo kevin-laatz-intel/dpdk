@@ -1,0 +1,217 @@
+<abi-corpus path='gcc//lib/librte_rcu.so.0.200' architecture='elf-amd-x86_64' soname='librte_rcu.so.0.200'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_rcu_qsbr_dump' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_rcu_qsbr_get_memsize' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_rcu_qsbr_init' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_rcu_qsbr_synchronize' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_rcu_qsbr_thread_register' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_rcu_qsbr_thread_unregister' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <elf-variable-symbols>
+    <elf-symbol name='rte_rcu_log_type' size='4' version='EXPERIMENTAL' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-variable-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_rcu/rte_rcu_qsbr.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <var-decl name='rte_rcu_log_type' type-id='type-id-1' mangled-name='rte_rcu_log_type' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='38' column='1' elf-symbol-id='rte_rcu_log_type@@EXPERIMENTAL'/>
+    <class-decl name='_IO_FILE' size-in-bits='1728' is-struct='yes' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='49' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='_flags' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='_IO_read_ptr' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='_IO_read_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='_IO_read_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='_IO_write_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='_IO_write_ptr' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='_IO_write_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='_IO_buf_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='_IO_buf_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='_IO_save_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='_IO_backup_base' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='_IO_save_end' type-id='type-id-3' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='_markers' type-id='type-id-4' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='_chain' type-id='type-id-5' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='_fileno' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='_flags2' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='_old_offset' type-id='type-id-6' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='_cur_column' type-id='type-id-7' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1040'>
+        <var-decl name='_vtable_offset' type-id='type-id-8' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1048'>
+        <var-decl name='_shortbuf' type-id='type-id-9' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='_lock' type-id='type-id-10' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='_offset' type-id='type-id-11' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='_codecvt' type-id='type-id-12' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1280'>
+        <var-decl name='_wide_data' type-id='type-id-13' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='_freeres_list' type-id='type-id-5' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='_freeres_buf' type-id='type-id-14' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1472'>
+        <var-decl name='__pad5' type-id='type-id-15' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='_mode' type-id='type-id-1' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1568'>
+        <var-decl name='_unused2' type-id='type-id-16' visibility='default' filepath='/usr/include/bits/types/struct_FILE.h' line='98' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-17'/>
+    <pointer-type-def type-id='type-id-17' size-in-bits='64' id='type-id-3'/>
+    <class-decl name='_IO_marker' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-18'/>
+    <pointer-type-def type-id='type-id-18' size-in-bits='64' id='type-id-4'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-5'/>
+    <type-decl name='long int' size-in-bits='64' id='type-id-19'/>
+    <typedef-decl name='__off_t' type-id='type-id-19' filepath='/usr/include/bits/types.h' line='152' column='1' id='type-id-6'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-7'/>
+    <type-decl name='signed char' size-in-bits='8' id='type-id-8'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-20'/>
+
+    <array-type-def dimensions='1' type-id='type-id-17' size-in-bits='8' id='type-id-9'>
+      <subrange length='1' type-id='type-id-20' id='type-id-21'/>
+
+    </array-type-def>
+    <typedef-decl name='_IO_lock_t' type-id='type-id-22' filepath='/usr/include/bits/types/struct_FILE.h' line='43' column='1' id='type-id-23'/>
+    <pointer-type-def type-id='type-id-23' size-in-bits='64' id='type-id-10'/>
+    <typedef-decl name='__off64_t' type-id='type-id-19' filepath='/usr/include/bits/types.h' line='153' column='1' id='type-id-11'/>
+    <class-decl name='_IO_codecvt' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-24'/>
+    <pointer-type-def type-id='type-id-24' size-in-bits='64' id='type-id-12'/>
+    <class-decl name='_IO_wide_data' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-25'/>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-13'/>
+    <type-decl name='void' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-22' size-in-bits='64' id='type-id-14'/>
+    <typedef-decl name='size_t' type-id='type-id-20' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-15'/>
+
+    <array-type-def dimensions='1' type-id='type-id-17' size-in-bits='160' id='type-id-16'>
+      <subrange length='20' type-id='type-id-20' id='type-id-26'/>
+
+    </array-type-def>
+    <typedef-decl name='FILE' type-id='type-id-2' filepath='/usr/include/bits/types/FILE.h' line='7' column='1' id='type-id-27'/>
+    <pointer-type-def type-id='type-id-27' size-in-bits='64' id='type-id-28'/>
+    <class-decl name='rte_rcu_qsbr' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='94' column='1' id='type-id-29'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='token' type-id='type-id-30' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='acked_token' type-id='type-id-30' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='num_elems' type-id='type-id-31' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='num_threads' type-id='type-id-31' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='max_threads' type-id='type-id-31' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='qsbr_cnt' type-id='type-id-32' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='109' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint64_t' type-id='type-id-20' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-33'/>
+    <typedef-decl name='uint64_t' type-id='type-id-33' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-30'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-34'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-34' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-35'/>
+    <typedef-decl name='uint32_t' type-id='type-id-35' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-31'/>
+    <class-decl name='rte_rcu_qsbr_cnt' size-in-bits='512' is-struct='yes' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='73' column='1' id='type-id-36'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-30' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='lock_cnt' type-id='type-id-31' visibility='default' filepath='../lib/librte_rcu/rte_rcu_qsbr.h' line='80' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-36' size-in-bits='infinite' id='type-id-32'>
+      <subrange length='infinite' type-id='type-id-20' id='type-id-37'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-29' size-in-bits='64' id='type-id-38'/>
+    <function-decl name='rte_rcu_qsbr_dump' mangled-name='rte_rcu_qsbr_dump' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='210' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_rcu_qsbr_dump@@EXPERIMENTAL'>
+      <parameter type-id='type-id-28' name='f' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='210' column='1'/>
+      <parameter type-id='type-id-38' name='v' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='210' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_rcu_qsbr_synchronize' mangled-name='rte_rcu_qsbr_synchronize' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='190' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_rcu_qsbr_synchronize@@EXPERIMENTAL'>
+      <parameter type-id='type-id-38' name='v' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='190' column='1'/>
+      <parameter type-id='type-id-34' name='thread_id' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='190' column='1'/>
+      <return type-id='type-id-22'/>
+    </function-decl>
+    <function-decl name='rte_rcu_qsbr_thread_unregister' mangled-name='rte_rcu_qsbr_thread_unregister' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='136' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_rcu_qsbr_thread_unregister@@EXPERIMENTAL'>
+      <parameter type-id='type-id-38' name='v' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='136' column='1'/>
+      <parameter type-id='type-id-34' name='thread_id' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='136' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_rcu_qsbr_thread_register' mangled-name='rte_rcu_qsbr_thread_register' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='84' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_rcu_qsbr_thread_register@@EXPERIMENTAL'>
+      <parameter type-id='type-id-38' name='v' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='136' column='1'/>
+      <parameter type-id='type-id-34' name='thread_id' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='136' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_rcu_qsbr_init' mangled-name='rte_rcu_qsbr_init' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='52' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_rcu_qsbr_init@@EXPERIMENTAL'>
+      <parameter type-id='type-id-38' name='v' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='52' column='1'/>
+      <parameter type-id='type-id-31' name='max_threads' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='52' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_rcu_qsbr_get_memsize' mangled-name='rte_rcu_qsbr_get_memsize' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='26' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_rcu_qsbr_get_memsize@@EXPERIMENTAL'>
+      <parameter type-id='type-id-31' name='max_threads' filepath='../lib/librte_rcu/rte_rcu_qsbr.c' line='26' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

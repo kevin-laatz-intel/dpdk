@@ -1,0 +1,728 @@
+<abi-corpus path='gcc//lib/librte_cmdline.so.20.0' architecture='elf-amd-x86_64' soname='librte_cmdline.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='cirbuf_add_buf_head' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_add_buf_tail' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_add_head' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_add_head_safe' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_add_tail' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_add_tail_safe' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_align_left' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_align_right' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_del_buf_head' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_del_buf_tail' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_del_head' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_del_head_safe' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_del_tail' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_del_tail_safe' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_get_buf_head' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_get_buf_tail' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_get_head' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_get_tail' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cirbuf_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_complete' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_complete_get_elt_string' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_complete_get_nb_string' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_file_new' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_free' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_get_help_etheraddr' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_get_help_ipaddr' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_get_help_num' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_get_help_portlist' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_get_help_string' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_in' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_interact' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_isendoftoken' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_new' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_parse' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_parse_etheraddr' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_parse_ipaddr' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_parse_num' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_parse_portlist' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_parse_string' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_poll' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_printf' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_quit' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_set_prompt' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_stdin_exit' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_stdin_new' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_write_char' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_add_history' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_char_in' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_clear_history' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_get_buffer' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_get_history_item' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_newline' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_quit' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_redisplay' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_reset' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_restart' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rdline_stop' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='vt100_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='vt100_parser' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <elf-variable-symbols>
+    <elf-symbol name='cmdline_token_etheraddr_ops' size='32' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_token_ipaddr_ops' size='32' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_token_num_ops' size='32' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_token_portlist_ops' size='32' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='cmdline_token_string_ops' size='32' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-variable-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='void' id='type-id-1'/>
+    <class-decl name='cmdline' size-in-bits='80192' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='24' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='s_in' type-id='type-id-3' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='25' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='s_out' type-id='type-id-3' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='26' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ctx' type-id='type-id-4' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='27' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='rdl' type-id='type-id-5' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='79424'>
+        <var-decl name='prompt' type-id='type-id-6' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='29' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='79680'>
+        <var-decl name='oldterm' type-id='type-id-7' visibility='default' filepath='../lib/librte_cmdline/cmdline.h' line='30' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='int' size-in-bits='32' id='type-id-3'/>
+    <class-decl name='cmdline_inst' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='131' column='1' id='type-id-8'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='f' type-id='type-id-9' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='133' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='data' type-id='type-id-10' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='134' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='help_str' type-id='type-id-11' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tokens' type-id='type-id-12' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='136' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-10'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-13'/>
+    <pointer-type-def type-id='type-id-14' size-in-bits='64' id='type-id-9'/>
+    <type-decl name='char' size-in-bits='8' id='type-id-15'/>
+    <qualified-type-def type-id='type-id-15' const='yes' id='type-id-16'/>
+    <pointer-type-def type-id='type-id-16' size-in-bits='64' id='type-id-11'/>
+    <class-decl name='cmdline_token_hdr' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='36' column='1' id='type-id-17'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-18' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='37' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='offset' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='38' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='cmdline_token_ops' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='61' column='1' id='type-id-20'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='parse' type-id='type-id-21' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='complete_get_nb' type-id='type-id-22' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='complete_get_elt' type-id='type-id-23' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='get_help' type-id='type-id-24' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse.h' line='71' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='cmdline_parse_token_hdr_t' type-id='type-id-17' filepath='../lib/librte_cmdline/cmdline_parse.h' line='40' column='1' id='type-id-25'/>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-26'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-19'/>
+    <pointer-type-def type-id='type-id-27' size-in-bits='64' id='type-id-21'/>
+    <pointer-type-def type-id='type-id-28' size-in-bits='64' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-15' size-in-bits='64' id='type-id-29'/>
+    <pointer-type-def type-id='type-id-30' size-in-bits='64' id='type-id-23'/>
+    <pointer-type-def type-id='type-id-31' size-in-bits='64' id='type-id-24'/>
+    <pointer-type-def type-id='type-id-20' size-in-bits='64' id='type-id-18'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-32'/>
+
+    <array-type-def dimensions='1' type-id='type-id-26' size-in-bits='infinite' id='type-id-12'>
+      <subrange length='infinite' type-id='type-id-32' id='type-id-33'/>
+
+    </array-type-def>
+    <typedef-decl name='cmdline_parse_inst_t' type-id='type-id-8' filepath='../lib/librte_cmdline/cmdline_parse.h' line='138' column='1' id='type-id-34'/>
+    <pointer-type-def type-id='type-id-34' size-in-bits='64' id='type-id-35'/>
+    <typedef-decl name='cmdline_parse_ctx_t' type-id='type-id-35' filepath='../lib/librte_cmdline/cmdline_parse.h' line='145' column='1' id='type-id-36'/>
+    <pointer-type-def type-id='type-id-36' size-in-bits='64' id='type-id-4'/>
+    <class-decl name='rdline' size-in-bits='79296' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='63' column='1' id='type-id-5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='status' type-id='type-id-37' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='left' type-id='type-id-38' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='right' type-id='type-id-38' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='left_buf' type-id='type-id-39' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4560'>
+        <var-decl name='right_buf' type-id='type-id-40' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8656'>
+        <var-decl name='prompt' type-id='type-id-6' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8928'>
+        <var-decl name='prompt_size' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8960'>
+        <var-decl name='kill_buf' type-id='type-id-40' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13056'>
+        <var-decl name='kill_size' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13120'>
+        <var-decl name='history' type-id='type-id-38' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13312'>
+        <var-decl name='history_buf' type-id='type-id-41' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='78848'>
+        <var-decl name='history_cur_line' type-id='type-id-3' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='80' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='78912'>
+        <var-decl name='write_char' type-id='type-id-42' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='78976'>
+        <var-decl name='validate' type-id='type-id-43' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='79040'>
+        <var-decl name='complete' type-id='type-id-44' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='79104'>
+        <var-decl name='vt100' type-id='type-id-45' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='79232'>
+        <var-decl name='opaque' type-id='type-id-10' visibility='default' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='91' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-46'/>
+    <enum-decl name='rdline_status' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='48' column='1' id='type-id-37'>
+      <underlying-type type-id='type-id-46'/>
+      <enumerator name='RDLINE_INIT' value='0'/>
+      <enumerator name='RDLINE_RUNNING' value='1'/>
+      <enumerator name='RDLINE_EXITED' value='2'/>
+    </enum-decl>
+    <class-decl name='cirbuf' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline_cirbuf.h' line='19' column='1' id='type-id-38'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='maxlen' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_cirbuf.h' line='20' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='start' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_cirbuf.h' line='21' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='end' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_cirbuf.h' line='22' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='len' type-id='type-id-19' visibility='default' filepath='../lib/librte_cmdline/cmdline_cirbuf.h' line='23' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='buf' type-id='type-id-29' visibility='default' filepath='../lib/librte_cmdline/cmdline_cirbuf.h' line='24' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='4112' id='type-id-39'>
+      <subrange length='514' type-id='type-id-32' id='type-id-47'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='4096' id='type-id-40'>
+      <subrange length='512' type-id='type-id-32' id='type-id-48'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='256' id='type-id-6'>
+      <subrange length='32' type-id='type-id-32' id='type-id-49'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='65536' id='type-id-41'>
+      <subrange length='8192' type-id='type-id-32' id='type-id-50'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-5' size-in-bits='64' id='type-id-51'/>
+    <typedef-decl name='rdline_write_char_t' type-id='type-id-52' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='56' column='1' id='type-id-53'/>
+    <pointer-type-def type-id='type-id-53' size-in-bits='64' id='type-id-42'/>
+    <typedef-decl name='rdline_validate_t' type-id='type-id-54' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='57' column='1' id='type-id-55'/>
+    <pointer-type-def type-id='type-id-55' size-in-bits='64' id='type-id-43'/>
+    <pointer-type-def type-id='type-id-3' size-in-bits='64' id='type-id-56'/>
+    <typedef-decl name='rdline_complete_t' type-id='type-id-57' filepath='../lib/librte_cmdline/cmdline_rdline.h' line='59' column='1' id='type-id-58'/>
+    <pointer-type-def type-id='type-id-58' size-in-bits='64' id='type-id-44'/>
+    <class-decl name='cmdline_vt100' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_cmdline/cmdline_vt100.h' line='77' column='1' id='type-id-45'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='bufpos' type-id='type-id-59' visibility='default' filepath='../lib/librte_cmdline/cmdline_vt100.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='buf' type-id='type-id-60' visibility='default' filepath='../lib/librte_cmdline/cmdline_vt100.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='state' type-id='type-id-61' visibility='default' filepath='../lib/librte_cmdline/cmdline_vt100.h' line='80' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-62'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-62' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-63'/>
+    <typedef-decl name='uint8_t' type-id='type-id-63' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-59'/>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='64' id='type-id-60'>
+      <subrange length='8' type-id='type-id-32' id='type-id-64'/>
+
+    </array-type-def>
+    <enum-decl name='cmdline_vt100_parser_state' filepath='../lib/librte_cmdline/cmdline_vt100.h' line='70' column='1' id='type-id-61'>
+      <underlying-type type-id='type-id-46'/>
+      <enumerator name='CMDLINE_VT100_INIT' value='0'/>
+      <enumerator name='CMDLINE_VT100_ESCAPE' value='1'/>
+      <enumerator name='CMDLINE_VT100_ESCAPE_CSI' value='2'/>
+    </enum-decl>
+    <class-decl name='termios' size-in-bits='480' is-struct='yes' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='24' column='1' id='type-id-7'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='c_iflag' type-id='type-id-65' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='26' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='c_oflag' type-id='type-id-65' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='27' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='c_cflag' type-id='type-id-65' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='c_lflag' type-id='type-id-65' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='29' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='c_line' type-id='type-id-66' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='30' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='136'>
+        <var-decl name='c_cc' type-id='type-id-67' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='31' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='c_ispeed' type-id='type-id-68' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='32' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='c_ospeed' type-id='type-id-68' visibility='default' filepath='/usr/include/bits/termios-struct.h' line='33' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='tcflag_t' type-id='type-id-19' filepath='/usr/include/bits/termios.h' line='25' column='1' id='type-id-65'/>
+    <typedef-decl name='cc_t' type-id='type-id-62' filepath='/usr/include/bits/termios.h' line='23' column='1' id='type-id-66'/>
+
+    <array-type-def dimensions='1' type-id='type-id-66' size-in-bits='256' id='type-id-67'>
+      <subrange length='32' type-id='type-id-32' id='type-id-49'/>
+
+    </array-type-def>
+    <typedef-decl name='speed_t' type-id='type-id-19' filepath='/usr/include/bits/termios.h' line='24' column='1' id='type-id-68'/>
+    <function-decl name='cmdline_interact' mangled-name='cmdline_interact' filepath='../lib/librte_cmdline/cmdline.c' line='216' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_interact@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='216' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cmdline_poll' mangled-name='cmdline_poll' filepath='../lib/librte_cmdline/cmdline.c' line='182' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_poll@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='182' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_quit' mangled-name='cmdline_quit' filepath='../lib/librte_cmdline/cmdline.c' line='174' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_quit@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='174' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cmdline_in' mangled-name='cmdline_in' filepath='../lib/librte_cmdline/cmdline.c' line='137' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_in@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='137' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline.c' line='137' column='1'/>
+      <parameter type-id='type-id-3' name='size' filepath='../lib/librte_cmdline/cmdline.c' line='137' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-2' const='yes' id='type-id-69'/>
+    <pointer-type-def type-id='type-id-69' size-in-bits='64' id='type-id-70'/>
+    <function-decl name='cmdline_printf' mangled-name='cmdline_printf' filepath='../lib/librte_cmdline/cmdline.c' line='122' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_printf@@DPDK_20.0'>
+      <parameter type-id='type-id-70' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='122' column='1'/>
+      <parameter type-id='type-id-11' name='fmt' filepath='../lib/librte_cmdline/cmdline.c' line='122' column='1'/>
+      <parameter is-variadic='yes'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cmdline_free' mangled-name='cmdline_free' filepath='../lib/librte_cmdline/cmdline.c' line='107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_free@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='174' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cmdline_new' mangled-name='cmdline_new' filepath='../lib/librte_cmdline/cmdline.c' line='76' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_new@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='ctx' filepath='../lib/librte_cmdline/cmdline.c' line='76' column='1'/>
+      <parameter type-id='type-id-11' name='prompt' filepath='../lib/librte_cmdline/cmdline.c' line='76' column='1'/>
+      <parameter type-id='type-id-3' name='s_in' filepath='../lib/librte_cmdline/cmdline.c' line='76' column='1'/>
+      <parameter type-id='type-id-3' name='s_out' filepath='../lib/librte_cmdline/cmdline.c' line='76' column='1'/>
+      <return type-id='type-id-13'/>
+    </function-decl>
+    <function-decl name='cmdline_set_prompt' mangled-name='cmdline_set_prompt' filepath='../lib/librte_cmdline/cmdline.c' line='68' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_set_prompt@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='68' column='1'/>
+      <parameter type-id='type-id-11' name='prompt' filepath='../lib/librte_cmdline/cmdline.c' line='68' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cmdline_write_char' mangled-name='cmdline_write_char' filepath='../lib/librte_cmdline/cmdline.c' line='50' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_write_char@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline.c' line='50' column='1'/>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline.c' line='50' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-28'>
+      <parameter type-id='type-id-26'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-31'>
+      <parameter type-id='type-id-26'/>
+      <parameter type-id='type-id-29'/>
+      <parameter type-id='type-id-19'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-27'>
+      <parameter type-id='type-id-26'/>
+      <parameter type-id='type-id-11'/>
+      <parameter type-id='type-id-10'/>
+      <parameter type-id='type-id-19'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-30'>
+      <parameter type-id='type-id-26'/>
+      <parameter type-id='type-id-3'/>
+      <parameter type-id='type-id-29'/>
+      <parameter type-id='type-id-19'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-52'>
+      <parameter type-id='type-id-51'/>
+      <parameter type-id='type-id-15'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-57'>
+      <parameter type-id='type-id-51'/>
+      <parameter type-id='type-id-11'/>
+      <parameter type-id='type-id-29'/>
+      <parameter type-id='type-id-19'/>
+      <parameter type-id='type-id-56'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-54'>
+      <parameter type-id='type-id-51'/>
+      <parameter type-id='type-id-11'/>
+      <parameter type-id='type-id-19'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-14'>
+      <parameter type-id='type-id-10'/>
+      <parameter type-id='type-id-13'/>
+      <parameter type-id='type-id-10'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_cirbuf.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <pointer-type-def type-id='type-id-38' size-in-bits='64' id='type-id-71'/>
+    <function-decl name='cirbuf_get_tail' mangled-name='cirbuf_get_tail' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='409' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_get_tail@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='409' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <function-decl name='cirbuf_get_head' mangled-name='cirbuf_get_head' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='401' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_get_head@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='409' column='1'/>
+      <return type-id='type-id-15'/>
+    </function-decl>
+    <function-decl name='cirbuf_get_buf_tail' mangled-name='cirbuf_get_buf_tail' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_get_buf_tail@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1'/>
+      <parameter type-id='type-id-29' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_get_buf_head' mangled-name='cirbuf_get_buf_head' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='324' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_get_buf_head@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1'/>
+      <parameter type-id='type-id-29' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='362' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_del_tail' mangled-name='cirbuf_del_tail' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='316' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_del_tail@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='316' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cirbuf_del_tail_safe' mangled-name='cirbuf_del_tail_safe' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='306' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_del_tail_safe@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='306' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_del_head' mangled-name='cirbuf_del_head' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='288' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_del_head@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='316' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cirbuf_del_head_safe' mangled-name='cirbuf_del_head_safe' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='278' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_del_head_safe@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='306' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_del_buf_tail' mangled-name='cirbuf_del_buf_tail' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='248' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_del_buf_tail@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='248' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='248' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_del_buf_head' mangled-name='cirbuf_del_buf_head' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='228' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_del_buf_head@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='248' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='248' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_align_right' mangled-name='cirbuf_align_right' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='206' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_align_right@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='306' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_align_left' mangled-name='cirbuf_align_left' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='185' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_align_left@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='306' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_add_tail' mangled-name='cirbuf_add_tail' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='143' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_add_tail@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='143' column='1'/>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='143' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cirbuf_add_tail_safe' mangled-name='cirbuf_add_tail_safe' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='133' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_add_tail_safe@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='133' column='1'/>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='133' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_add_head' mangled-name='cirbuf_add_head' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='114' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_add_head@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='143' column='1'/>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='143' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cirbuf_add_head_safe' mangled-name='cirbuf_add_head_safe' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='104' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_add_head_safe@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='133' column='1'/>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='133' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_add_buf_tail' mangled-name='cirbuf_add_buf_tail' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_add_buf_tail@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1'/>
+      <parameter type-id='type-id-11' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1'/>
+      <parameter type-id='type-id-19' name='n' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_add_buf_head' mangled-name='cirbuf_add_buf_head' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='30' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_add_buf_head@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1'/>
+      <parameter type-id='type-id-11' name='c' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1'/>
+      <parameter type-id='type-id-19' name='n' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='61' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cirbuf_init' mangled-name='cirbuf_init' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='15' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cirbuf_init@@DPDK_20.0'>
+      <parameter type-id='type-id-71' name='cbuf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='15' column='1'/>
+      <parameter type-id='type-id-29' name='buf' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='15' column='1'/>
+      <parameter type-id='type-id-19' name='start' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='15' column='1'/>
+      <parameter type-id='type-id-19' name='maxlen' filepath='../lib/librte_cmdline/cmdline_cirbuf.c' line='15' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_parse.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='cmdline_complete' mangled-name='cmdline_complete' filepath='../lib/librte_cmdline/cmdline_parse.c' line='308' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_complete@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline_parse.c' line='308' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_parse.c' line='308' column='1'/>
+      <parameter type-id='type-id-56' name='state' filepath='../lib/librte_cmdline/cmdline_parse.c' line='308' column='1'/>
+      <parameter type-id='type-id-29' name='dst' filepath='../lib/librte_cmdline/cmdline_parse.c' line='309' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse.c' line='309' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_parse' mangled-name='cmdline_parse' filepath='../lib/librte_cmdline/cmdline_parse.c' line='194' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_parse@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline_parse.c' line='194' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_parse.c' line='194' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_isendoftoken' mangled-name='cmdline_isendoftoken' filepath='../lib/librte_cmdline/cmdline_parse.c' line='60' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_isendoftoken@@DPDK_20.0'>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline_parse.c' line='60' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_parse_etheraddr.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cmdline_token_etheraddr_ops' type-id='type-id-20' mangled-name='cmdline_token_etheraddr_ops' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.h' line='21' column='1' elf-symbol-id='cmdline_token_etheraddr_ops@@DPDK_20.0'/>
+    <function-decl name='cmdline_get_help_etheraddr' mangled-name='cmdline_get_help_etheraddr' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='61' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_get_help_etheraddr@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='61' column='1'/>
+      <parameter type-id='type-id-29' name='dstbuf' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='62' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='62' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_parse_etheraddr' mangled-name='cmdline_parse_etheraddr' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='30' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_parse_etheraddr@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='30' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='31' column='1'/>
+      <parameter type-id='type-id-10' name='res' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='31' column='1'/>
+      <parameter type-id='type-id-19' name='ressize' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='31' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_parse_ipaddr.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cmdline_token_ipaddr_ops' type-id='type-id-20' mangled-name='cmdline_token_ipaddr_ops' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.h' line='41' column='1' elf-symbol-id='cmdline_token_ipaddr_ops@@DPDK_20.0'/>
+    <function-decl name='cmdline_get_help_ipaddr' mangled-name='cmdline_get_help_ipaddr' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.c' line='99' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_get_help_ipaddr@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='61' column='1'/>
+      <parameter type-id='type-id-29' name='dstbuf' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='62' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='62' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_parse_ipaddr' mangled-name='cmdline_parse_ipaddr' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.c' line='34' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_parse_ipaddr@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.c' line='34' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.c' line='34' column='1'/>
+      <parameter type-id='type-id-10' name='res' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.c' line='34' column='1'/>
+      <parameter type-id='type-id-19' name='ressize' filepath='../lib/librte_cmdline/cmdline_parse_ipaddr.c' line='35' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_parse_num.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cmdline_token_num_ops' type-id='type-id-20' mangled-name='cmdline_token_num_ops' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse_num.h' line='37' column='1' elf-symbol-id='cmdline_token_num_ops@@DPDK_20.0'/>
+    <function-decl name='cmdline_get_help_num' mangled-name='cmdline_get_help_num' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='329' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_get_help_num@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='329' column='1'/>
+      <parameter type-id='type-id-29' name='dstbuf' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='329' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='329' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_parse_num' mangled-name='cmdline_parse_num' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='100' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_parse_num@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='100' column='1'/>
+      <parameter type-id='type-id-11' name='srcbuf' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='100' column='1'/>
+      <parameter type-id='type-id-10' name='res' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='100' column='1'/>
+      <parameter type-id='type-id-19' name='ressize' filepath='../lib/librte_cmdline/cmdline_parse_num.c' line='101' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_parse_portlist.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cmdline_token_portlist_ops' type-id='type-id-20' mangled-name='cmdline_token_portlist_ops' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse_portlist.h' line='30' column='1' elf-symbol-id='cmdline_token_portlist_ops@@DPDK_20.0'/>
+    <function-decl name='cmdline_get_help_portlist' mangled-name='cmdline_get_help_portlist' filepath='../lib/librte_cmdline/cmdline_parse_portlist.c' line='111' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_get_help_portlist@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='61' column='1'/>
+      <parameter type-id='type-id-29' name='dstbuf' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='62' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='62' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_parse_portlist' mangled-name='cmdline_parse_portlist' filepath='../lib/librte_cmdline/cmdline_parse_portlist.c' line='75' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_parse_portlist@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='30' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='31' column='1'/>
+      <parameter type-id='type-id-10' name='res' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='31' column='1'/>
+      <parameter type-id='type-id-19' name='ressize' filepath='../lib/librte_cmdline/cmdline_parse_etheraddr.c' line='31' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_parse_string.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cmdline_token_string_ops' type-id='type-id-20' mangled-name='cmdline_token_string_ops' visibility='default' filepath='../lib/librte_cmdline/cmdline_parse_string.h' line='36' column='1' elf-symbol-id='cmdline_token_string_ops@@DPDK_20.0'/>
+    <function-decl name='cmdline_get_help_string' mangled-name='cmdline_get_help_string' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='194' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_get_help_string@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='194' column='1'/>
+      <parameter type-id='type-id-29' name='dstbuf' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='194' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='195' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_complete_get_elt_string' mangled-name='cmdline_complete_get_elt_string' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='162' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_complete_get_elt_string@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='162' column='1'/>
+      <parameter type-id='type-id-3' name='idx' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='162' column='1'/>
+      <parameter type-id='type-id-29' name='dstbuf' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='163' column='1'/>
+      <parameter type-id='type-id-19' name='size' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='163' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_complete_get_nb_string' mangled-name='cmdline_complete_get_nb_string' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='139' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_complete_get_nb_string@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='139' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='cmdline_parse_string' mangled-name='cmdline_parse_string' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='55' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_parse_string@@DPDK_20.0'>
+      <parameter type-id='type-id-26' name='tk' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='55' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='55' column='1'/>
+      <parameter type-id='type-id-10' name='res' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='55' column='1'/>
+      <parameter type-id='type-id-19' name='ressize' filepath='../lib/librte_cmdline/cmdline_parse_string.c' line='56' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_rdline.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='rdline_clear_history' mangled-name='rdline_clear_history' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='597' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_clear_history@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='597' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_add_history' mangled-name='rdline_add_history' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='568' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_add_history@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='568' column='1'/>
+      <parameter type-id='type-id-11' name='buf' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='568' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='rdline_get_history_item' mangled-name='rdline_get_history_item' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='542' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_get_history_item@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='542' column='1'/>
+      <parameter type-id='type-id-19' name='idx' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='542' column='1'/>
+      <return type-id='type-id-29'/>
+    </function-decl>
+    <function-decl name='rdline_char_in' mangled-name='rdline_char_in' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='171' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_char_in@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='171' column='1'/>
+      <parameter type-id='type-id-15' name='c' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='171' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='rdline_redisplay' mangled-name='rdline_redisplay' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='153' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_redisplay@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='153' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_get_buffer' mangled-name='rdline_get_buffer' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='117' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_get_buffer@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='117' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-decl name='rdline_reset' mangled-name='rdline_reset' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='103' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_reset@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='597' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_restart' mangled-name='rdline_restart' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='95' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_restart@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='597' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_quit' mangled-name='rdline_quit' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='87' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_quit@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='597' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_stop' mangled-name='rdline_stop' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='79' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_stop@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='597' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_newline' mangled-name='rdline_newline' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='55' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_newline@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='55' column='1'/>
+      <parameter type-id='type-id-11' name='prompt' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='55' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rdline_init' mangled-name='rdline_init' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='39' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rdline_init@@DPDK_20.0'>
+      <parameter type-id='type-id-51' name='rdl' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='39' column='1'/>
+      <parameter type-id='type-id-42' name='write_char' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='40' column='1'/>
+      <parameter type-id='type-id-43' name='validate' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='41' column='1'/>
+      <parameter type-id='type-id-44' name='complete' filepath='../lib/librte_cmdline/cmdline_rdline.c' line='42' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_socket.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <function-decl name='cmdline_stdin_exit' mangled-name='cmdline_stdin_exit' filepath='../lib/librte_cmdline/cmdline_socket.c' line='59' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_stdin_exit@@DPDK_20.0'>
+      <parameter type-id='type-id-13' name='cl' filepath='../lib/librte_cmdline/cmdline.c' line='174' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='cmdline_stdin_new' mangled-name='cmdline_stdin_new' filepath='../lib/librte_cmdline/cmdline_socket.c' line='39' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_stdin_new@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='ctx' filepath='../lib/librte_cmdline/cmdline_socket.c' line='39' column='1'/>
+      <parameter type-id='type-id-11' name='prompt' filepath='../lib/librte_cmdline/cmdline_socket.c' line='39' column='1'/>
+      <return type-id='type-id-13'/>
+    </function-decl>
+    <function-decl name='cmdline_file_new' mangled-name='cmdline_file_new' filepath='../lib/librte_cmdline/cmdline_socket.c' line='22' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='cmdline_file_new@@DPDK_20.0'>
+      <parameter type-id='type-id-4' name='ctx' filepath='../lib/librte_cmdline/cmdline_socket.c' line='22' column='1'/>
+      <parameter type-id='type-id-11' name='prompt' filepath='../lib/librte_cmdline/cmdline_socket.c' line='22' column='1'/>
+      <parameter type-id='type-id-11' name='path' filepath='../lib/librte_cmdline/cmdline_socket.c' line='22' column='1'/>
+      <return type-id='type-id-13'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_cmdline/cmdline_vt100.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+
+    <array-type-def dimensions='1' type-id='type-id-11' size-in-bits='infinite' id='type-id-72'>
+      <subrange length='infinite' id='type-id-33'/>
+
+    </array-type-def>
+    <var-decl name='cmdline_vt100_commands' type-id='type-id-72' visibility='default' filepath='../lib/librte_cmdline/cmdline_vt100.h' line='68' column='1'/>
+    <pointer-type-def type-id='type-id-45' size-in-bits='64' id='type-id-73'/>
+    <function-decl name='vt100_parser' mangled-name='vt100_parser' filepath='../lib/librte_cmdline/cmdline_vt100.c' line='77' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='vt100_parser@@DPDK_20.0'>
+      <parameter type-id='type-id-73' name='vt' filepath='../lib/librte_cmdline/cmdline_vt100.c' line='77' column='1'/>
+      <parameter type-id='type-id-15' name='ch' filepath='../lib/librte_cmdline/cmdline_vt100.c' line='77' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+    <function-decl name='vt100_init' mangled-name='vt100_init' filepath='../lib/librte_cmdline/cmdline_vt100.c' line='48' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='vt100_init@@DPDK_20.0'>
+      <parameter type-id='type-id-73' name='vt' filepath='../lib/librte_cmdline/cmdline_vt100.c' line='48' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

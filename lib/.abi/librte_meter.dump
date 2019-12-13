@@ -1,0 +1,197 @@
+<abi-corpus path='gcc//lib/librte_meter.so.20.0' architecture='elf-amd-x86_64' soname='librte_meter.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_meter_srtcm_config' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_meter_srtcm_profile_config' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_meter_trtcm_config' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_meter_trtcm_profile_config' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_meter_trtcm_rfc4115_config' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_meter_trtcm_rfc4115_profile_config' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_meter/rte_meter.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <class-decl name='rte_meter_trtcm' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='376' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='time_tc' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='377' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='time_tp' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='379' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tc' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='381' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tp' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='383' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-4'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-4' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-5'/>
+    <typedef-decl name='uint64_t' type-id='type-id-5' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-3'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-6'/>
+    <class-decl name='rte_meter_trtcm_profile' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='357' column='1' id='type-id-7'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='358' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='360' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cir_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='362' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='cir_bytes_per_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='364' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='pir_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='366' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='pir_bytes_per_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='368' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-7' size-in-bits='64' id='type-id-8'/>
+    <function-decl name='rte_meter_trtcm_config' mangled-name='rte_meter_trtcm_config' filepath='../lib/librte_meter/rte_meter.c' line='107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_meter_trtcm_config@@DPDK_20.0'>
+      <parameter type-id='type-id-6' name='m' filepath='../lib/librte_meter/rte_meter.c' line='107' column='1'/>
+      <parameter type-id='type-id-8' name='p' filepath='../lib/librte_meter/rte_meter.c' line='108' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_meter_trtcm_params' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='55' column='1' id='type-id-9'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cir' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pir' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='pbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='59' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-9' size-in-bits='64' id='type-id-10'/>
+    <function-decl name='rte_meter_trtcm_profile_config' mangled-name='rte_meter_trtcm_profile_config' filepath='../lib/librte_meter/rte_meter.c' line='80' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_meter_trtcm_profile_config@@DPDK_20.0'>
+      <parameter type-id='type-id-8' name='p' filepath='../lib/librte_meter/rte_meter.c' line='80' column='1'/>
+      <parameter type-id='type-id-10' name='params' filepath='../lib/librte_meter/rte_meter.c' line='81' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_meter_srtcm' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='351' column='1' id='type-id-11'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='time' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='352' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tc' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='353' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='te' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='354' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-11' size-in-bits='64' id='type-id-12'/>
+    <class-decl name='rte_meter_srtcm_profile' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='339' column='1' id='type-id-13'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='340' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ebs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='342' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cir_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='344' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='cir_bytes_per_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='346' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-13' size-in-bits='64' id='type-id-14'/>
+    <function-decl name='rte_meter_srtcm_config' mangled-name='rte_meter_srtcm_config' filepath='../lib/librte_meter/rte_meter.c' line='64' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_meter_srtcm_config@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='m' filepath='../lib/librte_meter/rte_meter.c' line='64' column='1'/>
+      <parameter type-id='type-id-14' name='p' filepath='../lib/librte_meter/rte_meter.c' line='65' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_meter_srtcm_params' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='46' column='1' id='type-id-15'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cir' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='47' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='cbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ebs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='49' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-15' size-in-bits='64' id='type-id-16'/>
+    <function-decl name='rte_meter_srtcm_profile_config' mangled-name='rte_meter_srtcm_profile_config' filepath='../lib/librte_meter/rte_meter.c' line='42' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_meter_srtcm_profile_config@@DPDK_20.0'>
+      <parameter type-id='type-id-14' name='p' filepath='../lib/librte_meter/rte_meter.c' line='42' column='1'/>
+      <parameter type-id='type-id-16' name='params' filepath='../lib/librte_meter/rte_meter.c' line='43' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_meter_trtcm_rfc4115' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='406' column='1' id='type-id-17'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='time_tc' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='407' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='time_te' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='409' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tc' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='411' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='te' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='413' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-17' size-in-bits='64' id='type-id-18'/>
+    <class-decl name='rte_meter_trtcm_rfc4115_profile' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='387' column='1' id='type-id-19'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='388' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ebs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='390' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cir_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='392' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='cir_bytes_per_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='394' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='eir_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='396' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='eir_bytes_per_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='398' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-20'/>
+    <function-decl name='rte_meter_trtcm_rfc4115_config' mangled-name='rte_meter_trtcm_rfc4115_config' filepath='../lib/librte_meter/rte_meter.c' line='148' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_meter_trtcm_rfc4115_config@@EXPERIMENTAL'>
+      <parameter type-id='type-id-18' name='m' filepath='../lib/librte_meter/rte_meter.c' line='149' column='1'/>
+      <parameter type-id='type-id-20' name='p' filepath='../lib/librte_meter/rte_meter.c' line='150' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_meter_trtcm_rfc4115_params' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='66' column='1' id='type-id-21'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cir' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='eir' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cbs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='ebs' type-id='type-id-3' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='70' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-21' size-in-bits='64' id='type-id-22'/>
+    <function-decl name='rte_meter_trtcm_rfc4115_profile_config' mangled-name='rte_meter_trtcm_rfc4115_profile_config' filepath='../lib/librte_meter/rte_meter.c' line='123' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_meter_trtcm_rfc4115_profile_config@@EXPERIMENTAL'>
+      <parameter type-id='type-id-20' name='p' filepath='../lib/librte_meter/rte_meter.c' line='124' column='1'/>
+      <parameter type-id='type-id-22' name='params' filepath='../lib/librte_meter/rte_meter.c' line='125' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

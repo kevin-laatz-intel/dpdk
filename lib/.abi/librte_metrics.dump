@@ -1,0 +1,102 @@
+<abi-corpus path='gcc//lib/librte_metrics.so.20.0' architecture='elf-amd-x86_64' soname='librte_metrics.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_metrics_deinit' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_get_names' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_get_values' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_reg_name' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_reg_names' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_update_value' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_metrics_update_values' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_metrics/rte_metrics.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <class-decl name='rte_metric_value' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_metrics/rte_metrics.h' line='67' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='key' type-id='type-id-3' visibility='default' filepath='../lib/librte_metrics/rte_metrics.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='value' type-id='type-id-4' visibility='default' filepath='../lib/librte_metrics/rte_metrics.h' line='71' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-5'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-5' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-6'/>
+    <typedef-decl name='uint16_t' type-id='type-id-6' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-3'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-7'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-7' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-8'/>
+    <typedef-decl name='uint64_t' type-id='type-id-8' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-4'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-9'/>
+    <function-decl name='rte_metrics_get_values' mangled-name='rte_metrics_get_values' filepath='../lib/librte_metrics/rte_metrics.c' line='253' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_get_values@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='port_id' filepath='../lib/librte_metrics/rte_metrics.c' line='253' column='1'/>
+      <parameter type-id='type-id-9' name='values' filepath='../lib/librte_metrics/rte_metrics.c' line='254' column='1'/>
+      <parameter type-id='type-id-3' name='capacity' filepath='../lib/librte_metrics/rte_metrics.c' line='255' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_metric_name' size-in-bits='512' is-struct='yes' visibility='default' filepath='../lib/librte_metrics/rte_metrics.h' line='53' column='1' id='type-id-10'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-11' visibility='default' filepath='../lib/librte_metrics/rte_metrics.h' line='55' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-12'/>
+
+    <array-type-def dimensions='1' type-id='type-id-12' size-in-bits='512' id='type-id-11'>
+      <subrange length='64' type-id='type-id-7' id='type-id-13'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-10' size-in-bits='64' id='type-id-14'/>
+    <function-decl name='rte_metrics_get_names' mangled-name='rte_metrics_get_names' filepath='../lib/librte_metrics/rte_metrics.c' line='222' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_get_names@@DPDK_20.0'>
+      <parameter type-id='type-id-14' name='names' filepath='../lib/librte_metrics/rte_metrics.c' line='222' column='1'/>
+      <parameter type-id='type-id-3' name='capacity' filepath='../lib/librte_metrics/rte_metrics.c' line='223' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-4' const='yes' id='type-id-15'/>
+    <pointer-type-def type-id='type-id-15' size-in-bits='64' id='type-id-16'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-17'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-17' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-18'/>
+    <typedef-decl name='uint32_t' type-id='type-id-18' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-19'/>
+    <function-decl name='rte_metrics_update_values' mangled-name='rte_metrics_update_values' filepath='../lib/librte_metrics/rte_metrics.c' line='160' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_update_values@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='port_id' filepath='../lib/librte_metrics/rte_metrics.c' line='160' column='1'/>
+      <parameter type-id='type-id-3' name='key' filepath='../lib/librte_metrics/rte_metrics.c' line='161' column='1'/>
+      <parameter type-id='type-id-16' name='values' filepath='../lib/librte_metrics/rte_metrics.c' line='162' column='1'/>
+      <parameter type-id='type-id-19' name='count' filepath='../lib/librte_metrics/rte_metrics.c' line='163' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_metrics_update_value' mangled-name='rte_metrics_update_value' filepath='../lib/librte_metrics/rte_metrics.c' line='154' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_update_value@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='port_id' filepath='../lib/librte_metrics/rte_metrics.c' line='154' column='1'/>
+      <parameter type-id='type-id-3' name='key' filepath='../lib/librte_metrics/rte_metrics.c' line='154' column='1'/>
+      <parameter type-id='type-id-15' name='value' filepath='../lib/librte_metrics/rte_metrics.c' line='154' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-12' const='yes' id='type-id-20'/>
+    <pointer-type-def type-id='type-id-20' size-in-bits='64' id='type-id-21'/>
+    <qualified-type-def type-id='type-id-21' const='yes' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-22' size-in-bits='64' id='type-id-23'/>
+    <function-decl name='rte_metrics_reg_names' mangled-name='rte_metrics_reg_names' filepath='../lib/librte_metrics/rte_metrics.c' line='108' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_reg_names@@DPDK_20.0'>
+      <parameter type-id='type-id-23' name='names' filepath='../lib/librte_metrics/rte_metrics.c' line='108' column='1'/>
+      <parameter type-id='type-id-3' name='cnt_names' filepath='../lib/librte_metrics/rte_metrics.c' line='108' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_metrics_reg_name' mangled-name='rte_metrics_reg_name' filepath='../lib/librte_metrics/rte_metrics.c' line='100' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_reg_name@@DPDK_20.0'>
+      <parameter type-id='type-id-21' name='name' filepath='../lib/librte_metrics/rte_metrics.c' line='100' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <type-decl name='void' id='type-id-24'/>
+    <function-decl name='rte_metrics_init' mangled-name='rte_metrics_init' filepath='../lib/librte_metrics/rte_metrics.c' line='59' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_init@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='socket_id' filepath='../lib/librte_metrics/rte_metrics.c' line='59' column='1'/>
+      <return type-id='type-id-24'/>
+    </function-decl>
+    <function-decl name='rte_metrics_deinit' mangled-name='rte_metrics_deinit' filepath='../lib/librte_metrics/rte_metrics.c' line='80' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_metrics_deinit@@EXPERIMENTAL'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

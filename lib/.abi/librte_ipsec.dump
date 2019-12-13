@@ -1,0 +1,1269 @@
+<abi-corpus path='gcc//lib/librte_ipsec.so.0.200' architecture='elf-amd-x86_64' soname='librte_ipsec.so.0.200'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_cryptodev.so.20.0'/>
+    <dependency name='librte_security.so.20.0'/>
+    <dependency name='librte_hash.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_ipsec_sa_fini' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sa_init' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sa_size' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sa_type' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sad_add' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sad_create' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sad_del' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sad_destroy' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sad_find_existing' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_sad_lookup' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_ipsec_session_prepare' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_ipsec/sa.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='void' id='type-id-1'/>
+    <class-decl name='rte_ipsec_sa' size-in-bits='1536' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='73' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='udata' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='76' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='size' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='spi' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='sqn_mask' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='80' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='replay' type-id='type-id-5' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='ctp' type-id='type-id-6' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='tx_offload' type-id='type-id-7' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='salt' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='algo_type' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='616'>
+        <var-decl name='proto' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='624'>
+        <var-decl name='aad_len' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='632'>
+        <var-decl name='hdr_len' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='100' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='hdr_l3_off' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='648'>
+        <var-decl name='icv_len' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='656'>
+        <var-decl name='sqh_len' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='664'>
+        <var-decl name='iv_ofs' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='iv_len' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='680'>
+        <var-decl name='pad_align' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='688'>
+        <var-decl name='tos_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='107' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='696'>
+        <var-decl name='hdr' type-id='type-id-9' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='110' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='sqn' type-id='type-id-10' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='129' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-11'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-11' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-12'/>
+    <typedef-decl name='uint64_t' type-id='type-id-12' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-3'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-13'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-13' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-14'/>
+    <typedef-decl name='uint32_t' type-id='type-id-14' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-4'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='81' column='1' id='type-id-5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='win_sz' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='82' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='nb_bucket' type-id='type-id-15' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='bucket_index_mask' type-id='type-id-15' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='84' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-16'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-16' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-17'/>
+    <typedef-decl name='uint16_t' type-id='type-id-17' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-15'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='87' column='1' id='type-id-6'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cipher' type-id='type-id-18' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='auth' type-id='type-id-18' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='89' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='sym_op_ofslen' size-in-bits='64' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='36' column='1' id='type-id-18'>
+      <data-member access='private'>
+        <var-decl name='raw' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='37' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='' type-id='type-id-19' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='38' column='1' id='type-id-19'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='length' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='40' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='92' column='1' id='type-id-7'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='msk' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='val' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='94' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-20'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-20' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-21'/>
+    <typedef-decl name='uint8_t' type-id='type-id-21' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-8'/>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='512' id='type-id-9'>
+      <subrange length='64' type-id='type-id-11' id='type-id-22'/>
+
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='192' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='119' column='1' id='type-id-10'>
+      <data-member access='private'>
+        <var-decl name='outb' type-id='type-id-23' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='inb' type-id='type-id-24' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='128' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='120' column='1' id='type-id-23'>
+      <data-member access='private'>
+        <var-decl name='atom' type-id='type-id-25' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='121' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='raw' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='122' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-25' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='788' column='1' id='type-id-26'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-27' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='789' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='long int' size-in-bits='64' id='type-id-28'/>
+    <typedef-decl name='__int64_t' type-id='type-id-28' filepath='/usr/include/bits/types.h' line='44' column='1' id='type-id-29'/>
+    <typedef-decl name='int64_t' type-id='type-id-29' filepath='/usr/include/bits/stdint-intn.h' line='27' column='1' id='type-id-30'/>
+    <qualified-type-def type-id='type-id-30' volatile='yes' id='type-id-27'/>
+    <typedef-decl name='rte_atomic64_t' type-id='type-id-26' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='790' column='1' id='type-id-25'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='124' column='1' id='type-id-24'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='rdidx' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='125' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='wridx' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='126' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='rsn' type-id='type-id-31' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='127' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='replay_sqn' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='57' column='1' id='type-id-32'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='rwl' type-id='type-id-33' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='sqn' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='window' type-id='type-id-34' visibility='default' filepath='../lib/librte_ipsec/sa.h' line='60' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-33' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_rwlock.h' line='33' column='1' id='type-id-35'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-36' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_rwlock.h' line='34' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='int' size-in-bits='32' id='type-id-37'/>
+    <typedef-decl name='__int32_t' type-id='type-id-37' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-38'/>
+    <typedef-decl name='int32_t' type-id='type-id-38' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-39'/>
+    <qualified-type-def type-id='type-id-39' volatile='yes' id='type-id-36'/>
+    <typedef-decl name='rte_rwlock_t' type-id='type-id-35' filepath='../lib/librte_eal/common/include/generic/rte_rwlock.h' line='35' column='1' id='type-id-33'/>
+
+    <array-type-def dimensions='1' type-id='type-id-3' size-in-bits='infinite' id='type-id-34'>
+      <subrange length='infinite' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-32' size-in-bits='64' id='type-id-41'/>
+
+    <array-type-def dimensions='1' type-id='type-id-41' size-in-bits='128' id='type-id-31'>
+      <subrange length='2' type-id='type-id-11' id='type-id-42'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-43'/>
+    <function-decl name='rte_ipsec_sa_fini' mangled-name='rte_ipsec_sa_fini' filepath='../lib/librte_ipsec/sa.c' line='153' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sa_fini@@EXPERIMENTAL'>
+      <parameter type-id='type-id-43' name='sa' filepath='../lib/librte_ipsec/sa.c' line='153' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_ipsec_sa_prm' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='31' column='1' id='type-id-44'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='userdata' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='33' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='flags' type-id='type-id-3' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ipsec_xform' type-id='type-id-45' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='crypto_xform' type-id='type-id-46' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='' type-id='type-id-47' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_security_ipsec_xform' size-in-bits='704' is-struct='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='198' column='1' id='type-id-45'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='spi' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='199' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='salt' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='201' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='options' type-id='type-id-48' visibility='default' filepath='../lib/librte_security/rte_security.h' line='203' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='direction' type-id='type-id-49' visibility='default' filepath='../lib/librte_security/rte_security.h' line='205' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='proto' type-id='type-id-50' visibility='default' filepath='../lib/librte_security/rte_security.h' line='207' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='mode' type-id='type-id-51' visibility='default' filepath='../lib/librte_security/rte_security.h' line='209' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tunnel' type-id='type-id-52' visibility='default' filepath='../lib/librte_security/rte_security.h' line='211' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='esn_soft_limit' type-id='type-id-3' visibility='default' filepath='../lib/librte_security/rte_security.h' line='213' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='replay_win_sz' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='215' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_security_ipsec_sa_options' size-in-bits='32' is-struct='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='117' column='1' id='type-id-48'>
+      <data-member access='public' layout-offset-in-bits='31'>
+        <var-decl name='esn' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='30'>
+        <var-decl name='udp_encap' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='131' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='29'>
+        <var-decl name='copy_dscp' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='140' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='28'>
+        <var-decl name='copy_flabel' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='27'>
+        <var-decl name='copy_df' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='156' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='26'>
+        <var-decl name='dec_ttl' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='165' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='25'>
+        <var-decl name='ecn' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='174' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='24'>
+        <var-decl name='stats' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='182' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-53'/>
+    <enum-decl name='rte_security_ipsec_sa_direction' filepath='../lib/librte_security/rte_security.h' line='186' column='1' id='type-id-49'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_SECURITY_IPSEC_SA_DIR_EGRESS' value='0'/>
+      <enumerator name='RTE_SECURITY_IPSEC_SA_DIR_INGRESS' value='1'/>
+    </enum-decl>
+    <enum-decl name='rte_security_ipsec_sa_protocol' filepath='../lib/librte_security/rte_security.h' line='42' column='1' id='type-id-50'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_SECURITY_IPSEC_SA_PROTO_AH' value='1'/>
+      <enumerator name='RTE_SECURITY_IPSEC_SA_PROTO_ESP' value='2'/>
+    </enum-decl>
+    <enum-decl name='rte_security_ipsec_sa_mode' filepath='../lib/librte_security/rte_security.h' line='34' column='1' id='type-id-51'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_SECURITY_IPSEC_SA_MODE_TRANSPORT' value='1'/>
+      <enumerator name='RTE_SECURITY_IPSEC_SA_MODE_TUNNEL' value='2'/>
+    </enum-decl>
+    <class-decl name='rte_security_ipsec_tunnel_param' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='80' column='1' id='type-id-52'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='type-id-54' visibility='default' filepath='../lib/librte_security/rte_security.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='' type-id='type-id-55' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_security_ipsec_tunnel_type' filepath='../lib/librte_security/rte_security.h' line='50' column='1' id='type-id-54'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_SECURITY_IPSEC_TUNNEL_IPV4' value='1'/>
+      <enumerator name='RTE_SECURITY_IPSEC_TUNNEL_IPV6' value='2'/>
+    </enum-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='352' is-anonymous='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='84' column='1' id='type-id-55'>
+      <data-member access='private'>
+        <var-decl name='ipv4' type-id='type-id-56' visibility='default' filepath='../lib/librte_security/rte_security.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='ipv6' type-id='type-id-57' visibility='default' filepath='../lib/librte_security/rte_security.h' line='109' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='96' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='85' column='1' id='type-id-56'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='src_ip' type-id='type-id-58' visibility='default' filepath='../lib/librte_security/rte_security.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='dst_ip' type-id='type-id-58' visibility='default' filepath='../lib/librte_security/rte_security.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='dscp' type-id='type-id-8' visibility='default' filepath='../lib/librte_security/rte_security.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='72'>
+        <var-decl name='df' type-id='type-id-8' visibility='default' filepath='../lib/librte_security/rte_security.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='ttl' type-id='type-id-8' visibility='default' filepath='../lib/librte_security/rte_security.h' line='94' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='in_addr' size-in-bits='32' is-struct='yes' visibility='default' filepath='/usr/include/netinet/in.h' line='31' column='1' id='type-id-58'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='s_addr' type-id='type-id-59' visibility='default' filepath='/usr/include/netinet/in.h' line='33' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='in_addr_t' type-id='type-id-4' filepath='/usr/include/netinet/in.h' line='30' column='1' id='type-id-59'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='352' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='98' column='1' id='type-id-57'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='src_addr' type-id='type-id-60' visibility='default' filepath='../lib/librte_security/rte_security.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='dst_addr' type-id='type-id-60' visibility='default' filepath='../lib/librte_security/rte_security.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='dscp' type-id='type-id-8' visibility='default' filepath='../lib/librte_security/rte_security.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='flabel' type-id='type-id-4' visibility='default' filepath='../lib/librte_security/rte_security.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='hlimit' type-id='type-id-8' visibility='default' filepath='../lib/librte_security/rte_security.h' line='107' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='in6_addr' size-in-bits='128' is-struct='yes' visibility='default' filepath='/usr/include/netinet/in.h' line='212' column='1' id='type-id-60'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='__in6_u' type-id='type-id-61' visibility='default' filepath='/usr/include/netinet/in.h' line='219' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='128' is-anonymous='yes' visibility='default' filepath='/usr/include/netinet/in.h' line='214' column='1' id='type-id-61'>
+      <data-member access='private'>
+        <var-decl name='__u6_addr8' type-id='type-id-62' visibility='default' filepath='/usr/include/netinet/in.h' line='216' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='__u6_addr16' type-id='type-id-63' visibility='default' filepath='/usr/include/netinet/in.h' line='217' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='__u6_addr32' type-id='type-id-64' visibility='default' filepath='/usr/include/netinet/in.h' line='218' column='1'/>
+      </data-member>
+    </union-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='128' id='type-id-62'>
+      <subrange length='16' type-id='type-id-11' id='type-id-65'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='128' id='type-id-63'>
+      <subrange length='8' type-id='type-id-11' id='type-id-66'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-4' size-in-bits='128' id='type-id-64'>
+      <subrange length='4' type-id='type-id-11' id='type-id-67'/>
+
+    </array-type-def>
+    <class-decl name='rte_crypto_sym_xform' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='440' column='1' id='type-id-68'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-46' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='441' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='type' type-id='type-id-69' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='443' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-70' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-68' size-in-bits='64' id='type-id-46'/>
+    <enum-decl name='rte_crypto_sym_xform_type' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='424' column='1' id='type-id-69'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_SYM_XFORM_NOT_SPECIFIED' value='0'/>
+      <enumerator name='RTE_CRYPTO_SYM_XFORM_AUTH' value='1'/>
+      <enumerator name='RTE_CRYPTO_SYM_XFORM_CIPHER' value='2'/>
+      <enumerator name='RTE_CRYPTO_SYM_XFORM_AEAD' value='3'/>
+    </enum-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='256' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='446' column='1' id='type-id-70'>
+      <data-member access='private'>
+        <var-decl name='auth' type-id='type-id-71' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='447' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='cipher' type-id='type-id-72' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='449' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='aead' type-id='type-id-73' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='451' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='rte_crypto_auth_xform' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='278' column='1' id='type-id-71'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='op' type-id='type-id-74' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='279' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='algo' type-id='type-id-75' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='281' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key' type-id='type-id-76' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='287' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='iv' type-id='type-id-77' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='330' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='digest_length' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='332' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_crypto_auth_operation' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='262' column='1' id='type-id-74'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_AUTH_OP_VERIFY' value='0'/>
+      <enumerator name='RTE_CRYPTO_AUTH_OP_GENERATE' value='1'/>
+    </enum-decl>
+    <enum-decl name='rte_crypto_auth_algorithm' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='189' column='1' id='type-id-75'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_AUTH_NULL' value='1'/>
+      <enumerator name='RTE_CRYPTO_AUTH_AES_CBC_MAC' value='2'/>
+      <enumerator name='RTE_CRYPTO_AUTH_AES_CMAC' value='3'/>
+      <enumerator name='RTE_CRYPTO_AUTH_AES_GMAC' value='4'/>
+      <enumerator name='RTE_CRYPTO_AUTH_AES_XCBC_MAC' value='5'/>
+      <enumerator name='RTE_CRYPTO_AUTH_KASUMI_F9' value='6'/>
+      <enumerator name='RTE_CRYPTO_AUTH_MD5' value='7'/>
+      <enumerator name='RTE_CRYPTO_AUTH_MD5_HMAC' value='8'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA1' value='9'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA1_HMAC' value='10'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA224' value='11'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA224_HMAC' value='12'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA256' value='13'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA256_HMAC' value='14'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA384' value='15'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA384_HMAC' value='16'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA512' value='17'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA512_HMAC' value='18'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SNOW3G_UIA2' value='19'/>
+      <enumerator name='RTE_CRYPTO_AUTH_ZUC_EIA3' value='20'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_224' value='21'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_224_HMAC' value='22'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_256' value='23'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_256_HMAC' value='24'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_384' value='25'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_384_HMAC' value='26'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_512' value='27'/>
+      <enumerator name='RTE_CRYPTO_AUTH_SHA3_512_HMAC' value='28'/>
+      <enumerator name='RTE_CRYPTO_AUTH_LIST_END' value='29'/>
+    </enum-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='284' column='1' id='type-id-76'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='data' type-id='type-id-78' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='285' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='length' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='286' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-8' const='yes' id='type-id-79'/>
+    <pointer-type-def type-id='type-id-79' size-in-bits='64' id='type-id-78'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='295' column='1' id='type-id-77'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='offset' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='296' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='length' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='312' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_crypto_cipher_xform' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='107' column='1' id='type-id-72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='op' type-id='type-id-80' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='108' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='algo' type-id='type-id-81' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='113' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key' type-id='type-id-76' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='119' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='iv' type-id='type-id-77' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='185' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_crypto_cipher_operation' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='90' column='1' id='type-id-80'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_OP_ENCRYPT' value='0'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_OP_DECRYPT' value='1'/>
+    </enum-decl>
+    <enum-decl name='rte_crypto_cipher_algorithm' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='30' column='1' id='type-id-81'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_NULL' value='1'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_3DES_CBC' value='2'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_3DES_CTR' value='3'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_3DES_ECB' value='4'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_AES_CBC' value='5'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_AES_CTR' value='6'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_AES_ECB' value='7'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_AES_F8' value='8'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_AES_XTS' value='9'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_ARC4' value='10'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_KASUMI_F8' value='11'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_SNOW3G_UEA2' value='12'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_ZUC_EEA3' value='13'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_DES_CBC' value='14'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_AES_DOCSISBPI' value='15'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_DES_DOCSISBPI' value='16'/>
+      <enumerator name='RTE_CRYPTO_CIPHER_LIST_END' value='17'/>
+    </enum-decl>
+    <class-decl name='rte_crypto_aead_xform' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='370' column='1' id='type-id-73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='op' type-id='type-id-82' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='371' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='algo' type-id='type-id-83' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='373' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key' type-id='type-id-76' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='379' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='iv' type-id='type-id-77' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='411' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='digest_length' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='413' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='240'>
+        <var-decl name='aad_length' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='415' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_crypto_aead_operation' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='359' column='1' id='type-id-82'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_AEAD_OP_ENCRYPT' value='0'/>
+      <enumerator name='RTE_CRYPTO_AEAD_OP_DECRYPT' value='1'/>
+    </enum-decl>
+    <enum-decl name='rte_crypto_aead_algorithm' filepath='../lib/librte_cryptodev/rte_crypto_sym.h' line='346' column='1' id='type-id-83'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_CRYPTO_AEAD_AES_CCM' value='1'/>
+      <enumerator name='RTE_CRYPTO_AEAD_AES_GCM' value='2'/>
+      <enumerator name='RTE_CRYPTO_AEAD_LIST_END' value='3'/>
+    </enum-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='128' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='39' column='1' id='type-id-47'>
+      <data-member access='private'>
+        <var-decl name='tun' type-id='type-id-84' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='45' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='trs' type-id='type-id-85' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='48' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='40' column='1' id='type-id-84'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='hdr_len' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='hdr_l3_off' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='42' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='next_proto' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='hdr' type-id='type-id-86' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='44' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-86'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='8' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='46' column='1' id='type-id-85'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='proto' type-id='type-id-8' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sa.h' line='47' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-44' const='yes' id='type-id-87'/>
+    <pointer-type-def type-id='type-id-87' size-in-bits='64' id='type-id-88'/>
+    <function-decl name='rte_ipsec_sa_init' mangled-name='rte_ipsec_sa_init' filepath='../lib/librte_ipsec/sa.c' line='447' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sa_init@@EXPERIMENTAL'>
+      <parameter type-id='type-id-43' name='sa' filepath='../lib/librte_ipsec/sa.c' line='447' column='1'/>
+      <parameter type-id='type-id-88' name='prm' filepath='../lib/librte_ipsec/sa.c' line='447' column='1'/>
+      <parameter type-id='type-id-4' name='size' filepath='../lib/librte_ipsec/sa.c' line='448' column='1'/>
+      <return type-id='type-id-37'/>
+    </function-decl>
+    <function-decl name='rte_ipsec_sa_size' mangled-name='rte_ipsec_sa_size' filepath='../lib/librte_ipsec/sa.c' line='427' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sa_size@@EXPERIMENTAL'>
+      <parameter type-id='type-id-88' name='prm' filepath='../lib/librte_ipsec/sa.c' line='427' column='1'/>
+      <return type-id='type-id-37'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-2' const='yes' id='type-id-89'/>
+    <pointer-type-def type-id='type-id-89' size-in-bits='64' id='type-id-90'/>
+    <function-decl name='rte_ipsec_sa_type' mangled-name='rte_ipsec_sa_type' filepath='../lib/librte_ipsec/sa.c' line='81' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sa_type@@EXPERIMENTAL'>
+      <parameter type-id='type-id-90' name='sa' filepath='../lib/librte_ipsec/sa.c' line='81' column='1'/>
+      <return type-id='type-id-3'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_ipsec/ses.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='rte_ipsec_session' size-in-bits='512' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='53' column='1' id='type-id-91'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='sa' type-id='type-id-43' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='type' type-id='type-id-92' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-93' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='pkt_func' type-id='type-id-94' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='73' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_security_session_action_type' filepath='../lib/librte_security/rte_security.h' line='299' column='1' id='type-id-92'>
+      <underlying-type type-id='type-id-53'/>
+      <enumerator name='RTE_SECURITY_ACTION_TYPE_NONE' value='0'/>
+      <enumerator name='RTE_SECURITY_ACTION_TYPE_INLINE_CRYPTO' value='1'/>
+      <enumerator name='RTE_SECURITY_ACTION_TYPE_INLINE_PROTOCOL' value='2'/>
+      <enumerator name='RTE_SECURITY_ACTION_TYPE_LOOKASIDE_PROTOCOL' value='3'/>
+    </enum-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='192' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='62' column='1' id='type-id-93'>
+      <data-member access='private'>
+        <var-decl name='crypto' type-id='type-id-95' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='security' type-id='type-id-96' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='70' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='63' column='1' id='type-id-95'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ses' type-id='type-id-97' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='64' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_cryptodev_sym_session' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='974' column='1' id='type-id-98'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='opaque_data' type-id='type-id-3' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='975' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='nb_drivers' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='977' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='user_data_sz' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='979' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sess_data' type-id='type-id-99' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='984' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='981' column='1' id='type-id-100'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='data' type-id='type-id-86' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='982' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='refcnt' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='983' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-100' size-in-bits='infinite' id='type-id-99'>
+      <subrange length='infinite' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-98' size-in-bits='64' id='type-id-97'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='66' column='1' id='type-id-96'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ses' type-id='type-id-101' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ctx' type-id='type-id-102' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ol_flags' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='69' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_security_session' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='347' column='1' id='type-id-103'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='sess_private_data' type-id='type-id-86' visibility='default' filepath='../lib/librte_security/rte_security.h' line='348' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='opaque_data' type-id='type-id-3' visibility='default' filepath='../lib/librte_security/rte_security.h' line='350' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-103' size-in-bits='64' id='type-id-101'/>
+    <class-decl name='rte_security_ctx' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_security/rte_security.h' line='66' column='1' id='type-id-104'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='device' type-id='type-id-86' visibility='default' filepath='../lib/librte_security/rte_security.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ops' type-id='type-id-105' visibility='default' filepath='../lib/librte_security/rte_security.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sess_cnt' type-id='type-id-15' visibility='default' filepath='../lib/librte_security/rte_security.h' line='71' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_security_ops' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-106'/>
+    <qualified-type-def type-id='type-id-106' const='yes' id='type-id-107'/>
+    <pointer-type-def type-id='type-id-107' size-in-bits='64' id='type-id-105'/>
+    <pointer-type-def type-id='type-id-104' size-in-bits='64' id='type-id-102'/>
+    <class-decl name='rte_ipsec_sa_pkt_func' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='35' column='1' id='type-id-94'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='prepare' type-id='type-id-108' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='process' type-id='type-id-109' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec.h' line='40' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-91' const='yes' id='type-id-110'/>
+    <pointer-type-def type-id='type-id-110' size-in-bits='64' id='type-id-111'/>
+    <class-decl name='rte_mbuf' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='480' column='1' id='type-id-112'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cacheline0' type-id='type-id-113' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='481' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='buf_addr' type-id='type-id-86' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='483' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='' type-id='type-id-114' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='rearm_data' type-id='type-id-115' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='497' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='data_off' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='498' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='nb_segs' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='515' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='176'>
+        <var-decl name='port' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='520' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='ol_flags' type-id='type-id-3' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='522' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='rx_descriptor_fields1' type-id='type-id-113' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='525' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='pkt_len' type-id='type-id-4' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='561' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='data_len' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='562' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='336'>
+        <var-decl name='vlan_tci' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='564' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='vlan_tci_outer' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='601' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='432'>
+        <var-decl name='buf_len' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='603' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='timestamp' type-id='type-id-3' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='610' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='cacheline1' type-id='type-id-113' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='613' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='pool' type-id='type-id-116' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='621' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='next' type-id='type-id-117' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='622' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='priv_size' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='665' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='784'>
+        <var-decl name='timesync' type-id='type-id-15' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='668' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='seqn' type-id='type-id-4' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='671' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='shinfo' type-id='type-id-118' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='676' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='dynfield1' type-id='type-id-119' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='678' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-86' size-in-bits='infinite' id='type-id-120'>
+      <subrange length='infinite' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+    <typedef-decl name='MARKER' type-id='type-id-120' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='414' column='1' id='type-id-113'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='491' column='1' id='type-id-114'>
+      <data-member access='private'>
+        <var-decl name='buf_iova' type-id='type-id-121' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='492' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='buf_physaddr' type-id='type-id-121' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='493' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='rte_iova_t' type-id='type-id-3' filepath='../lib/librte_eal/common/include/rte_common.h' line='335' column='1' id='type-id-121'/>
+    <typedef-decl name='MARKER64' type-id='type-id-34' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='420' column='1' id='type-id-115'/>
+    <class-decl name='rte_mempool' size-in-bits='1536' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='216' column='1' id='type-id-122'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-123' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='222' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-124' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='pool_config' type-id='type-id-86' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='228' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='mz' type-id='type-id-125' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='229' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='flags' type-id='type-id-13' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='230' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='socket_id' type-id='type-id-37' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='231' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='232' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='cache_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='233' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='elt_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='236' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='header_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='237' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='trailer_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='238' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='private_data_size' type-id='type-id-13' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='240' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='ops_index' type-id='type-id-39' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='248' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='local_cache' type-id='type-id-126' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='250' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='populated_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='252' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='elt_list' type-id='type-id-127' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='253' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='nb_mem_chunks' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='254' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='mem_list' type-id='type-id-128' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='255' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-129'/>
+
+    <array-type-def dimensions='1' type-id='type-id-129' size-in-bits='256' id='type-id-123'>
+      <subrange length='32' type-id='type-id-11' id='type-id-130'/>
+
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='224' column='1' id='type-id-124'>
+      <data-member access='private'>
+        <var-decl name='pool_data' type-id='type-id-86' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='225' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='pool_id' type-id='type-id-3' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='226' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='rte_memzone' size-in-bits='576' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='49' column='1' id='type-id-131'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-123' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-132' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='len' type-id='type-id-133' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='hugepage_sz' type-id='type-id-3' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='socket_id' type-id='type-id-39' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='flags' type-id='type-id-4' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='70' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='55' column='1' id='type-id-132'>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-134' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-121' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='57' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='phys_addr_t' type-id='type-id-3' filepath='../lib/librte_eal/common/include/rte_common.h' line='325' column='1' id='type-id-134'/>
+    <typedef-decl name='size_t' type-id='type-id-11' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-133'/>
+    <qualified-type-def type-id='type-id-131' const='yes' id='type-id-135'/>
+    <pointer-type-def type-id='type-id-135' size-in-bits='64' id='type-id-125'/>
+    <class-decl name='rte_mempool_cache' size-in-bits='98816' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='83' column='1' id='type-id-136'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='flushthresh' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='objs' type-id='type-id-137' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='91' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-86' size-in-bits='98304' id='type-id-137'>
+      <subrange length='1536' type-id='type-id-11' id='type-id-138'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-136' size-in-bits='64' id='type-id-126'/>
+    <class-decl name='rte_mempool_objhdr_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1' id='type-id-127'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqh_first' type-id='type-id-139' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='stqh_last' type-id='type-id-140' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_mempool_objhdr' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='136' column='1' id='type-id-141'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-142' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp' type-id='type-id-116' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-143' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1' id='type-id-142'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqe_next' type-id='type-id-139' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-141' size-in-bits='64' id='type-id-139'/>
+    <pointer-type-def type-id='type-id-122' size-in-bits='64' id='type-id-116'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='140' column='1' id='type-id-143'>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-121' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='141' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='physaddr' type-id='type-id-134' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='142' column='1'/>
+      </data-member>
+    </union-decl>
+    <pointer-type-def type-id='type-id-139' size-in-bits='64' id='type-id-140'/>
+    <class-decl name='rte_mempool_memhdr_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1' id='type-id-128'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqh_first' type-id='type-id-144' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='stqh_last' type-id='type-id-145' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_mempool_memhdr' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='185' column='1' id='type-id-146'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-147' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp' type-id='type-id-116' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='187' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='addr' type-id='type-id-86' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='188' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='' type-id='type-id-148' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='len' type-id='type-id-133' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='194' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='free_cb' type-id='type-id-149' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='195' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='opaque' type-id='type-id-86' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='196' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1' id='type-id-147'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqe_next' type-id='type-id-144' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-146' size-in-bits='64' id='type-id-144'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='190' column='1' id='type-id-148'>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-121' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='191' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-134' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='192' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='rte_mempool_memchunk_free_cb_t' type-id='type-id-150' filepath='../lib/librte_mempool/rte_mempool.h' line='176' column='1' id='type-id-151'/>
+    <pointer-type-def type-id='type-id-151' size-in-bits='64' id='type-id-149'/>
+    <pointer-type-def type-id='type-id-144' size-in-bits='64' id='type-id-145'/>
+    <pointer-type-def type-id='type-id-112' size-in-bits='64' id='type-id-117'/>
+    <class-decl name='rte_mbuf_ext_shared_info' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='689' column='1' id='type-id-152'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='free_cb' type-id='type-id-153' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='690' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='fcb_opaque' type-id='type-id-86' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='691' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='refcnt_atomic' type-id='type-id-154' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='692' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-155' size-in-bits='64' id='type-id-156'/>
+    <typedef-decl name='rte_mbuf_extbuf_free_callback_t' type-id='type-id-156' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='684' column='1' id='type-id-153'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='16' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-154' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='223' column='1' id='type-id-157'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-158' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='224' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='short int' size-in-bits='16' id='type-id-159'/>
+    <typedef-decl name='__int16_t' type-id='type-id-159' filepath='/usr/include/bits/types.h' line='39' column='1' id='type-id-160'/>
+    <typedef-decl name='int16_t' type-id='type-id-160' filepath='/usr/include/bits/stdint-intn.h' line='25' column='1' id='type-id-161'/>
+    <qualified-type-def type-id='type-id-161' volatile='yes' id='type-id-158'/>
+    <typedef-decl name='rte_atomic16_t' type-id='type-id-157' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='225' column='1' id='type-id-154'/>
+    <pointer-type-def type-id='type-id-152' size-in-bits='64' id='type-id-118'/>
+
+    <array-type-def dimensions='1' type-id='type-id-3' size-in-bits='128' id='type-id-119'>
+      <subrange length='2' type-id='type-id-11' id='type-id-42'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-117' size-in-bits='64' id='type-id-162'/>
+    <class-decl name='rte_crypto_op' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='78' column='1' id='type-id-163'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='' type-id='type-id-164' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mempool' type-id='type-id-116' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='110' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='phys_addr' type-id='type-id-121' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='113' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='80' column='1' id='type-id-164'>
+      <data-member access='private'>
+        <var-decl name='raw' type-id='type-id-3' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='' type-id='type-id-165' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='83' column='1' id='type-id-165'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='type-id-8' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='status' type-id='type-id-8' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='sess_type' type-id='type-id-8' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='24'>
+        <var-decl name='reserved' type-id='type-id-166' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='private_data_offset' type-id='type-id-15' visibility='default' filepath='../lib/librte_cryptodev/rte_crypto.h' line='100' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='24' id='type-id-166'>
+      <subrange length='3' type-id='type-id-11' id='type-id-167'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-163' size-in-bits='64' id='type-id-168'/>
+    <pointer-type-def type-id='type-id-168' size-in-bits='64' id='type-id-169'/>
+    <pointer-type-def type-id='type-id-170' size-in-bits='64' id='type-id-108'/>
+    <pointer-type-def type-id='type-id-171' size-in-bits='64' id='type-id-109'/>
+    <pointer-type-def type-id='type-id-91' size-in-bits='64' id='type-id-172'/>
+    <function-decl name='rte_ipsec_session_prepare' mangled-name='rte_ipsec_session_prepare' filepath='../lib/librte_ipsec/ses.c' line='31' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_session_prepare@@EXPERIMENTAL'>
+      <parameter type-id='type-id-172' name='ss' filepath='../lib/librte_ipsec/ses.c' line='31' column='1'/>
+      <return type-id='type-id-37'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-170'>
+      <parameter type-id='type-id-111'/>
+      <parameter type-id='type-id-162'/>
+      <parameter type-id='type-id-169'/>
+      <parameter type-id='type-id-15'/>
+      <return type-id='type-id-15'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-171'>
+      <parameter type-id='type-id-111'/>
+      <parameter type-id='type-id-162'/>
+      <parameter type-id='type-id-15'/>
+      <return type-id='type-id-15'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-150'>
+      <parameter type-id='type-id-144'/>
+      <parameter type-id='type-id-86'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-155'>
+      <parameter type-id='type-id-86'/>
+      <parameter type-id='type-id-86'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_ipsec/ipsec_sad.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='rte_ipsec_sad' size-in-bits='704' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='36' column='1' id='type-id-173'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-174' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='37' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='hash' type-id='type-id-175' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='cnt_arr' type-id='type-id-176' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='43' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-129' size-in-bits='512' id='type-id-174'>
+      <subrange length='64' type-id='type-id-11' id='type-id-22'/>
+
+    </array-type-def>
+    <class-decl name='rte_hash' is-struct='yes' visibility='default' is-declaration-only='yes' id='type-id-177'/>
+    <pointer-type-def type-id='type-id-177' size-in-bits='64' id='type-id-178'/>
+
+    <array-type-def dimensions='1' type-id='type-id-178' size-in-bits='192' id='type-id-175'>
+      <subrange length='3' type-id='type-id-11' id='type-id-167'/>
+
+    </array-type-def>
+    <class-decl name='hash_cnt' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='31' column='1' id='type-id-179'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt_dip' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='32' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='cnt_dip_sip' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/ipsec_sad.c' line='33' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-179' size-in-bits='infinite' id='type-id-176'>
+      <subrange length='infinite' type-id='type-id-11' id='type-id-40'/>
+
+    </array-type-def>
+    <qualified-type-def type-id='type-id-173' const='yes' id='type-id-180'/>
+    <pointer-type-def type-id='type-id-180' size-in-bits='64' id='type-id-181'/>
+    <union-decl name='rte_ipsec_sad_key' size-in-bits='288' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='45' column='1' id='type-id-182'>
+      <data-member access='private'>
+        <var-decl name='v4' type-id='type-id-183' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='46' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='v6' type-id='type-id-184' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='47' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='rte_ipsec_sadv4_key' size-in-bits='96' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='33' column='1' id='type-id-183'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='spi' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='dip' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='35' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='sip' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='36' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_ipsec_sadv6_key' size-in-bits='288' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='39' column='1' id='type-id-184'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='spi' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='40' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='dip' type-id='type-id-62' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='sip' type-id='type-id-62' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='42' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-182' const='yes' id='type-id-185'/>
+    <pointer-type-def type-id='type-id-185' size-in-bits='64' id='type-id-186'/>
+    <pointer-type-def type-id='type-id-186' size-in-bits='64' id='type-id-187'/>
+    <pointer-type-def type-id='type-id-86' size-in-bits='64' id='type-id-188'/>
+    <function-decl name='rte_ipsec_sad_lookup' mangled-name='rte_ipsec_sad_lookup' filepath='../lib/librte_ipsec/ipsec_sad.c' line='498' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sad_lookup@@EXPERIMENTAL'>
+      <parameter type-id='type-id-181' name='sad' filepath='../lib/librte_ipsec/ipsec_sad.c' line='498' column='1'/>
+      <parameter type-id='type-id-187' name='keys' filepath='../lib/librte_ipsec/ipsec_sad.c' line='499' column='1'/>
+      <parameter type-id='type-id-188' name='sa' filepath='../lib/librte_ipsec/ipsec_sad.c' line='499' column='1'/>
+      <parameter type-id='type-id-4' name='n' filepath='../lib/librte_ipsec/ipsec_sad.c' line='499' column='1'/>
+      <return type-id='type-id-37'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-173' size-in-bits='64' id='type-id-189'/>
+    <function-decl name='rte_ipsec_sad_destroy' mangled-name='rte_ipsec_sad_destroy' filepath='../lib/librte_ipsec/ipsec_sad.c' line='389' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sad_destroy@@EXPERIMENTAL'>
+      <parameter type-id='type-id-189' name='sad' filepath='../lib/librte_ipsec/ipsec_sad.c' line='389' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <qualified-type-def type-id='type-id-129' const='yes' id='type-id-190'/>
+    <pointer-type-def type-id='type-id-190' size-in-bits='64' id='type-id-191'/>
+    <function-decl name='rte_ipsec_sad_find_existing' mangled-name='rte_ipsec_sad_find_existing' filepath='../lib/librte_ipsec/ipsec_sad.c' line='355' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sad_find_existing@@EXPERIMENTAL'>
+      <parameter type-id='type-id-191' name='name' filepath='../lib/librte_ipsec/ipsec_sad.c' line='355' column='1'/>
+      <return type-id='type-id-189'/>
+    </function-decl>
+    <class-decl name='rte_ipsec_sad_conf' size-in-bits='160' is-struct='yes' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='56' column='1' id='type-id-192'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='socket_id' type-id='type-id-37' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='max_sa' type-id='type-id-193' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='flags' type-id='type-id-4' visibility='default' filepath='../lib/librte_ipsec/rte_ipsec_sad.h' line='62' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-4' size-in-bits='96' id='type-id-193'>
+      <subrange length='3' type-id='type-id-11' id='type-id-167'/>
+
+    </array-type-def>
+    <qualified-type-def type-id='type-id-192' const='yes' id='type-id-194'/>
+    <pointer-type-def type-id='type-id-194' size-in-bits='64' id='type-id-195'/>
+    <function-decl name='rte_ipsec_sad_create' mangled-name='rte_ipsec_sad_create' filepath='../lib/librte_ipsec/ipsec_sad.c' line='231' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sad_create@@EXPERIMENTAL'>
+      <parameter type-id='type-id-191' name='name' filepath='../lib/librte_ipsec/ipsec_sad.c' line='231' column='1'/>
+      <parameter type-id='type-id-195' name='conf' filepath='../lib/librte_ipsec/ipsec_sad.c' line='231' column='1'/>
+      <return type-id='type-id-189'/>
+    </function-decl>
+    <function-decl name='rte_ipsec_sad_del' mangled-name='rte_ipsec_sad_del' filepath='../lib/librte_ipsec/ipsec_sad.c' line='196' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sad_del@@EXPERIMENTAL'>
+      <parameter type-id='type-id-189' name='sad' filepath='../lib/librte_ipsec/ipsec_sad.c' line='196' column='1'/>
+      <parameter type-id='type-id-186' name='key' filepath='../lib/librte_ipsec/ipsec_sad.c' line='197' column='1'/>
+      <parameter type-id='type-id-37' name='key_type' filepath='../lib/librte_ipsec/ipsec_sad.c' line='198' column='1'/>
+      <return type-id='type-id-37'/>
+    </function-decl>
+    <function-decl name='rte_ipsec_sad_add' mangled-name='rte_ipsec_sad_add' filepath='../lib/librte_ipsec/ipsec_sad.c' line='106' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_ipsec_sad_add@@EXPERIMENTAL'>
+      <parameter type-id='type-id-189' name='sad' filepath='../lib/librte_ipsec/ipsec_sad.c' line='106' column='1'/>
+      <parameter type-id='type-id-186' name='key' filepath='../lib/librte_ipsec/ipsec_sad.c' line='107' column='1'/>
+      <parameter type-id='type-id-37' name='key_type' filepath='../lib/librte_ipsec/ipsec_sad.c' line='108' column='1'/>
+      <parameter type-id='type-id-86' name='sa' filepath='../lib/librte_ipsec/ipsec_sad.c' line='108' column='1'/>
+      <return type-id='type-id-37'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

@@ -1,0 +1,490 @@
+<abi-corpus path='gcc//lib/librte_power.so.20.0' architecture='elf-amd-x86_64' soname='librte_power.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_timer.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_empty_poll_detection' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_empty_poll_stat_fetch' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_empty_poll_stat_free' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_empty_poll_stat_init' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_empty_poll_stat_update' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_exit' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_get_env' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_guest_channel_receive_msg' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_guest_channel_send_msg' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_poll_stat_fetch' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_poll_stat_update' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_set_env' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_unset_env' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <elf-variable-symbols>
+    <elf-symbol name='rte_power_freq_disable_turbo' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_freq_down' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_freq_enable_turbo' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_freq_max' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_freq_min' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_freq_up' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_freqs' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_get_capabilities' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_get_freq' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_set_freq' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_power_turbo_status' size='8' version='DPDK_20.0' is-default-version='yes' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-variable-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_power/rte_power.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-1'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-1' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-2'/>
+    <typedef-decl name='uint32_t' type-id='type-id-2' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-3'/>
+    <pointer-type-def type-id='type-id-3' size-in-bits='64' id='type-id-4'/>
+    <pointer-type-def type-id='type-id-5' size-in-bits='64' id='type-id-6'/>
+    <typedef-decl name='rte_power_freqs_t' type-id='type-id-6' filepath='../lib/librte_power/rte_power.h' line='97' column='1' id='type-id-7'/>
+    <var-decl name='rte_power_freqs' type-id='type-id-7' mangled-name='rte_power_freqs' visibility='default' filepath='../lib/librte_power/rte_power.h' line='100' column='1' elf-symbol-id='rte_power_freqs@@DPDK_20.0'/>
+    <pointer-type-def type-id='type-id-8' size-in-bits='64' id='type-id-9'/>
+    <typedef-decl name='rte_power_get_freq_t' type-id='type-id-9' filepath='../lib/librte_power/rte_power.h' line='113' column='1' id='type-id-10'/>
+    <var-decl name='rte_power_get_freq' type-id='type-id-10' mangled-name='rte_power_get_freq' visibility='default' filepath='../lib/librte_power/rte_power.h' line='115' column='1' elf-symbol-id='rte_power_get_freq@@DPDK_20.0'/>
+    <type-decl name='int' size-in-bits='32' id='type-id-11'/>
+    <pointer-type-def type-id='type-id-12' size-in-bits='64' id='type-id-13'/>
+    <typedef-decl name='rte_power_set_freq_t' type-id='type-id-13' filepath='../lib/librte_power/rte_power.h' line='133' column='1' id='type-id-14'/>
+    <var-decl name='rte_power_set_freq' type-id='type-id-14' mangled-name='rte_power_set_freq' visibility='default' filepath='../lib/librte_power/rte_power.h' line='135' column='1' elf-symbol-id='rte_power_set_freq@@DPDK_20.0'/>
+    <pointer-type-def type-id='type-id-15' size-in-bits='64' id='type-id-16'/>
+    <typedef-decl name='rte_power_freq_change_t' type-id='type-id-16' filepath='../lib/librte_power/rte_power.h' line='149' column='1' id='type-id-17'/>
+    <var-decl name='rte_power_freq_up' type-id='type-id-17' mangled-name='rte_power_freq_up' visibility='default' filepath='../lib/librte_power/rte_power.h' line='164' column='1' elf-symbol-id='rte_power_freq_up@@DPDK_20.0'/>
+    <var-decl name='rte_power_freq_down' type-id='type-id-17' mangled-name='rte_power_freq_down' visibility='default' filepath='../lib/librte_power/rte_power.h' line='180' column='1' elf-symbol-id='rte_power_freq_down@@DPDK_20.0'/>
+    <var-decl name='rte_power_freq_max' type-id='type-id-17' mangled-name='rte_power_freq_max' visibility='default' filepath='../lib/librte_power/rte_power.h' line='195' column='1' elf-symbol-id='rte_power_freq_max@@DPDK_20.0'/>
+    <var-decl name='rte_power_freq_min' type-id='type-id-17' mangled-name='rte_power_freq_min' visibility='default' filepath='../lib/librte_power/rte_power.h' line='210' column='1' elf-symbol-id='rte_power_freq_min@@DPDK_20.0'/>
+    <var-decl name='rte_power_turbo_status' type-id='type-id-17' mangled-name='rte_power_turbo_status' visibility='default' filepath='../lib/librte_power/rte_power.h' line='224' column='1' elf-symbol-id='rte_power_turbo_status@@DPDK_20.0'/>
+    <var-decl name='rte_power_freq_enable_turbo' type-id='type-id-17' mangled-name='rte_power_freq_enable_turbo' visibility='default' filepath='../lib/librte_power/rte_power.h' line='237' column='1' elf-symbol-id='rte_power_freq_enable_turbo@@DPDK_20.0'/>
+    <var-decl name='rte_power_freq_disable_turbo' type-id='type-id-17' mangled-name='rte_power_freq_disable_turbo' visibility='default' filepath='../lib/librte_power/rte_power.h' line='250' column='1' elf-symbol-id='rte_power_freq_disable_turbo@@DPDK_20.0'/>
+    <class-decl name='rte_power_core_capabilities' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_power/rte_power.h' line='255' column='1' id='type-id-18'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='' type-id='type-id-19' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_power/rte_power.h' line='257' column='1' id='type-id-19'>
+      <data-member access='private'>
+        <var-decl name='capabilities' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power.h' line='258' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='' type-id='type-id-21' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-22'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-22' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-23'/>
+    <typedef-decl name='uint64_t' type-id='type-id-23' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-20'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_power/rte_power.h' line='260' column='1' id='type-id-21'>
+      <data-member access='public' layout-offset-in-bits='63'>
+        <var-decl name='turbo' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power.h' line='261' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='62'>
+        <var-decl name='priority' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power.h' line='262' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-18' size-in-bits='64' id='type-id-24'/>
+    <pointer-type-def type-id='type-id-25' size-in-bits='64' id='type-id-26'/>
+    <typedef-decl name='rte_power_get_capabilities_t' type-id='type-id-26' filepath='../lib/librte_power/rte_power.h' line='281' column='1' id='type-id-27'/>
+    <var-decl name='rte_power_get_capabilities' type-id='type-id-27' mangled-name='rte_power_get_capabilities' visibility='default' filepath='../lib/librte_power/rte_power.h' line='284' column='1' elf-symbol-id='rte_power_get_capabilities@@DPDK_20.0'/>
+    <function-decl name='rte_power_exit' mangled-name='rte_power_exit' filepath='../lib/librte_power/rte_power.c' line='171' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_exit@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/rte_power.c' line='171' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-decl name='rte_power_init' mangled-name='rte_power_init' filepath='../lib/librte_power/rte_power.c' line='128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_init@@DPDK_20.0'>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/rte_power.c' line='128' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-28'/>
+    <enum-decl name='power_management_env' filepath='../lib/librte_power/rte_power.h' line='23' column='1' id='type-id-29'>
+      <underlying-type type-id='type-id-28'/>
+      <enumerator name='PM_ENV_NOT_SET' value='0'/>
+      <enumerator name='PM_ENV_ACPI_CPUFREQ' value='1'/>
+      <enumerator name='PM_ENV_KVM_VM' value='2'/>
+      <enumerator name='PM_ENV_PSTATE_CPUFREQ' value='3'/>
+    </enum-decl>
+    <function-decl name='rte_power_get_env' mangled-name='rte_power_get_env' filepath='../lib/librte_power/rte_power.c' line='123' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_get_env@@DPDK_20.0'>
+      <return type-id='type-id-29'/>
+    </function-decl>
+    <type-decl name='void' id='type-id-30'/>
+    <function-decl name='rte_power_unset_env' mangled-name='rte_power_unset_env' filepath='../lib/librte_power/rte_power.c' line='114' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_unset_env@@DPDK_20.0'>
+      <return type-id='type-id-30'/>
+    </function-decl>
+    <function-decl name='rte_power_set_env' mangled-name='rte_power_set_env' filepath='../lib/librte_power/rte_power.c' line='47' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_set_env@@DPDK_20.0'>
+      <parameter type-id='type-id-29' name='env' filepath='../lib/librte_power/rte_power.c' line='47' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-15'>
+      <parameter type-id='type-id-1'/>
+      <return type-id='type-id-11'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-25'>
+      <parameter type-id='type-id-1'/>
+      <parameter type-id='type-id-24'/>
+      <return type-id='type-id-11'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-12'>
+      <parameter type-id='type-id-1'/>
+      <parameter type-id='type-id-3'/>
+      <return type-id='type-id-11'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-8'>
+      <parameter type-id='type-id-1'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-5'>
+      <parameter type-id='type-id-1'/>
+      <parameter type-id='type-id-4'/>
+      <parameter type-id='type-id-3'/>
+      <return type-id='type-id-3'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_power/guest_channel.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='channel_packet' size-in-bits='3712' is-struct='yes' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='81' column='1' id='type-id-31'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='resource_id' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='82' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='unit' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='command' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='vm_name' type-id='type-id-32' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='vfid' type-id='type-id-33' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='nb_mac_to_monitor' type-id='type-id-11' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1056'>
+        <var-decl name='traffic_policy' type-id='type-id-34' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='vcpu_to_control' type-id='type-id-35' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='num_vcpu' type-id='type-id-36' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1248'>
+        <var-decl name='timer_policy' type-id='type-id-37' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3552'>
+        <var-decl name='core_type' type-id='type-id-38' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3584'>
+        <var-decl name='workload' type-id='type-id-39' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3616'>
+        <var-decl name='policy_to_use' type-id='type-id-40' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3648'>
+        <var-decl name='t_boost_status' type-id='type-id-41' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='96' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-42'/>
+
+    <array-type-def dimensions='1' type-id='type-id-42' size-in-bits='256' id='type-id-32'>
+      <subrange length='32' type-id='type-id-22' id='type-id-43'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-20' size-in-bits='640' id='type-id-33'>
+      <subrange length='10' type-id='type-id-22' id='type-id-44'/>
+
+    </array-type-def>
+    <class-decl name='traffic' size-in-bits='96' is-struct='yes' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='72' column='1' id='type-id-34'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='min_packet_thresh' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='avg_max_packet_thresh' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='max_max_packet_thresh' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='75' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-45'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-45' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-46'/>
+    <typedef-decl name='uint8_t' type-id='type-id-46' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-36'/>
+
+    <array-type-def dimensions='1' type-id='type-id-36' size-in-bits='64' id='type-id-35'>
+      <subrange length='8' type-id='type-id-22' id='type-id-47'/>
+
+    </array-type-def>
+    <class-decl name='timer_profile' size-in-bits='2304' is-struct='yes' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='58' column='1' id='type-id-37'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='busy_hours' type-id='type-id-48' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='quiet_hours' type-id='type-id-48' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='hours_to_use_traffic_profile' type-id='type-id-48' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='61' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-11' size-in-bits='768' id='type-id-48'>
+      <subrange length='24' type-id='type-id-22' id='type-id-49'/>
+
+    </array-type-def>
+    <type-decl name='bool' size-in-bits='8' id='type-id-38'/>
+    <enum-decl name='workload' filepath='../lib/librte_power/channel_commands.h' line='64' column='1' id='type-id-39'>
+      <underlying-type type-id='type-id-28'/>
+      <enumerator name='HIGH' value='0'/>
+      <enumerator name='MEDIUM' value='1'/>
+      <enumerator name='LOW' value='2'/>
+    </enum-decl>
+    <enum-decl name='policy_to_use' filepath='../lib/librte_power/channel_commands.h' line='65' column='1' id='type-id-40'>
+      <underlying-type type-id='type-id-28'/>
+      <enumerator name='TRAFFIC' value='0'/>
+      <enumerator name='TIME' value='1'/>
+      <enumerator name='WORKLOAD' value='2'/>
+      <enumerator name='BRANCH_RATIO' value='3'/>
+    </enum-decl>
+    <class-decl name='t_boost_status' size-in-bits='8' is-struct='yes' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='54' column='1' id='type-id-41'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tbEnabled' type-id='type-id-38' visibility='default' filepath='../lib/librte_power/channel_commands.h' line='55' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-31' size-in-bits='64' id='type-id-50'/>
+    <function-decl name='rte_power_guest_channel_send_msg' mangled-name='rte_power_guest_channel_send_msg' filepath='../lib/librte_power/guest_channel.c' line='126' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_guest_channel_send_msg@@DPDK_20.0'>
+      <parameter type-id='type-id-50' name='pkt' filepath='../lib/librte_power/guest_channel.c' line='126' column='1'/>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/guest_channel.c' line='127' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-30' size-in-bits='64' id='type-id-51'/>
+    <typedef-decl name='size_t' type-id='type-id-22' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-52'/>
+    <function-decl name='rte_power_guest_channel_receive_msg' mangled-name='rte_power_guest_channel_receive_msg' filepath='../lib/librte_power/guest_channel.c' line='187' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_guest_channel_receive_msg@@EXPERIMENTAL'>
+      <parameter type-id='type-id-51' name='pkt' filepath='../lib/librte_power/guest_channel.c' line='187' column='1'/>
+      <parameter type-id='type-id-52' name='pkt_len' filepath='../lib/librte_power/guest_channel.c' line='188' column='1'/>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/guest_channel.c' line='189' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_power/rte_power_empty_poll.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='rte_timer' size-in-bits='960' is-struct='yes' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='100' column='1' id='type-id-53'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='expire' type-id='type-id-20' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='sl_next' type-id='type-id-54' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='status' type-id='type-id-55' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='period' type-id='type-id-20' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='f' type-id='type-id-56' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='arg' type-id='type-id-51' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='107' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-53' size-in-bits='64' id='type-id-57'/>
+
+    <array-type-def dimensions='1' type-id='type-id-57' size-in-bits='640' id='type-id-54'>
+      <subrange length='10' type-id='type-id-22' id='type-id-44'/>
+
+    </array-type-def>
+    <union-decl name='rte_timer_status' size-in-bits='32' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='67' column='1' id='type-id-58'>
+      <data-member access='private'>
+        <var-decl name='' type-id='type-id-59' visibility='default'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='u32' type-id='type-id-3' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='73' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='69' column='1' id='type-id-59'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='state' type-id='type-id-60' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='owner' type-id='type-id-61' visibility='default' filepath='../lib/librte_timer/rte_timer.h' line='71' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-62'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-62' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-63'/>
+    <typedef-decl name='uint16_t' type-id='type-id-63' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-60'/>
+    <type-decl name='short int' size-in-bits='16' id='type-id-64'/>
+    <typedef-decl name='__int16_t' type-id='type-id-64' filepath='/usr/include/bits/types.h' line='39' column='1' id='type-id-65'/>
+    <typedef-decl name='int16_t' type-id='type-id-65' filepath='/usr/include/bits/stdint-intn.h' line='25' column='1' id='type-id-61'/>
+    <qualified-type-def type-id='type-id-58' volatile='yes' id='type-id-55'/>
+    <pointer-type-def type-id='type-id-66' size-in-bits='64' id='type-id-67'/>
+    <typedef-decl name='rte_timer_cb_t' type-id='type-id-67' filepath='../lib/librte_timer/rte_timer.h' line='93' column='1' id='type-id-56'/>
+    <function-decl name='rte_empty_poll_detection' mangled-name='rte_empty_poll_detection' filepath='../lib/librte_power/rte_power_empty_poll.c' line='365' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_empty_poll_detection@@EXPERIMENTAL'>
+      <parameter type-id='type-id-57' name='tim' filepath='../lib/librte_power/rte_power_empty_poll.c' line='365' column='1'/>
+      <parameter type-id='type-id-51' name='arg' filepath='../lib/librte_power/rte_power_empty_poll.c' line='365' column='1'/>
+      <return type-id='type-id-30'/>
+    </function-decl>
+    <function-decl name='rte_power_poll_stat_fetch' mangled-name='rte_power_poll_stat_fetch' filepath='../lib/librte_power/rte_power_empty_poll.c' line='529' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_poll_stat_fetch@@EXPERIMENTAL'>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/rte_power_empty_poll.c' line='529' column='1'/>
+      <return type-id='type-id-20'/>
+    </function-decl>
+    <function-decl name='rte_power_empty_poll_stat_fetch' mangled-name='rte_power_empty_poll_stat_fetch' filepath='../lib/librte_power/rte_power_empty_poll.c' line='513' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_empty_poll_stat_fetch@@EXPERIMENTAL'>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/rte_power_empty_poll.c' line='529' column='1'/>
+      <return type-id='type-id-20'/>
+    </function-decl>
+    <function-decl name='rte_power_poll_stat_update' mangled-name='rte_power_poll_stat_update' filepath='../lib/librte_power/rte_power_empty_poll.c' line='493' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_poll_stat_update@@EXPERIMENTAL'>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/rte_power_empty_poll.c' line='493' column='1'/>
+      <parameter type-id='type-id-36' name='nb_pkt' filepath='../lib/librte_power/rte_power_empty_poll.c' line='493' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-decl name='rte_power_empty_poll_stat_update' mangled-name='rte_power_empty_poll_stat_update' filepath='../lib/librte_power/rte_power_empty_poll.c' line='475' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_empty_poll_stat_update@@EXPERIMENTAL'>
+      <parameter type-id='type-id-1' name='lcore_id' filepath='../lib/librte_power/rte_power_empty_poll.c' line='475' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-decl name='rte_power_empty_poll_stat_free' mangled-name='rte_power_empty_poll_stat_free' filepath='../lib/librte_power/rte_power_empty_poll.c' line='465' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_empty_poll_stat_free@@EXPERIMENTAL'>
+      <return type-id='type-id-30'/>
+    </function-decl>
+    <class-decl name='ep_params' size-in-bits='3540992' is-struct='yes' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='109' column='1' id='type-id-68'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='interval_ticks' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='max_train_iter' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='113' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='timer0' type-id='type-id-53' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='115' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='wrk_data' type-id='type-id-69' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='116' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='stats_data' size-in-bits='3539456' is-struct='yes' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='99' column='1' id='type-id-69'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='wrk_stats' type-id='type-id-70' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='3538944'>
+        <var-decl name='start_rx' type-id='type-id-38' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='104' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='priority_worker' size-in-bits='13824' is-struct='yes' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='63' column='1' id='type-id-71'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='empty_dequeues' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='num_dequeue_pkts' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='queue_state' type-id='type-id-72' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='empty_dequeues_prev' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='num_dequeue_pkts_prev' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='thresh' type-id='type-id-73' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='12608'>
+        <var-decl name='cur_freq' type-id='type-id-74' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='12672'>
+        <var-decl name='edpi_av' type-id='type-id-75' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='82' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='12928'>
+        <var-decl name='ec' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='12992'>
+        <var-decl name='ppi_av' type-id='type-id-75' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13248'>
+        <var-decl name='pc' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13280'>
+        <var-decl name='lcore_id' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13312'>
+        <var-decl name='iter_counter' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13344'>
+        <var-decl name='threshold_ctr' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13376'>
+        <var-decl name='display_ctr' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='13408'>
+        <var-decl name='dev_id' type-id='type-id-36' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='94' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='queue_state' filepath='../lib/librte_power/rte_power_empty_poll.h' line='46' column='1' id='type-id-72'>
+      <underlying-type type-id='type-id-28'/>
+      <enumerator name='TRAINING' value='0'/>
+      <enumerator name='MED_NORMAL' value='1'/>
+      <enumerator name='HGH_BUSY' value='2'/>
+      <enumerator name='LOW_PURGE' value='3'/>
+    </enum-decl>
+    <class-decl name='freq_threshold' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='54' column='1' id='type-id-76'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='base_edpi' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='trained' type-id='type-id-38' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='threshold_percent' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cur_train_iter' type-id='type-id-3' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='59' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-76' size-in-bits='12288' id='type-id-73'>
+      <subrange length='64' type-id='type-id-22' id='type-id-77'/>
+
+    </array-type-def>
+    <enum-decl name='freq_val' filepath='../lib/librte_power/rte_power_empty_poll.h' line='37' column='1' id='type-id-74'>
+      <underlying-type type-id='type-id-28'/>
+      <enumerator name='LOW' value='0'/>
+      <enumerator name='MED' value='1'/>
+      <enumerator name='HGH' value='2'/>
+      <enumerator name='NUM_FREQ' value='64'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-20' size-in-bits='256' id='type-id-75'>
+      <subrange length='4' type-id='type-id-22' id='type-id-78'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-71' size-in-bits='3538944' id='type-id-70'>
+      <subrange length='256' type-id='type-id-22' id='type-id-79'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-68' size-in-bits='64' id='type-id-80'/>
+    <pointer-type-def type-id='type-id-80' size-in-bits='64' id='type-id-81'/>
+    <pointer-type-def type-id='type-id-36' size-in-bits='64' id='type-id-82'/>
+    <class-decl name='ep_policy' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='121' column='1' id='type-id-83'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='med_base_edpi' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='hgh_base_edpi' type-id='type-id-20' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='124' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='state' type-id='type-id-72' visibility='default' filepath='../lib/librte_power/rte_power_empty_poll.h' line='126' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-83' size-in-bits='64' id='type-id-84'/>
+    <function-decl name='rte_power_empty_poll_stat_init' mangled-name='rte_power_empty_poll_stat_init' filepath='../lib/librte_power/rte_power_empty_poll.c' line='406' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_power_empty_poll_stat_init@@EXPERIMENTAL'>
+      <parameter type-id='type-id-81' name='eptr' filepath='../lib/librte_power/rte_power_empty_poll.c' line='406' column='1'/>
+      <parameter type-id='type-id-82' name='freq_tlb' filepath='../lib/librte_power/rte_power_empty_poll.c' line='406' column='1'/>
+      <parameter type-id='type-id-84' name='policy' filepath='../lib/librte_power/rte_power_empty_poll.c' line='407' column='1'/>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-66'>
+      <parameter type-id='type-id-57'/>
+      <parameter type-id='type-id-51'/>
+      <return type-id='type-id-30'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

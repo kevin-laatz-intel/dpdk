@@ -1,0 +1,1795 @@
+<abi-corpus path='gcc//lib/librte_pipeline.so.20.0' architecture='elf-amd-x86_64' soname='librte_pipeline.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_port.so.20.0'/>
+    <dependency name='librte_ethdev.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_meter.so.20.0'/>
+    <dependency name='librte_sched.so.20.0'/>
+    <dependency name='librte_ip_frag.so.20.0'/>
+    <dependency name='librte_hash.so.20.0'/>
+    <dependency name='librte_cryptodev.so.20.0'/>
+    <dependency name='librte_eventdev.so.20.0'/>
+    <dependency name='librte_timer.so.20.0'/>
+    <dependency name='librte_kni.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_table.so.20.0'/>
+    <dependency name='librte_lpm.so.20.0'/>
+    <dependency name='librte_acl.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpcap.so.1'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_pipeline_ah_packet_drop' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_ah_packet_hijack' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_check' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_flush' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_free' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_in_connect_to_table' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_in_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_in_disable' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_in_enable' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_in_stats_read' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_out_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_out_packet_insert' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_port_out_stats_read' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_run' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_create' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_default_entry_add' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_default_entry_delete' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_entry_add' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_entry_add_bulk' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_entry_delete' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_entry_delete_bulk' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_pipeline_table_stats_read' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_apply' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_create' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_free' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_params_get' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_profile_action_register' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_profile_create' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_profile_free' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_port_in_action_profile_freeze' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_apply' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_create' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_crypto_sym_session_get' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_dscp_table_update' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_free' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_meter_profile_add' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_meter_profile_delete' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_meter_read' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_profile_action_register' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_profile_create' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_profile_free' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_profile_freeze' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_stats_read' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_table_params_get' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_time_read' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_table_action_ttl_read' version='EXPERIMENTAL' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_pipeline/rte_pipeline.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <class-decl name='rte_pipeline' size-in-bits='169984' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='105' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-3' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='107' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='992'>
+        <var-decl name='socket_id' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='108' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='offset_port_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='109' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='ports_in' type-id='type-id-5' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='42048'>
+        <var-decl name='ports_out' type-id='type-id-6' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='113' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='83008'>
+        <var-decl name='tables' type-id='type-id-7' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='114' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160832'>
+        <var-decl name='num_ports_in' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='117' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160864'>
+        <var-decl name='num_ports_out' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='118' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160896'>
+        <var-decl name='num_tables' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='119' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160960'>
+        <var-decl name='enabled_port_in_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='122' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='161024'>
+        <var-decl name='port_in_next' type-id='type-id-9' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='161088'>
+        <var-decl name='pkts' type-id='type-id-10' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='126' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='165184'>
+        <var-decl name='entries' type-id='type-id-11' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='127' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='169280'>
+        <var-decl name='action_mask0' type-id='type-id-12' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='128' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='169536'>
+        <var-decl name='action_mask1' type-id='type-id-12' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='129' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='169792'>
+        <var-decl name='pkts_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='130' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='169856'>
+        <var-decl name='n_pkts_ah_drop' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='131' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='169920'>
+        <var-decl name='pkts_drop_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='132' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='char' size-in-bits='8' id='type-id-13'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-14'/>
+
+    <array-type-def dimensions='1' type-id='type-id-13' size-in-bits='992' id='type-id-3'>
+      <subrange length='124' type-id='type-id-14' id='type-id-15'/>
+
+    </array-type-def>
+    <type-decl name='unsigned int' size-in-bits='32' id='type-id-16'/>
+    <typedef-decl name='__uint32_t' type-id='type-id-16' filepath='/usr/include/bits/types.h' line='42' column='1' id='type-id-17'/>
+    <typedef-decl name='uint32_t' type-id='type-id-17' filepath='/usr/include/bits/stdint-uintn.h' line='26' column='1' id='type-id-4'/>
+    <class-decl name='rte_port_in' size-in-bits='640' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='48' column='1' id='type-id-18'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-19' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='50' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='f_action' type-id='type-id-20' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='arg_ah' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='burst_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='table_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='h_port' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='next' type-id='type-id-9' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='n_pkts_dropped_by_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='65' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_port_in_ops' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_port/rte_port.h' line='119' column='1' id='type-id-19'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='f_create' type-id='type-id-22' visibility='default' filepath='../lib/librte_port/rte_port.h' line='120' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='f_free' type-id='type-id-23' visibility='default' filepath='../lib/librte_port/rte_port.h' line='121' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='f_rx' type-id='type-id-24' visibility='default' filepath='../lib/librte_port/rte_port.h' line='122' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='f_stats' type-id='type-id-25' visibility='default' filepath='../lib/librte_port/rte_port.h' line='123' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='void' id='type-id-26'/>
+    <pointer-type-def type-id='type-id-26' size-in-bits='64' id='type-id-21'/>
+    <pointer-type-def type-id='type-id-27' size-in-bits='64' id='type-id-28'/>
+    <typedef-decl name='rte_port_in_op_create' type-id='type-id-28' filepath='../lib/librte_port/rte_port.h' line='71' column='1' id='type-id-22'/>
+    <pointer-type-def type-id='type-id-29' size-in-bits='64' id='type-id-30'/>
+    <typedef-decl name='rte_port_in_op_free' type-id='type-id-30' filepath='../lib/librte_port/rte_port.h' line='81' column='1' id='type-id-23'/>
+    <class-decl name='rte_mbuf' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='480' column='1' id='type-id-31'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cacheline0' type-id='type-id-32' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='481' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='buf_addr' type-id='type-id-21' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='483' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='' type-id='type-id-33' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='rearm_data' type-id='type-id-34' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='497' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='data_off' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='498' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='nb_segs' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='515' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='176'>
+        <var-decl name='port' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='520' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='ol_flags' type-id='type-id-8' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='522' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='rx_descriptor_fields1' type-id='type-id-32' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='525' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='pkt_len' type-id='type-id-4' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='561' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='data_len' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='562' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='336'>
+        <var-decl name='vlan_tci' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='564' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='vlan_tci_outer' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='601' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='432'>
+        <var-decl name='buf_len' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='603' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='timestamp' type-id='type-id-8' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='610' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='cacheline1' type-id='type-id-32' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='613' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='pool' type-id='type-id-36' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='621' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='next' type-id='type-id-37' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='622' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='priv_size' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='665' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='784'>
+        <var-decl name='timesync' type-id='type-id-35' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='668' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='seqn' type-id='type-id-4' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='671' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='shinfo' type-id='type-id-38' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='676' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='dynfield1' type-id='type-id-39' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='678' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-21' size-in-bits='infinite' id='type-id-40'>
+      <subrange length='infinite' type-id='type-id-14' id='type-id-41'/>
+
+    </array-type-def>
+    <typedef-decl name='MARKER' type-id='type-id-40' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='414' column='1' id='type-id-32'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='491' column='1' id='type-id-33'>
+      <data-member access='private'>
+        <var-decl name='buf_iova' type-id='type-id-42' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='492' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='buf_physaddr' type-id='type-id-42' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='493' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='__uint64_t' type-id='type-id-14' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-43'/>
+    <typedef-decl name='uint64_t' type-id='type-id-43' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-8'/>
+    <typedef-decl name='rte_iova_t' type-id='type-id-8' filepath='../lib/librte_eal/common/include/rte_common.h' line='335' column='1' id='type-id-42'/>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='infinite' id='type-id-44'>
+      <subrange length='infinite' type-id='type-id-14' id='type-id-41'/>
+
+    </array-type-def>
+    <typedef-decl name='MARKER64' type-id='type-id-44' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='420' column='1' id='type-id-34'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-45'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-45' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-46'/>
+    <typedef-decl name='uint16_t' type-id='type-id-46' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-35'/>
+    <class-decl name='rte_mempool' size-in-bits='1536' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='216' column='1' id='type-id-47'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-48' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='222' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-49' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='pool_config' type-id='type-id-21' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='228' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='mz' type-id='type-id-50' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='229' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='flags' type-id='type-id-16' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='230' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='480'>
+        <var-decl name='socket_id' type-id='type-id-1' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='231' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='232' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='cache_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='233' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='elt_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='236' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='header_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='237' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='trailer_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='238' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='private_data_size' type-id='type-id-16' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='240' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='ops_index' type-id='type-id-51' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='248' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='local_cache' type-id='type-id-52' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='250' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='populated_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='252' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='elt_list' type-id='type-id-53' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='253' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='nb_mem_chunks' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='254' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='mem_list' type-id='type-id-54' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='255' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-13' size-in-bits='256' id='type-id-48'>
+      <subrange length='32' type-id='type-id-14' id='type-id-55'/>
+
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='224' column='1' id='type-id-49'>
+      <data-member access='private'>
+        <var-decl name='pool_data' type-id='type-id-21' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='225' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='pool_id' type-id='type-id-8' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='226' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='rte_memzone' size-in-bits='576' is-struct='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='49' column='1' id='type-id-56'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-48' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='type-id-57' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='len' type-id='type-id-58' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='hugepage_sz' type-id='type-id-8' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='socket_id' type-id='type-id-51' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='flags' type-id='type-id-4' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='70' column='1'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='55' column='1' id='type-id-57'>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-59' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-42' visibility='default' filepath='../lib/librte_eal/common/include/rte_memzone.h' line='57' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='phys_addr_t' type-id='type-id-8' filepath='../lib/librte_eal/common/include/rte_common.h' line='325' column='1' id='type-id-59'/>
+    <typedef-decl name='size_t' type-id='type-id-14' filepath='/usr/lib/gcc/x86_64-redhat-linux/9/include/stddef.h' line='209' column='1' id='type-id-58'/>
+    <typedef-decl name='__int32_t' type-id='type-id-1' filepath='/usr/include/bits/types.h' line='41' column='1' id='type-id-60'/>
+    <typedef-decl name='int32_t' type-id='type-id-60' filepath='/usr/include/bits/stdint-intn.h' line='26' column='1' id='type-id-51'/>
+    <qualified-type-def type-id='type-id-56' const='yes' id='type-id-61'/>
+    <pointer-type-def type-id='type-id-61' size-in-bits='64' id='type-id-50'/>
+    <class-decl name='rte_mempool_cache' size-in-bits='98816' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='83' column='1' id='type-id-62'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='size' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='flushthresh' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='type-id-4' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='objs' type-id='type-id-63' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='91' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-21' size-in-bits='98304' id='type-id-63'>
+      <subrange length='1536' type-id='type-id-14' id='type-id-64'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-62' size-in-bits='64' id='type-id-52'/>
+    <class-decl name='rte_mempool_objhdr_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1' id='type-id-53'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqh_first' type-id='type-id-65' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='stqh_last' type-id='type-id-66' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='152' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_mempool_objhdr' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='136' column='1' id='type-id-67'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-68' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp' type-id='type-id-36' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='' type-id='type-id-69' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1' id='type-id-68'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqe_next' type-id='type-id-65' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='137' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-67' size-in-bits='64' id='type-id-65'/>
+    <pointer-type-def type-id='type-id-47' size-in-bits='64' id='type-id-36'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='140' column='1' id='type-id-69'>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-42' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='141' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='physaddr' type-id='type-id-59' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='142' column='1'/>
+      </data-member>
+    </union-decl>
+    <pointer-type-def type-id='type-id-65' size-in-bits='64' id='type-id-66'/>
+    <class-decl name='rte_mempool_memhdr_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1' id='type-id-54'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqh_first' type-id='type-id-70' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='stqh_last' type-id='type-id-71' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='171' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_mempool_memhdr' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='185' column='1' id='type-id-72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='next' type-id='type-id-73' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp' type-id='type-id-36' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='187' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='addr' type-id='type-id-21' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='188' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='' type-id='type-id-74' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='len' type-id='type-id-58' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='194' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='free_cb' type-id='type-id-75' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='195' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='opaque' type-id='type-id-21' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='196' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1' id='type-id-73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stqe_next' type-id='type-id-70' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='186' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-72' size-in-bits='64' id='type-id-70'/>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='190' column='1' id='type-id-74'>
+      <data-member access='private'>
+        <var-decl name='iova' type-id='type-id-42' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='191' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='phys_addr' type-id='type-id-59' visibility='default' filepath='../lib/librte_mempool/rte_mempool.h' line='192' column='1'/>
+      </data-member>
+    </union-decl>
+    <typedef-decl name='rte_mempool_memchunk_free_cb_t' type-id='type-id-76' filepath='../lib/librte_mempool/rte_mempool.h' line='176' column='1' id='type-id-77'/>
+    <pointer-type-def type-id='type-id-77' size-in-bits='64' id='type-id-75'/>
+    <pointer-type-def type-id='type-id-70' size-in-bits='64' id='type-id-71'/>
+    <pointer-type-def type-id='type-id-31' size-in-bits='64' id='type-id-37'/>
+    <class-decl name='rte_mbuf_ext_shared_info' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='689' column='1' id='type-id-78'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='free_cb' type-id='type-id-79' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='690' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='fcb_opaque' type-id='type-id-21' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='691' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='refcnt_atomic' type-id='type-id-80' visibility='default' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='692' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-81' size-in-bits='64' id='type-id-82'/>
+    <typedef-decl name='rte_mbuf_extbuf_free_callback_t' type-id='type-id-82' filepath='../lib/librte_mbuf/rte_mbuf_core.h' line='684' column='1' id='type-id-79'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='16' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-80' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='223' column='1' id='type-id-83'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cnt' type-id='type-id-84' visibility='default' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='224' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='short int' size-in-bits='16' id='type-id-85'/>
+    <typedef-decl name='__int16_t' type-id='type-id-85' filepath='/usr/include/bits/types.h' line='39' column='1' id='type-id-86'/>
+    <typedef-decl name='int16_t' type-id='type-id-86' filepath='/usr/include/bits/stdint-intn.h' line='25' column='1' id='type-id-87'/>
+    <qualified-type-def type-id='type-id-87' volatile='yes' id='type-id-84'/>
+    <typedef-decl name='rte_atomic16_t' type-id='type-id-83' filepath='../lib/librte_eal/common/include/generic/rte_atomic.h' line='225' column='1' id='type-id-80'/>
+    <pointer-type-def type-id='type-id-78' size-in-bits='64' id='type-id-38'/>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='128' id='type-id-39'>
+      <subrange length='2' type-id='type-id-14' id='type-id-88'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-37' size-in-bits='64' id='type-id-89'/>
+    <pointer-type-def type-id='type-id-90' size-in-bits='64' id='type-id-91'/>
+    <typedef-decl name='rte_port_in_op_rx' type-id='type-id-91' filepath='../lib/librte_port/rte_port.h' line='95' column='1' id='type-id-24'/>
+    <class-decl name='rte_port_in_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_port/rte_port.h' line='56' column='1' id='type-id-92'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_pkts_in' type-id='type-id-8' visibility='default' filepath='../lib/librte_port/rte_port.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='n_pkts_drop' type-id='type-id-8' visibility='default' filepath='../lib/librte_port/rte_port.h' line='58' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-92' size-in-bits='64' id='type-id-93'/>
+    <pointer-type-def type-id='type-id-94' size-in-bits='64' id='type-id-95'/>
+    <typedef-decl name='rte_port_in_op_stats_read' type-id='type-id-95' filepath='../lib/librte_port/rte_port.h' line='113' column='1' id='type-id-25'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-96'/>
+    <pointer-type-def type-id='type-id-97' size-in-bits='64' id='type-id-98'/>
+    <typedef-decl name='rte_pipeline_port_in_action_handler' type-id='type-id-98' filepath='../lib/librte_pipeline/rte_pipeline.h' line='561' column='1' id='type-id-20'/>
+    <pointer-type-def type-id='type-id-18' size-in-bits='64' id='type-id-9'/>
+
+    <array-type-def dimensions='1' type-id='type-id-18' size-in-bits='40960' id='type-id-5'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+    <class-decl name='rte_port_out' size-in-bits='640' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='68' column='1' id='type-id-100'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-101' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='f_action' type-id='type-id-102' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='arg_ah' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='h_port' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='n_pkts_dropped_by_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='78' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_port_out_ops' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_port/rte_port.h' line='221' column='1' id='type-id-101'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='f_create' type-id='type-id-103' visibility='default' filepath='../lib/librte_port/rte_port.h' line='222' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='f_free' type-id='type-id-104' visibility='default' filepath='../lib/librte_port/rte_port.h' line='223' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='f_tx' type-id='type-id-105' visibility='default' filepath='../lib/librte_port/rte_port.h' line='224' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='f_tx_bulk' type-id='type-id-106' visibility='default' filepath='../lib/librte_port/rte_port.h' line='225' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='f_flush' type-id='type-id-107' visibility='default' filepath='../lib/librte_port/rte_port.h' line='226' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='f_stats' type-id='type-id-108' visibility='default' filepath='../lib/librte_port/rte_port.h' line='227' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='rte_port_out_op_create' type-id='type-id-28' filepath='../lib/librte_port/rte_port.h' line='146' column='1' id='type-id-103'/>
+    <typedef-decl name='rte_port_out_op_free' type-id='type-id-30' filepath='../lib/librte_port/rte_port.h' line='156' column='1' id='type-id-104'/>
+    <pointer-type-def type-id='type-id-109' size-in-bits='64' id='type-id-110'/>
+    <typedef-decl name='rte_port_out_op_tx' type-id='type-id-110' filepath='../lib/librte_port/rte_port.h' line='168' column='1' id='type-id-105'/>
+    <pointer-type-def type-id='type-id-111' size-in-bits='64' id='type-id-112'/>
+    <typedef-decl name='rte_port_out_op_tx_bulk' type-id='type-id-112' filepath='../lib/librte_port/rte_port.h' line='187' column='1' id='type-id-106'/>
+    <typedef-decl name='rte_port_out_op_flush' type-id='type-id-30' filepath='../lib/librte_port/rte_port.h' line='200' column='1' id='type-id-107'/>
+    <class-decl name='rte_port_out_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_port/rte_port.h' line='131' column='1' id='type-id-113'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_pkts_in' type-id='type-id-8' visibility='default' filepath='../lib/librte_port/rte_port.h' line='132' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='n_pkts_drop' type-id='type-id-8' visibility='default' filepath='../lib/librte_port/rte_port.h' line='133' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-113' size-in-bits='64' id='type-id-114'/>
+    <pointer-type-def type-id='type-id-115' size-in-bits='64' id='type-id-116'/>
+    <typedef-decl name='rte_port_out_op_stats_read' type-id='type-id-116' filepath='../lib/librte_port/rte_port.h' line='215' column='1' id='type-id-108'/>
+    <pointer-type-def type-id='type-id-117' size-in-bits='64' id='type-id-118'/>
+    <typedef-decl name='rte_pipeline_port_out_action_handler' type-id='type-id-118' filepath='../lib/librte_pipeline/rte_pipeline.h' line='694' column='1' id='type-id-102'/>
+
+    <array-type-def dimensions='1' type-id='type-id-100' size-in-bits='40960' id='type-id-6'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+    <class-decl name='rte_table' size-in-bits='1216' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='81' column='1' id='type-id-119'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-120' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='f_action_hit' type-id='type-id-121' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='f_action_miss' type-id='type-id-122' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='arg_ah' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='default_entry' type-id='type-id-123' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='entry_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='table_next_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='table_next_id_valid' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='h_table' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='n_pkts_dropped_by_lkp_hit_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='n_pkts_dropped_by_lkp_miss_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='n_pkts_dropped_lkp_hit' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='n_pkts_dropped_lkp_miss' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.c' line='100' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_ops' size-in-bits='512' is-struct='yes' visibility='default' filepath='../lib/librte_table/rte_table.h' line='257' column='1' id='type-id-120'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='f_create' type-id='type-id-124' visibility='default' filepath='../lib/librte_table/rte_table.h' line='258' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='f_free' type-id='type-id-125' visibility='default' filepath='../lib/librte_table/rte_table.h' line='259' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='f_add' type-id='type-id-126' visibility='default' filepath='../lib/librte_table/rte_table.h' line='260' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='f_delete' type-id='type-id-127' visibility='default' filepath='../lib/librte_table/rte_table.h' line='261' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='f_add_bulk' type-id='type-id-128' visibility='default' filepath='../lib/librte_table/rte_table.h' line='262' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='f_delete_bulk' type-id='type-id-129' visibility='default' filepath='../lib/librte_table/rte_table.h' line='263' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='f_lookup' type-id='type-id-130' visibility='default' filepath='../lib/librte_table/rte_table.h' line='264' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='f_stats' type-id='type-id-131' visibility='default' filepath='../lib/librte_table/rte_table.h' line='265' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-132' size-in-bits='64' id='type-id-133'/>
+    <typedef-decl name='rte_table_op_create' type-id='type-id-133' filepath='../lib/librte_table/rte_table.h' line='52' column='1' id='type-id-124'/>
+    <typedef-decl name='rte_table_op_free' type-id='type-id-30' filepath='../lib/librte_table/rte_table.h' line='63' column='1' id='type-id-125'/>
+    <pointer-type-def type-id='type-id-1' size-in-bits='64' id='type-id-134'/>
+    <pointer-type-def type-id='type-id-21' size-in-bits='64' id='type-id-135'/>
+    <pointer-type-def type-id='type-id-136' size-in-bits='64' id='type-id-137'/>
+    <typedef-decl name='rte_table_op_entry_add' type-id='type-id-137' filepath='../lib/librte_table/rte_table.h' line='92' column='1' id='type-id-126'/>
+    <pointer-type-def type-id='type-id-138' size-in-bits='64' id='type-id-139'/>
+    <typedef-decl name='rte_table_op_entry_delete' type-id='type-id-139' filepath='../lib/librte_table/rte_table.h' line='121' column='1' id='type-id-127'/>
+    <pointer-type-def type-id='type-id-140' size-in-bits='64' id='type-id-141'/>
+    <typedef-decl name='rte_table_op_entry_add_bulk' type-id='type-id-141' filepath='../lib/librte_table/rte_table.h' line='156' column='1' id='type-id-128'/>
+    <pointer-type-def type-id='type-id-142' size-in-bits='64' id='type-id-143'/>
+    <typedef-decl name='rte_table_op_entry_delete_bulk' type-id='type-id-143' filepath='../lib/librte_table/rte_table.h' line='191' column='1' id='type-id-129'/>
+    <pointer-type-def type-id='type-id-8' size-in-bits='64' id='type-id-144'/>
+    <pointer-type-def type-id='type-id-145' size-in-bits='64' id='type-id-146'/>
+    <typedef-decl name='rte_table_op_lookup' type-id='type-id-146' filepath='../lib/librte_table/rte_table.h' line='231' column='1' id='type-id-130'/>
+    <class-decl name='rte_table_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_table/rte_table.h' line='34' column='1' id='type-id-147'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_pkts_in' type-id='type-id-8' visibility='default' filepath='../lib/librte_table/rte_table.h' line='35' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='n_pkts_lookup_miss' type-id='type-id-8' visibility='default' filepath='../lib/librte_table/rte_table.h' line='36' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-147' size-in-bits='64' id='type-id-148'/>
+    <pointer-type-def type-id='type-id-149' size-in-bits='64' id='type-id-150'/>
+    <typedef-decl name='rte_table_op_stats_read' type-id='type-id-150' filepath='../lib/librte_table/rte_table.h' line='251' column='1' id='type-id-131'/>
+    <class-decl name='rte_pipeline_table_entry' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='215' column='1' id='type-id-151'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='action' type-id='type-id-152' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='217' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='' type-id='type-id-153' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='action_data' type-id='type-id-154' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='228' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-155'/>
+    <enum-decl name='rte_pipeline_action' filepath='../lib/librte_pipeline/rte_pipeline.h' line='181' column='1' id='type-id-152'>
+      <underlying-type type-id='type-id-155'/>
+      <enumerator name='RTE_PIPELINE_ACTION_DROP' value='0'/>
+      <enumerator name='RTE_PIPELINE_ACTION_PORT' value='1'/>
+      <enumerator name='RTE_PIPELINE_ACTION_PORT_META' value='2'/>
+      <enumerator name='RTE_PIPELINE_ACTION_TABLE' value='3'/>
+      <enumerator name='RTE_PIPELINE_ACTIONS' value='4'/>
+    </enum-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='32' is-anonymous='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='220' column='1' id='type-id-153'>
+      <data-member access='private'>
+        <var-decl name='port_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='223' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='table_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='225' column='1'/>
+      </data-member>
+    </union-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-156'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-156' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-157'/>
+    <typedef-decl name='uint8_t' type-id='type-id-157' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-158'/>
+
+    <array-type-def dimensions='1' type-id='type-id-158' size-in-bits='infinite' id='type-id-154'>
+      <subrange length='infinite' type-id='type-id-14' id='type-id-41'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-151' size-in-bits='64' id='type-id-123'/>
+    <pointer-type-def type-id='type-id-123' size-in-bits='64' id='type-id-159'/>
+    <pointer-type-def type-id='type-id-160' size-in-bits='64' id='type-id-161'/>
+    <typedef-decl name='rte_pipeline_table_action_handler_hit' type-id='type-id-161' filepath='../lib/librte_pipeline/rte_pipeline.h' line='260' column='1' id='type-id-121'/>
+    <pointer-type-def type-id='type-id-162' size-in-bits='64' id='type-id-163'/>
+    <typedef-decl name='rte_pipeline_table_action_handler_miss' type-id='type-id-163' filepath='../lib/librte_pipeline/rte_pipeline.h' line='296' column='1' id='type-id-122'/>
+
+    <array-type-def dimensions='1' type-id='type-id-119' size-in-bits='77824' id='type-id-7'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-37' size-in-bits='4096' id='type-id-10'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-123' size-in-bits='4096' id='type-id-11'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='256' id='type-id-12'>
+      <subrange length='4' type-id='type-id-14' id='type-id-164'/>
+
+    </array-type-def>
+    <class-decl name='rte_pipeline_table_stats' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='107' column='1' id='type-id-165'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stats' type-id='type-id-147' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='109' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='n_pkts_dropped_by_lkp_hit_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='n_pkts_dropped_by_lkp_miss_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='115' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='n_pkts_dropped_lkp_hit' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='119' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='n_pkts_dropped_lkp_miss' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='123' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-165' size-in-bits='64' id='type-id-166'/>
+    <function-decl name='rte_pipeline_table_stats_read' mangled-name='rte_pipeline_table_stats_read' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1575' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_stats_read@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1575' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1575' column='1'/>
+      <parameter type-id='type-id-166' name='stats' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1576' column='1'/>
+      <parameter type-id='type-id-1' name='clear' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1576' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_pipeline_port_out_stats' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='98' column='1' id='type-id-167'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stats' type-id='type-id-113' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='100' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='n_pkts_dropped_by_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='103' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-167' size-in-bits='64' id='type-id-168'/>
+    <function-decl name='rte_pipeline_port_out_stats_read' mangled-name='rte_pipeline_port_out_stats_read' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1541' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_out_stats_read@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1541' column='1'/>
+      <parameter type-id='type-id-4' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1541' column='1'/>
+      <parameter type-id='type-id-168' name='stats' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1542' column='1'/>
+      <parameter type-id='type-id-1' name='clear' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1542' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_pipeline_port_in_stats' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='88' column='1' id='type-id-169'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stats' type-id='type-id-92' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='n_pkts_dropped_by_ah' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='93' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-169' size-in-bits='64' id='type-id-170'/>
+    <function-decl name='rte_pipeline_port_in_stats_read' mangled-name='rte_pipeline_port_in_stats_read' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1504' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_in_stats_read@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1504' column='1'/>
+      <parameter type-id='type-id-4' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1504' column='1'/>
+      <parameter type-id='type-id-170' name='stats' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1505' column='1'/>
+      <parameter type-id='type-id-1' name='clear' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1505' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_ah_packet_drop' mangled-name='rte_pipeline_ah_packet_drop' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1493' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_ah_packet_drop@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1493' column='1'/>
+      <parameter type-id='type-id-8' name='pkts_mask' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1494' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_ah_packet_hijack' mangled-name='rte_pipeline_ah_packet_hijack' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1484' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_ah_packet_hijack@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1493' column='1'/>
+      <parameter type-id='type-id-8' name='pkts_mask' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1494' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_port_out_packet_insert' mangled-name='rte_pipeline_port_out_packet_insert' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1474' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_out_packet_insert@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1474' column='1'/>
+      <parameter type-id='type-id-4' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1475' column='1'/>
+      <parameter type-id='type-id-37' name='pkt' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1475' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_flush' mangled-name='rte_pipeline_flush' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1452' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_flush@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1452' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_run' mangled-name='rte_pipeline_run' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1313' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_run@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1313' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_check' mangled-name='rte_pipeline_check' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1040' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_check@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='1452' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_port_in_disable' mangled-name='rte_pipeline_port_in_disable' filepath='../lib/librte_pipeline/rte_pipeline.c' line='984' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_in_disable@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='984' column='1'/>
+      <parameter type-id='type-id-4' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='984' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_port_in_enable' mangled-name='rte_pipeline_port_in_enable' filepath='../lib/librte_pipeline/rte_pipeline.c' line='937' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_in_enable@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='984' column='1'/>
+      <parameter type-id='type-id-4' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='984' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_port_in_connect_to_table' mangled-name='rte_pipeline_port_in_connect_to_table' filepath='../lib/librte_pipeline/rte_pipeline.c' line='903' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_in_connect_to_table@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='903' column='1'/>
+      <parameter type-id='type-id-4' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='904' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='905' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_pipeline_port_out_params' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='704' column='1' id='type-id-171'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-172' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='706' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='arg_create' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='708' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='f_action' type-id='type-id-102' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='712' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='arg_ah' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='714' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-101' size-in-bits='64' id='type-id-172'/>
+    <pointer-type-def type-id='type-id-171' size-in-bits='64' id='type-id-173'/>
+    <pointer-type-def type-id='type-id-4' size-in-bits='64' id='type-id-174'/>
+    <function-decl name='rte_pipeline_port_out_create' mangled-name='rte_pipeline_port_out_create' filepath='../lib/librte_pipeline/rte_pipeline.c' line='856' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_out_create@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='856' column='1'/>
+      <parameter type-id='type-id-173' name='params' filepath='../lib/librte_pipeline/rte_pipeline.c' line='857' column='1'/>
+      <parameter type-id='type-id-174' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='858' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_pipeline_port_in_params' size-in-bits='320' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='568' column='1' id='type-id-175'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-176' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='570' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='arg_create' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='572' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='f_action' type-id='type-id-20' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='576' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='arg_ah' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='578' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='burst_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='581' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-176'/>
+    <pointer-type-def type-id='type-id-175' size-in-bits='64' id='type-id-177'/>
+    <function-decl name='rte_pipeline_port_in_create' mangled-name='rte_pipeline_port_in_create' filepath='../lib/librte_pipeline/rte_pipeline.c' line='806' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_port_in_create@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='806' column='1'/>
+      <parameter type-id='type-id-177' name='params' filepath='../lib/librte_pipeline/rte_pipeline.c' line='807' column='1'/>
+      <parameter type-id='type-id-174' name='port_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='808' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_table_entry_delete_bulk' mangled-name='rte_pipeline_table_entry_delete_bulk' filepath='../lib/librte_pipeline/rte_pipeline.c' line='647' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_entry_delete_bulk@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='647' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='648' column='1'/>
+      <parameter type-id='type-id-135' name='keys' filepath='../lib/librte_pipeline/rte_pipeline.c' line='649' column='1'/>
+      <parameter type-id='type-id-4' name='n_keys' filepath='../lib/librte_pipeline/rte_pipeline.c' line='650' column='1'/>
+      <parameter type-id='type-id-134' name='key_found' filepath='../lib/librte_pipeline/rte_pipeline.c' line='651' column='1'/>
+      <parameter type-id='type-id-159' name='entries' filepath='../lib/librte_pipeline/rte_pipeline.c' line='652' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_table_entry_add_bulk' mangled-name='rte_pipeline_table_entry_add_bulk' filepath='../lib/librte_pipeline/rte_pipeline.c' line='581' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_entry_add_bulk@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='581' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='582' column='1'/>
+      <parameter type-id='type-id-135' name='keys' filepath='../lib/librte_pipeline/rte_pipeline.c' line='583' column='1'/>
+      <parameter type-id='type-id-159' name='entries' filepath='../lib/librte_pipeline/rte_pipeline.c' line='584' column='1'/>
+      <parameter type-id='type-id-4' name='n_keys' filepath='../lib/librte_pipeline/rte_pipeline.c' line='585' column='1'/>
+      <parameter type-id='type-id-134' name='key_found' filepath='../lib/librte_pipeline/rte_pipeline.c' line='586' column='1'/>
+      <parameter type-id='type-id-159' name='entries_ptr' filepath='../lib/librte_pipeline/rte_pipeline.c' line='587' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_table_entry_delete' mangled-name='rte_pipeline_table_entry_delete' filepath='../lib/librte_pipeline/rte_pipeline.c' line='543' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_entry_delete@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='543' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='544' column='1'/>
+      <parameter type-id='type-id-21' name='key' filepath='../lib/librte_pipeline/rte_pipeline.c' line='545' column='1'/>
+      <parameter type-id='type-id-134' name='key_found' filepath='../lib/librte_pipeline/rte_pipeline.c' line='546' column='1'/>
+      <parameter type-id='type-id-123' name='entry' filepath='../lib/librte_pipeline/rte_pipeline.c' line='547' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_table_entry_add' mangled-name='rte_pipeline_table_entry_add' filepath='../lib/librte_pipeline/rte_pipeline.c' line='482' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_entry_add@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='482' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='483' column='1'/>
+      <parameter type-id='type-id-21' name='key' filepath='../lib/librte_pipeline/rte_pipeline.c' line='484' column='1'/>
+      <parameter type-id='type-id-123' name='entry' filepath='../lib/librte_pipeline/rte_pipeline.c' line='485' column='1'/>
+      <parameter type-id='type-id-134' name='key_found' filepath='../lib/librte_pipeline/rte_pipeline.c' line='486' column='1'/>
+      <parameter type-id='type-id-159' name='entry_ptr' filepath='../lib/librte_pipeline/rte_pipeline.c' line='487' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_table_default_entry_delete' mangled-name='rte_pipeline_table_default_entry_delete' filepath='../lib/librte_pipeline/rte_pipeline.c' line='449' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_default_entry_delete@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='449' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='450' column='1'/>
+      <parameter type-id='type-id-123' name='entry' filepath='../lib/librte_pipeline/rte_pipeline.c' line='451' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_table_default_entry_add' mangled-name='rte_pipeline_table_default_entry_add' filepath='../lib/librte_pipeline/rte_pipeline.c' line='399' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_default_entry_add@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='399' column='1'/>
+      <parameter type-id='type-id-4' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='400' column='1'/>
+      <parameter type-id='type-id-123' name='default_entry' filepath='../lib/librte_pipeline/rte_pipeline.c' line='401' column='1'/>
+      <parameter type-id='type-id-159' name='default_entry_ptr' filepath='../lib/librte_pipeline/rte_pipeline.c' line='402' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_pipeline_table_params' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='306' column='1' id='type-id-178'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ops' type-id='type-id-179' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='308' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='arg_create' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='311' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='f_action_hit' type-id='type-id-121' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='314' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='f_action_miss' type-id='type-id-122' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='317' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='arg_ah' type-id='type-id-21' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='321' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='action_data_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='324' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-120' size-in-bits='64' id='type-id-179'/>
+    <pointer-type-def type-id='type-id-178' size-in-bits='64' id='type-id-180'/>
+    <function-decl name='rte_pipeline_table_create' mangled-name='rte_pipeline_table_create' filepath='../lib/librte_pipeline/rte_pipeline.c' line='328' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_table_create@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='328' column='1'/>
+      <parameter type-id='type-id-180' name='params' filepath='../lib/librte_pipeline/rte_pipeline.c' line='329' column='1'/>
+      <parameter type-id='type-id-174' name='table_id' filepath='../lib/librte_pipeline/rte_pipeline.c' line='330' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_pipeline_free' mangled-name='rte_pipeline_free' filepath='../lib/librte_pipeline/rte_pipeline.c' line='234' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_free@@DPDK_20.0'>
+      <parameter type-id='type-id-96' name='p' filepath='../lib/librte_pipeline/rte_pipeline.c' line='234' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_pipeline_params' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='73' column='1' id='type-id-181'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='type-id-182' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='socket_id' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='offset_port_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_pipeline.h' line='84' column='1'/>
+      </data-member>
+    </class-decl>
+    <qualified-type-def type-id='type-id-13' const='yes' id='type-id-183'/>
+    <pointer-type-def type-id='type-id-183' size-in-bits='64' id='type-id-182'/>
+    <pointer-type-def type-id='type-id-181' size-in-bits='64' id='type-id-184'/>
+    <function-decl name='rte_pipeline_create' mangled-name='rte_pipeline_create' filepath='../lib/librte_pipeline/rte_pipeline.c' line='192' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_pipeline_create@@DPDK_20.0'>
+      <parameter type-id='type-id-184' name='params' filepath='../lib/librte_pipeline/rte_pipeline.c' line='192' column='1'/>
+      <return type-id='type-id-96'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-97'>
+      <parameter type-id='type-id-96'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-4'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-160'>
+      <parameter type-id='type-id-96'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-8'/>
+      <parameter type-id='type-id-159'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-162'>
+      <parameter type-id='type-id-96'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-8'/>
+      <parameter type-id='type-id-123'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-117'>
+      <parameter type-id='type-id-96'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-8'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-29'>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-109'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-37'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-90'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-4'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-111'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-8'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-145'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-89'/>
+      <parameter type-id='type-id-8'/>
+      <parameter type-id='type-id-144'/>
+      <parameter type-id='type-id-135'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-94'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-93'/>
+      <parameter type-id='type-id-1'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-115'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-114'/>
+      <parameter type-id='type-id-1'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-149'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-148'/>
+      <parameter type-id='type-id-1'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-142'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-135'/>
+      <parameter type-id='type-id-4'/>
+      <parameter type-id='type-id-134'/>
+      <parameter type-id='type-id-135'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-140'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-135'/>
+      <parameter type-id='type-id-135'/>
+      <parameter type-id='type-id-4'/>
+      <parameter type-id='type-id-134'/>
+      <parameter type-id='type-id-135'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-138'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-134'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-136'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-134'/>
+      <parameter type-id='type-id-135'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-76'>
+      <parameter type-id='type-id-70'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-26'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-81'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-21'/>
+      <return type-id='type-id-26'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-27'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-1'/>
+      <return type-id='type-id-21'/>
+    </function-type>
+    <function-type size-in-bits='64' id='type-id-132'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-1'/>
+      <parameter type-id='type-id-4'/>
+      <return type-id='type-id-21'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_pipeline/rte_port_in_action.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='rte_port_in_action' size-in-bits='6144' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='284' column='1' id='type-id-185'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cfg' type-id='type-id-186' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='285' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='data' type-id='type-id-187' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='286' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='6144'>
+        <var-decl name='memory' type-id='type-id-154' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='287' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ap_config' size-in-bits='1664' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='108' column='1' id='type-id-186'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='action_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='109' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='fltr' type-id='type-id-188' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='110' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='lb' type-id='type-id-189' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='111' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_port_in_action_fltr_config' size-in-bits='352' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='76' column='1' id='type-id-188'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='key_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='80' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='key_mask' type-id='type-id-190' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='key' type-id='type-id-190' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='filter_on_match' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='port_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='100' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-158' size-in-bits='128' id='type-id-190'>
+      <subrange length='16' type-id='type-id-14' id='type-id-191'/>
+
+    </array-type-def>
+    <class-decl name='rte_port_in_action_lb_config' size-in-bits='1216' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='122' column='1' id='type-id-189'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='key_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='124' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='key_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='129' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key_mask' type-id='type-id-192' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='132' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='f_hash' type-id='type-id-193' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='seed' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='port_id' type-id='type-id-194' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='148' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-158' size-in-bits='512' id='type-id-192'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-195' size-in-bits='64' id='type-id-196'/>
+    <typedef-decl name='rte_table_hash_op_hash' type-id='type-id-196' filepath='../lib/librte_table/rte_table_hash.h' line='56' column='1' id='type-id-193'/>
+
+    <array-type-def dimensions='1' type-id='type-id-4' size-in-bits='512' id='type-id-194'>
+      <subrange length='16' type-id='type-id-14' id='type-id-191'/>
+
+    </array-type-def>
+    <class-decl name='ap_data' size-in-bits='4160' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2301' column='1' id='type-id-187'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='offset' type-id='type-id-197' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='157' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4096'>
+        <var-decl name='total_size' type-id='type-id-58' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='158' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-58' size-in-bits='4096' id='type-id-197'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-185' size-in-bits='64' id='type-id-198'/>
+    <enum-decl name='rte_port_in_action_type' filepath='../lib/librte_pipeline/rte_port_in_action.h' line='61' column='1' id='type-id-199'>
+      <underlying-type type-id='type-id-155'/>
+      <enumerator name='RTE_PORT_IN_ACTION_FLTR' value='0'/>
+      <enumerator name='RTE_PORT_IN_ACTION_LB' value='1'/>
+    </enum-decl>
+    <function-decl name='rte_port_in_action_apply' mangled-name='rte_port_in_action_apply' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='356' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_apply@@EXPERIMENTAL'>
+      <parameter type-id='type-id-198' name='action' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='356' column='1'/>
+      <parameter type-id='type-id-199' name='type' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='357' column='1'/>
+      <parameter type-id='type-id-21' name='action_params' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='358' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_port_in_action_params_get' mangled-name='rte_port_in_action_params_get' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='503' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_params_get@@EXPERIMENTAL'>
+      <parameter type-id='type-id-198' name='action' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='503' column='1'/>
+      <parameter type-id='type-id-177' name='params' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='504' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_port_in_action_free' mangled-name='rte_port_in_action_free' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='523' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_free@@EXPERIMENTAL'>
+      <parameter type-id='type-id-198' name='action' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='523' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_port_in_action_profile' size-in-bits='5888' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='198' column='1' id='type-id-200'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cfg' type-id='type-id-186' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='199' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='data' type-id='type-id-187' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='200' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='5824'>
+        <var-decl name='frozen' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='201' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-200' size-in-bits='64' id='type-id-201'/>
+    <function-decl name='rte_port_in_action_create' mangled-name='rte_port_in_action_create' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='320' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_create@@EXPERIMENTAL'>
+      <parameter type-id='type-id-201' name='profile' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='320' column='1'/>
+      <parameter type-id='type-id-4' name='socket_id' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='321' column='1'/>
+      <return type-id='type-id-198'/>
+    </function-decl>
+    <function-decl name='rte_port_in_action_profile_freeze' mangled-name='rte_port_in_action_profile_freeze' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='260' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_profile_freeze@@EXPERIMENTAL'>
+      <parameter type-id='type-id-201' name='profile' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='260' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_port_in_action_profile_action_register' mangled-name='rte_port_in_action_profile_action_register' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='221' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_profile_action_register@@EXPERIMENTAL'>
+      <parameter type-id='type-id-201' name='profile' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='221' column='1'/>
+      <parameter type-id='type-id-199' name='type' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='222' column='1'/>
+      <parameter type-id='type-id-21' name='action_config' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='223' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_port_in_action_profile_free' mangled-name='rte_port_in_action_profile_free' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='272' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_profile_free@@EXPERIMENTAL'>
+      <parameter type-id='type-id-201' name='profile' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='260' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_port_in_action_profile_create' mangled-name='rte_port_in_action_profile_create' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='205' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_port_in_action_profile_create@@EXPERIMENTAL'>
+      <parameter type-id='type-id-4' name='socket_id' filepath='../lib/librte_pipeline/rte_port_in_action.c' line='205' column='1'/>
+      <return type-id='type-id-201'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-195'>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-21'/>
+      <parameter type-id='type-id-4'/>
+      <parameter type-id='type-id-8'/>
+      <return type-id='type-id-8'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_pipeline/rte_table_action.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='rte_cryptodev_sym_session' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='974' column='1' id='type-id-202'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='opaque_data' type-id='type-id-8' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='975' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='nb_drivers' type-id='type-id-35' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='977' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='user_data_sz' type-id='type-id-35' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='979' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sess_data' type-id='type-id-203' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='984' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='981' column='1' id='type-id-204'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='data' type-id='type-id-21' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='982' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='refcnt' type-id='type-id-35' visibility='default' filepath='../lib/librte_cryptodev/rte_cryptodev.h' line='983' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-204' size-in-bits='infinite' id='type-id-203'>
+      <subrange length='infinite' type-id='type-id-14' id='type-id-41'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-202' size-in-bits='64' id='type-id-205'/>
+    <class-decl name='rte_table_action' size-in-bits='24256' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2493' column='1' id='type-id-206'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cfg' type-id='type-id-207' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2494' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='data' type-id='type-id-187' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2495' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='5824'>
+        <var-decl name='dscp_table' type-id='type-id-208' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2496' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='9920'>
+        <var-decl name='mp' type-id='type-id-209' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2497' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ap_config' size-in-bits='1664' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2217' column='1' id='type-id-207'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='action_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2218' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='common' type-id='type-id-210' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2219' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='lb' type-id='type-id-211' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2220' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='mtr' type-id='type-id-212' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2221' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='tm' type-id='type-id-213' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2222' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='encap' type-id='type-id-214' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2223' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1280'>
+        <var-decl name='nat' type-id='type-id-215' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2224' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='ttl' type-id='type-id-216' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2225' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='stats' type-id='type-id-217' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2226' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1472'>
+        <var-decl name='sym_crypto' type-id='type-id-218' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2227' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_common_config' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='108' column='1' id='type-id-210'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ip_version' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ip_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='117' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_lb_config' size-in-bits='768' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='145' column='1' id='type-id-211'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='key_size' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='147' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='key_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='key_mask' type-id='type-id-192' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='155' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='f_hash' type-id='type-id-193' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='seed' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='161' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='out_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='166' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_mtr_config' size-in-bits='128' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='287' column='1' id='type-id-212'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='alg' type-id='type-id-219' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='289' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='n_tc' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='295' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='n_packets_enabled' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='302' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='n_bytes_enabled' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='309' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_table_action_meter_algorithm' filepath='../lib/librte_pipeline/rte_table_action.h' line='215' column='1' id='type-id-219'>
+      <underlying-type type-id='type-id-155'/>
+      <enumerator name='RTE_TABLE_ACTION_METER_SRTCM' value='0'/>
+      <enumerator name='RTE_TABLE_ACTION_METER_TRTCM' value='1'/>
+    </enum-decl>
+    <class-decl name='rte_table_action_tm_config' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='342' column='1' id='type-id-213'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_subports_per_port' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='344' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='n_pipes_per_subport' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='347' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_encap_config' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='501' column='1' id='type-id-214'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='encap_mask' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='508' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='' type-id='type-id-220' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='96' is-anonymous='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='512' column='1' id='type-id-220'>
+      <data-member access='private'>
+        <var-decl name='vxlan' type-id='type-id-221' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='531' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='96' is-struct='yes' is-anonymous='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='513' column='1' id='type-id-221'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='data_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='519' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='vlan' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='524' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='ip_version' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='530' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_nat_config' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='579' column='1' id='type-id-215'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='source_nat' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='584' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='proto' type-id='type-id-158' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='590' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_ttl_config' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='615' column='1' id='type-id-216'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='drop' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='622' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='n_packets_enabled' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='629' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_stats_config' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='653' column='1' id='type-id-217'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_packets_enabled' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='659' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='n_bytes_enabled' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='666' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_sym_crypto_config' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='732' column='1' id='type-id-218'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cryptodev_id' type-id='type-id-158' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='734' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='op_offset' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='740' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mp_create' type-id='type-id-36' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='743' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='mp_init' type-id='type-id-36' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='746' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='dscp_table_data' size-in-bits='4096' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='175' column='1' id='type-id-208'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='entry' type-id='type-id-222' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='176' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='dscp_table_entry_data' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='169' column='1' id='type-id-223'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='color' type-id='type-id-224' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='170' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='tc' type-id='type-id-35' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='171' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='tc_queue' type-id='type-id-35' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='172' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='rte_color' filepath='../lib/librte_meter/rte_meter.h' line='36' column='1' id='type-id-224'>
+      <underlying-type type-id='type-id-155'/>
+      <enumerator name='RTE_COLOR_GREEN' value='0'/>
+      <enumerator name='RTE_COLOR_YELLOW' value='1'/>
+      <enumerator name='RTE_COLOR_RED' value='2'/>
+      <enumerator name='RTE_COLORS' value='3'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-223' size-in-bits='4096' id='type-id-222'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+    <class-decl name='meter_profile_data' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='179' column='1' id='type-id-225'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='profile' type-id='type-id-226' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='180' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='profile_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='181' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='valid' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='182' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_meter_trtcm_profile' size-in-bits='384' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='357' column='1' id='type-id-226'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cbs' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='358' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pbs' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='360' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cir_period' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='362' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='cir_bytes_per_period' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='364' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='pir_period' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='366' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='pir_bytes_per_period' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='368' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-225' size-in-bits='14336' id='type-id-209'>
+      <subrange length='32' type-id='type-id-14' id='type-id-55'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-206' size-in-bits='64' id='type-id-227'/>
+    <function-decl name='rte_table_action_crypto_sym_session_get' mangled-name='rte_table_action_crypto_sym_session_get' filepath='../lib/librte_pipeline/rte_table_action.c' line='2862' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_crypto_sym_session_get@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2862' column='1'/>
+      <parameter type-id='type-id-21' name='data' filepath='../lib/librte_pipeline/rte_table_action.c' line='2863' column='1'/>
+      <return type-id='type-id-205'/>
+    </function-decl>
+    <function-decl name='rte_table_action_time_read' mangled-name='rte_table_action_time_read' filepath='../lib/librte_pipeline/rte_table_action.c' line='2839' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_time_read@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2839' column='1'/>
+      <parameter type-id='type-id-21' name='data' filepath='../lib/librte_pipeline/rte_table_action.c' line='2840' column='1'/>
+      <parameter type-id='type-id-144' name='timestamp' filepath='../lib/librte_pipeline/rte_table_action.c' line='2841' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_table_action_stats_counters' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='685' column='1' id='type-id-228'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_packets' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='687' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='n_bytes' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='690' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='n_packets_valid' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='693' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='n_bytes_valid' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='696' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-228' size-in-bits='64' id='type-id-229'/>
+    <function-decl name='rte_table_action_stats_read' mangled-name='rte_table_action_stats_read' filepath='../lib/librte_pipeline/rte_table_action.c' line='2804' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_stats_read@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2804' column='1'/>
+      <parameter type-id='type-id-21' name='data' filepath='../lib/librte_pipeline/rte_table_action.c' line='2805' column='1'/>
+      <parameter type-id='type-id-229' name='stats' filepath='../lib/librte_pipeline/rte_table_action.c' line='2806' column='1'/>
+      <parameter type-id='type-id-1' name='clear' filepath='../lib/librte_pipeline/rte_table_action.c' line='2807' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_table_action_ttl_counters' size-in-bits='64' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='642' column='1' id='type-id-230'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_packets' type-id='type-id-8' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='646' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-230' size-in-bits='64' id='type-id-231'/>
+    <function-decl name='rte_table_action_ttl_read' mangled-name='rte_table_action_ttl_read' filepath='../lib/librte_pipeline/rte_table_action.c' line='2776' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_ttl_read@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2776' column='1'/>
+      <parameter type-id='type-id-21' name='data' filepath='../lib/librte_pipeline/rte_table_action.c' line='2777' column='1'/>
+      <parameter type-id='type-id-231' name='stats' filepath='../lib/librte_pipeline/rte_table_action.c' line='2778' column='1'/>
+      <parameter type-id='type-id-1' name='clear' filepath='../lib/librte_pipeline/rte_table_action.c' line='2779' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_table_action_mtr_counters' size-in-bits='7232' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='327' column='1' id='type-id-232'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='stats' type-id='type-id-233' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='329' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='7168'>
+        <var-decl name='tc_mask' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='335' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_mtr_counters_tc' size-in-bits='448' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='266' column='1' id='type-id-234'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='n_packets' type-id='type-id-235' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='271' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='n_bytes' type-id='type-id-235' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='277' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='n_packets_valid' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='280' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='n_bytes_valid' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='283' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-8' size-in-bits='192' id='type-id-235'>
+      <subrange length='3' type-id='type-id-14' id='type-id-236'/>
+
+    </array-type-def>
+
+    <array-type-def dimensions='1' type-id='type-id-234' size-in-bits='7168' id='type-id-233'>
+      <subrange length='16' type-id='type-id-14' id='type-id-191'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-232' size-in-bits='64' id='type-id-237'/>
+    <function-decl name='rte_table_action_meter_read' mangled-name='rte_table_action_meter_read' filepath='../lib/librte_pipeline/rte_table_action.c' line='2714' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_meter_read@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2714' column='1'/>
+      <parameter type-id='type-id-21' name='data' filepath='../lib/librte_pipeline/rte_table_action.c' line='2715' column='1'/>
+      <parameter type-id='type-id-4' name='tc_mask' filepath='../lib/librte_pipeline/rte_table_action.c' line='2716' column='1'/>
+      <parameter type-id='type-id-237' name='stats' filepath='../lib/librte_pipeline/rte_table_action.c' line='2717' column='1'/>
+      <parameter type-id='type-id-1' name='clear' filepath='../lib/librte_pipeline/rte_table_action.c' line='2718' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_table_action_meter_profile_delete' mangled-name='rte_table_action_meter_profile_delete' filepath='../lib/librte_pipeline/rte_table_action.c' line='2691' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_meter_profile_delete@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2691' column='1'/>
+      <parameter type-id='type-id-4' name='meter_profile_id' filepath='../lib/librte_pipeline/rte_table_action.c' line='2692' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_table_action_meter_profile' size-in-bits='320' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='224' column='1' id='type-id-238'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='alg' type-id='type-id-219' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='226' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='' type-id='type-id-239' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='256' is-anonymous='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='229' column='1' id='type-id-239'>
+      <data-member access='private'>
+        <var-decl name='srtcm' type-id='type-id-240' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='231' column='1'/>
+      </data-member>
+      <data-member access='private'>
+        <var-decl name='trtcm' type-id='type-id-241' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='234' column='1'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='rte_meter_srtcm_params' size-in-bits='192' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='46' column='1' id='type-id-240'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cir' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='47' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='cbs' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ebs' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='49' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_meter_trtcm_params' size-in-bits='256' is-struct='yes' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='55' column='1' id='type-id-241'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cir' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='pir' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cbs' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='pbs' type-id='type-id-8' visibility='default' filepath='../lib/librte_meter/rte_meter.h' line='59' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-238' size-in-bits='64' id='type-id-242'/>
+    <function-decl name='rte_table_action_meter_profile_add' mangled-name='rte_table_action_meter_profile_add' filepath='../lib/librte_pipeline/rte_table_action.c' line='2651' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_meter_profile_add@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2651' column='1'/>
+      <parameter type-id='type-id-4' name='meter_profile_id' filepath='../lib/librte_pipeline/rte_table_action.c' line='2652' column='1'/>
+      <parameter type-id='type-id-242' name='profile' filepath='../lib/librte_pipeline/rte_table_action.c' line='2653' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_table_action_dscp_table' size-in-bits='6144' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='209' column='1' id='type-id-243'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='entry' type-id='type-id-244' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='211' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='rte_table_action_dscp_table_entry' size-in-bits='96' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='190' column='1' id='type-id-245'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tc_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='195' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='tc_queue_id' type-id='type-id-4' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='200' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='color' type-id='type-id-224' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.h' line='205' column='1'/>
+      </data-member>
+    </class-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-245' size-in-bits='6144' id='type-id-244'>
+      <subrange length='64' type-id='type-id-14' id='type-id-99'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-243' size-in-bits='64' id='type-id-246'/>
+    <function-decl name='rte_table_action_dscp_table_update' mangled-name='rte_table_action_dscp_table_update' filepath='../lib/librte_pipeline/rte_table_action.c' line='2619' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_dscp_table_update@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2619' column='1'/>
+      <parameter type-id='type-id-8' name='dscp_mask' filepath='../lib/librte_pipeline/rte_table_action.c' line='2620' column='1'/>
+      <parameter type-id='type-id-246' name='table' filepath='../lib/librte_pipeline/rte_table_action.c' line='2621' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <enum-decl name='rte_table_action_type' filepath='../lib/librte_pipeline/rte_table_action.h' line='69' column='1' id='type-id-247'>
+      <underlying-type type-id='type-id-155'/>
+      <enumerator name='RTE_TABLE_ACTION_FWD' value='0'/>
+      <enumerator name='RTE_TABLE_ACTION_LB' value='1'/>
+      <enumerator name='RTE_TABLE_ACTION_MTR' value='2'/>
+      <enumerator name='RTE_TABLE_ACTION_TM' value='3'/>
+      <enumerator name='RTE_TABLE_ACTION_ENCAP' value='4'/>
+      <enumerator name='RTE_TABLE_ACTION_NAT' value='5'/>
+      <enumerator name='RTE_TABLE_ACTION_TTL' value='6'/>
+      <enumerator name='RTE_TABLE_ACTION_STATS' value='7'/>
+      <enumerator name='RTE_TABLE_ACTION_TIME' value='8'/>
+      <enumerator name='RTE_TABLE_ACTION_SYM_CRYPTO' value='9'/>
+      <enumerator name='RTE_TABLE_ACTION_TAG' value='10'/>
+      <enumerator name='RTE_TABLE_ACTION_DECAP' value='11'/>
+    </enum-decl>
+    <function-decl name='rte_table_action_apply' mangled-name='rte_table_action_apply' filepath='../lib/librte_pipeline/rte_table_action.c' line='2538' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_apply@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='2538' column='1'/>
+      <parameter type-id='type-id-21' name='data' filepath='../lib/librte_pipeline/rte_table_action.c' line='2539' column='1'/>
+      <parameter type-id='type-id-247' name='type' filepath='../lib/librte_pipeline/rte_table_action.c' line='2540' column='1'/>
+      <parameter type-id='type-id-21' name='action_params' filepath='../lib/librte_pipeline/rte_table_action.c' line='2541' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_table_action_table_params_get' mangled-name='rte_table_action_table_params_get' filepath='../lib/librte_pipeline/rte_table_action.c' line='3449' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_table_params_get@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='3449' column='1'/>
+      <parameter type-id='type-id-180' name='params' filepath='../lib/librte_pipeline/rte_table_action.c' line='3450' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_table_action_free' mangled-name='rte_table_action_free' filepath='../lib/librte_pipeline/rte_table_action.c' line='3474' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_free@@EXPERIMENTAL'>
+      <parameter type-id='type-id-227' name='action' filepath='../lib/librte_pipeline/rte_table_action.c' line='3474' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <class-decl name='rte_table_action_profile' size-in-bits='5888' is-struct='yes' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2375' column='1' id='type-id-248'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='cfg' type-id='type-id-207' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2376' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='data' type-id='type-id-187' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2377' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='5824'>
+        <var-decl name='frozen' type-id='type-id-1' visibility='default' filepath='../lib/librte_pipeline/rte_table_action.c' line='2378' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-248' size-in-bits='64' id='type-id-249'/>
+    <function-decl name='rte_table_action_create' mangled-name='rte_table_action_create' filepath='../lib/librte_pipeline/rte_table_action.c' line='2501' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_create@@EXPERIMENTAL'>
+      <parameter type-id='type-id-249' name='profile' filepath='../lib/librte_pipeline/rte_table_action.c' line='2501' column='1'/>
+      <parameter type-id='type-id-4' name='socket_id' filepath='../lib/librte_pipeline/rte_table_action.c' line='2502' column='1'/>
+      <return type-id='type-id-227'/>
+    </function-decl>
+    <function-decl name='rte_table_action_profile_freeze' mangled-name='rte_table_action_profile_freeze' filepath='../lib/librte_pipeline/rte_table_action.c' line='2466' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_profile_freeze@@EXPERIMENTAL'>
+      <parameter type-id='type-id-249' name='profile' filepath='../lib/librte_pipeline/rte_table_action.c' line='2466' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_table_action_profile_action_register' mangled-name='rte_table_action_profile_action_register' filepath='../lib/librte_pipeline/rte_table_action.c' line='2403' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_profile_action_register@@EXPERIMENTAL'>
+      <parameter type-id='type-id-249' name='profile' filepath='../lib/librte_pipeline/rte_table_action.c' line='2403' column='1'/>
+      <parameter type-id='type-id-247' name='type' filepath='../lib/librte_pipeline/rte_table_action.c' line='2404' column='1'/>
+      <parameter type-id='type-id-21' name='action_config' filepath='../lib/librte_pipeline/rte_table_action.c' line='2405' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_table_action_profile_free' mangled-name='rte_table_action_profile_free' filepath='../lib/librte_pipeline/rte_table_action.c' line='2479' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_profile_free@@EXPERIMENTAL'>
+      <parameter type-id='type-id-249' name='profile' filepath='../lib/librte_pipeline/rte_table_action.c' line='2466' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <pointer-type-def type-id='type-id-210' size-in-bits='64' id='type-id-250'/>
+    <function-decl name='rte_table_action_profile_create' mangled-name='rte_table_action_profile_create' filepath='../lib/librte_pipeline/rte_table_action.c' line='2382' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_table_action_profile_create@@EXPERIMENTAL'>
+      <parameter type-id='type-id-250' name='common' filepath='../lib/librte_pipeline/rte_table_action.c' line='2382' column='1'/>
+      <return type-id='type-id-249'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>

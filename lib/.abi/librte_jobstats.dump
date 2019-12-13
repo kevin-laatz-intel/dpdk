@@ -1,0 +1,197 @@
+<abi-corpus path='gcc//lib/librte_jobstats.so.20.0' architecture='elf-amd-x86_64' soname='librte_jobstats.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='rte_jobstats_abort' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_context_finish' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_context_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_context_reset' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_context_start' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_finish' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_init' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_reset' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_set_max' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_set_min' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_set_period' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_set_target' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_set_update_period_function' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='rte_jobstats_start' version='DPDK_20.0' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='../lib/librte_jobstats/rte_jobstats.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='void' id='type-id-1'/>
+    <class-decl name='rte_jobstats' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='36' column='1' id='type-id-2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='period' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='37' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='min_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='40' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='max_period' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='43' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='target' type-id='type-id-4' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='46' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='update_period_cb' type-id='type-id-5' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='exec_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='min_exec_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='max_exec_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='exec_cnt' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='name' type-id='type-id-6' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='context' type-id='type-id-7' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='67' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-8'/>
+    <typedef-decl name='__uint64_t' type-id='type-id-8' filepath='/usr/include/bits/types.h' line='45' column='1' id='type-id-9'/>
+    <typedef-decl name='uint64_t' type-id='type-id-9' filepath='/usr/include/bits/stdint-uintn.h' line='27' column='1' id='type-id-3'/>
+    <type-decl name='long int' size-in-bits='64' id='type-id-10'/>
+    <typedef-decl name='__int64_t' type-id='type-id-10' filepath='/usr/include/bits/types.h' line='44' column='1' id='type-id-11'/>
+    <typedef-decl name='int64_t' type-id='type-id-11' filepath='/usr/include/bits/stdint-intn.h' line='27' column='1' id='type-id-4'/>
+    <pointer-type-def type-id='type-id-2' size-in-bits='64' id='type-id-12'/>
+    <pointer-type-def type-id='type-id-13' size-in-bits='64' id='type-id-14'/>
+    <typedef-decl name='rte_job_update_period_cb_t' type-id='type-id-14' filepath='../lib/librte_jobstats/rte_jobstats.h' line='33' column='1' id='type-id-5'/>
+    <type-decl name='char' size-in-bits='8' id='type-id-15'/>
+
+    <array-type-def dimensions='1' type-id='type-id-15' size-in-bits='256' id='type-id-6'>
+      <subrange length='32' type-id='type-id-8' id='type-id-16'/>
+
+    </array-type-def>
+    <class-decl name='rte_jobstats_context' size-in-bits='1024' is-struct='yes' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='71' column='1' id='type-id-17'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='state_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='loop_executed_jobs' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='exec_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='min_exec_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='max_exec_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='management_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='min_management_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='max_management_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='start_time' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='107' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='job_exec_cnt' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='110' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='loop_cnt' type-id='type-id-3' visibility='default' filepath='../lib/librte_jobstats/rte_jobstats.h' line='113' column='1'/>
+      </data-member>
+    </class-decl>
+    <pointer-type-def type-id='type-id-17' size-in-bits='64' id='type-id-7'/>
+    <function-decl name='rte_jobstats_reset' mangled-name='rte_jobstats_reset' filepath='../lib/librte_jobstats/rte_jobstats.c' line='261' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_reset@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='261' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_set_update_period_function' mangled-name='rte_jobstats_set_update_period_function' filepath='../lib/librte_jobstats/rte_jobstats.c' line='251' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_set_update_period_function@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='251' column='1'/>
+      <parameter type-id='type-id-5' name='update_period_cb' filepath='../lib/librte_jobstats/rte_jobstats.c' line='252' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <type-decl name='int' size-in-bits='32' id='type-id-18'/>
+    <qualified-type-def type-id='type-id-15' const='yes' id='type-id-19'/>
+    <pointer-type-def type-id='type-id-19' size-in-bits='64' id='type-id-20'/>
+    <function-decl name='rte_jobstats_init' mangled-name='rte_jobstats_init' filepath='../lib/librte_jobstats/rte_jobstats.c' line='231' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_init@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='231' column='1'/>
+      <parameter type-id='type-id-20' name='name' filepath='../lib/librte_jobstats/rte_jobstats.c' line='231' column='1'/>
+      <parameter type-id='type-id-3' name='min_period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='232' column='1'/>
+      <parameter type-id='type-id-3' name='max_period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='232' column='1'/>
+      <parameter type-id='type-id-3' name='initial_period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='232' column='1'/>
+      <parameter type-id='type-id-4' name='target' filepath='../lib/librte_jobstats/rte_jobstats.c' line='233' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_set_max' mangled-name='rte_jobstats_set_max' filepath='../lib/librte_jobstats/rte_jobstats.c' line='223' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_set_max@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='223' column='1'/>
+      <parameter type-id='type-id-3' name='period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='223' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_set_min' mangled-name='rte_jobstats_set_min' filepath='../lib/librte_jobstats/rte_jobstats.c' line='215' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_set_min@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='223' column='1'/>
+      <parameter type-id='type-id-3' name='period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='223' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-21'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-21' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-22'/>
+    <typedef-decl name='uint8_t' type-id='type-id-22' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-23'/>
+    <function-decl name='rte_jobstats_set_period' mangled-name='rte_jobstats_set_period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='201' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_set_period@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='201' column='1'/>
+      <parameter type-id='type-id-3' name='period' filepath='../lib/librte_jobstats/rte_jobstats.c' line='201' column='1'/>
+      <parameter type-id='type-id-23' name='saturate' filepath='../lib/librte_jobstats/rte_jobstats.c' line='202' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_finish' mangled-name='rte_jobstats_finish' filepath='../lib/librte_jobstats/rte_jobstats.c' line='165' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_finish@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='165' column='1'/>
+      <parameter type-id='type-id-4' name='job_value' filepath='../lib/librte_jobstats/rte_jobstats.c' line='165' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_abort' mangled-name='rte_jobstats_abort' filepath='../lib/librte_jobstats/rte_jobstats.c' line='145' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_abort@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='145' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_start' mangled-name='rte_jobstats_start' filepath='../lib/librte_jobstats/rte_jobstats.c' line='126' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_start@@DPDK_20.0'>
+      <parameter type-id='type-id-7' name='ctx' filepath='../lib/librte_jobstats/rte_jobstats.c' line='126' column='1'/>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='126' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_set_target' mangled-name='rte_jobstats_set_target' filepath='../lib/librte_jobstats/rte_jobstats.c' line='120' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_set_target@@DPDK_20.0'>
+      <parameter type-id='type-id-12' name='job' filepath='../lib/librte_jobstats/rte_jobstats.c' line='120' column='1'/>
+      <parameter type-id='type-id-4' name='target' filepath='../lib/librte_jobstats/rte_jobstats.c' line='120' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_context_reset' mangled-name='rte_jobstats_context_reset' filepath='../lib/librte_jobstats/rte_jobstats.c' line='109' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_context_reset@@DPDK_20.0'>
+      <parameter type-id='type-id-7' name='ctx' filepath='../lib/librte_jobstats/rte_jobstats.c' line='109' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_context_finish' mangled-name='rte_jobstats_context_finish' filepath='../lib/librte_jobstats/rte_jobstats.c' line='96' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_context_finish@@DPDK_20.0'>
+      <parameter type-id='type-id-7' name='ctx' filepath='../lib/librte_jobstats/rte_jobstats.c' line='96' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_context_start' mangled-name='rte_jobstats_context_start' filepath='../lib/librte_jobstats/rte_jobstats.c' line='84' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_context_start@@DPDK_20.0'>
+      <parameter type-id='type-id-7' name='ctx' filepath='../lib/librte_jobstats/rte_jobstats.c' line='96' column='1'/>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='rte_jobstats_context_init' mangled-name='rte_jobstats_context_init' filepath='../lib/librte_jobstats/rte_jobstats.c' line='70' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='rte_jobstats_context_init@@DPDK_20.0'>
+      <parameter type-id='type-id-7' name='ctx' filepath='../lib/librte_jobstats/rte_jobstats.c' line='70' column='1'/>
+      <return type-id='type-id-18'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='type-id-13'>
+      <parameter type-id='type-id-12'/>
+      <parameter type-id='type-id-4'/>
+      <return type-id='type-id-1'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>
