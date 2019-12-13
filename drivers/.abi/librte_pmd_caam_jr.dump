@@ -1,0 +1,47 @@
+<abi-corpus path='gcc//drivers/librte_pmd_caam_jr.so.20.0' architecture='elf-amd-x86_64' soname='librte_pmd_caam_jr.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_cryptodev.so.20.0'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_bus_vdev.so.20.0'/>
+    <dependency name='librte_bus_dpaa.so.20.0'/>
+    <dependency name='librte_common_dpaax.so.20.0'/>
+    <dependency name='librte_eventdev.so.20.0'/>
+    <dependency name='librte_ethdev.so.20.0'/>
+    <dependency name='librte_net.so.20.0'/>
+    <dependency name='librte_meter.so.20.0'/>
+    <dependency name='librte_hash.so.20.0'/>
+    <dependency name='librte_timer.so.20.0'/>
+    <dependency name='librte_security.so.20.0'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <abi-instr version='1.0' address-size='64' path='../drivers/crypto/caam_jr/caam_jr.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-1'/>
+    <var-decl name='caam_jr_logtype' type-id='type-id-1' visibility='default' filepath='../drivers/crypto/caam_jr/caam_jr_log.h' line='10' column='1'/>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-2'/>
+    <enum-decl name='rta_sec_era' filepath='../drivers/crypto/caam_jr/../../common/dpaax/caamflib/rta/sec_run_time_asm.h' line='29' column='1' id='type-id-3'>
+      <underlying-type type-id='type-id-2'/>
+      <enumerator name='RTA_SEC_ERA_1' value='0'/>
+      <enumerator name='RTA_SEC_ERA_2' value='1'/>
+      <enumerator name='RTA_SEC_ERA_3' value='2'/>
+      <enumerator name='RTA_SEC_ERA_4' value='3'/>
+      <enumerator name='RTA_SEC_ERA_5' value='4'/>
+      <enumerator name='RTA_SEC_ERA_6' value='5'/>
+      <enumerator name='RTA_SEC_ERA_7' value='6'/>
+      <enumerator name='RTA_SEC_ERA_8' value='7'/>
+      <enumerator name='RTA_SEC_ERA_9' value='8'/>
+      <enumerator name='RTA_SEC_ERA_10' value='9'/>
+      <enumerator name='MAX_SEC_ERA' value='9'/>
+    </enum-decl>
+    <var-decl name='rta_sec_era' type-id='type-id-3' visibility='default' filepath='../drivers/crypto/caam_jr/../../common/dpaax/caamflib/desc.h' line='21' column='1'/>
+  </abi-instr>
+</abi-corpus>

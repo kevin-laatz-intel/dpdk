@@ -1,0 +1,119 @@
+<abi-corpus path='gcc//drivers/librte_pmd_qat.so.20.0' architecture='elf-amd-x86_64' soname='librte_pmd_qat.so.20.0'>
+  <elf-needed>
+    <dependency name='libm.so.6'/>
+    <dependency name='libdl.so.2'/>
+    <dependency name='libnuma.so.1'/>
+    <dependency name='librte_compressdev.so.0.200'/>
+    <dependency name='librte_eal.so.20.0'/>
+    <dependency name='librte_kvargs.so.20.0'/>
+    <dependency name='librte_mbuf.so.20.0'/>
+    <dependency name='librte_mempool.so.20.0'/>
+    <dependency name='librte_ring.so.20.0'/>
+    <dependency name='librte_bus_pci.so.20.0'/>
+    <dependency name='librte_pci.so.20.0'/>
+    <dependency name='librte_cryptodev.so.20.0'/>
+    <dependency name='libcrypto.so.1.1'/>
+    <dependency name='libisal.so.2'/>
+    <dependency name='libbsd.so.0'/>
+    <dependency name='libpthread.so.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/qat/qat_qp.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='qat_qp_hw_data' size-in-bits='96' is-struct='yes' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='27' column='1' id='type-id-1'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='service_type' type-id='type-id-2' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='hw_bundle_num' type-id='type-id-3' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='29' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='40'>
+        <var-decl name='tx_ring_num' type-id='type-id-3' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='30' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='rx_ring_num' type-id='type-id-3' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='31' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tx_msg_size' type-id='type-id-4' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='32' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='rx_msg_size' type-id='type-id-4' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='33' column='1'/>
+      </data-member>
+    </class-decl>
+    <type-decl name='unnamed-enum-underlying-type' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='type-id-5'/>
+    <enum-decl name='qat_service_type' filepath='../drivers/common/qat/qat_common.h' line='24' column='1' id='type-id-2'>
+      <underlying-type type-id='type-id-5'/>
+      <enumerator name='QAT_SERVICE_ASYMMETRIC' value='0'/>
+      <enumerator name='QAT_SERVICE_SYMMETRIC' value='1'/>
+      <enumerator name='QAT_SERVICE_COMPRESSION' value='2'/>
+      <enumerator name='QAT_SERVICE_INVALID' value='3'/>
+    </enum-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='type-id-6'/>
+    <typedef-decl name='__uint8_t' type-id='type-id-6' filepath='/usr/include/bits/types.h' line='38' column='1' id='type-id-7'/>
+    <typedef-decl name='uint8_t' type-id='type-id-7' filepath='/usr/include/bits/stdint-uintn.h' line='24' column='1' id='type-id-3'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='type-id-8'/>
+    <typedef-decl name='__uint16_t' type-id='type-id-8' filepath='/usr/include/bits/types.h' line='40' column='1' id='type-id-9'/>
+    <typedef-decl name='uint16_t' type-id='type-id-9' filepath='/usr/include/bits/stdint-uintn.h' line='25' column='1' id='type-id-4'/>
+    <qualified-type-def type-id='type-id-1' const='yes' id='type-id-10'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='type-id-11'/>
+
+
+    <array-type-def dimensions='2' type-id='type-id-10' size-in-bits='infinite' id='type-id-12'>
+      <subrange length='infinite' id='type-id-13'/>
+
+      <subrange length='2' type-id='type-id-11' id='type-id-14'/>
+
+    </array-type-def>
+    <qualified-type-def type-id='type-id-12' const='yes' id='type-id-15'/>
+    <var-decl name='qat_gen1_qps' type-id='type-id-15' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='87' column='1'/>
+    <var-decl name='qat_gen3_qps' type-id='type-id-15' visibility='default' filepath='../drivers/common/qat/qat_qp.h' line='88' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/qat/qat_device.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <class-decl name='qat_gen_hw_data' size-in-bits='192' is-struct='yes' visibility='default' filepath='../drivers/common/qat/qat_device.h' line='88' column='1' id='type-id-16'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='dev_gen' type-id='type-id-17' visibility='default' filepath='../drivers/common/qat/qat_device.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='qp_hw_data' type-id='type-id-18' visibility='default' filepath='../drivers/common/qat/qat_device.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='comp_num_im_bufs_required' type-id='type-id-19' visibility='default' filepath='../drivers/common/qat/qat_device.h' line='91' column='1'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='qat_device_gen' filepath='../drivers/common/qat/qat_common.h' line='18' column='1' id='type-id-17'>
+      <underlying-type type-id='type-id-5'/>
+      <enumerator name='QAT_GEN1' value='1'/>
+      <enumerator name='QAT_GEN2' value='2'/>
+      <enumerator name='QAT_GEN3' value='3'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-10' size-in-bits='192' id='type-id-20'>
+      <subrange length='2' type-id='type-id-11' id='type-id-14'/>
+
+    </array-type-def>
+    <pointer-type-def type-id='type-id-20' size-in-bits='64' id='type-id-18'/>
+    <enum-decl name='qat_comp_num_im_buffers' filepath='../drivers/common/qat/qat_device.h' line='19' column='1' id='type-id-19'>
+      <underlying-type type-id='type-id-5'/>
+      <enumerator name='QAT_NUM_INTERM_BUFS_GEN1' value='12'/>
+      <enumerator name='QAT_NUM_INTERM_BUFS_GEN2' value='20'/>
+      <enumerator name='QAT_NUM_INTERM_BUFS_GEN3' value='20'/>
+    </enum-decl>
+
+    <array-type-def dimensions='1' type-id='type-id-16' size-in-bits='infinite' id='type-id-21'>
+      <subrange length='infinite' id='type-id-13'/>
+
+    </array-type-def>
+    <var-decl name='qat_gen_config' type-id='type-id-21' visibility='default' filepath='../drivers/common/qat/qat_device.h' line='94' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/common/qat/qat_logs.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <type-decl name='int' size-in-bits='32' id='type-id-22'/>
+    <var-decl name='qat_gen_logtype' type-id='type-id-22' visibility='default' filepath='../drivers/common/qat/qat_logs.h' line='8' column='1'/>
+    <var-decl name='qat_dp_logtype' type-id='type-id-22' visibility='default' filepath='../drivers/common/qat/qat_logs.h' line='9' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/crypto/qat/qat_sym_pmd.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cryptodev_qat_driver_id' type-id='type-id-3' visibility='default' filepath='../drivers/crypto/qat/qat_sym_pmd.h' line='18' column='1'/>
+  </abi-instr>
+  <abi-instr version='1.0' address-size='64' path='../drivers/crypto/qat/qat_asym_pmd.c' comp-dir-path='/root/klaatz/dpdk/gcc' language='LANG_C99'>
+    <var-decl name='cryptodev_qat_asym_driver_id' type-id='type-id-3' visibility='default' filepath='../drivers/crypto/qat/qat_asym_pmd.h' line='16' column='1'/>
+  </abi-instr>
+</abi-corpus>
