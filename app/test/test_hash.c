@@ -235,15 +235,9 @@ static void run_hash_func_tests(void)
 {
 	unsigned i, j, k;
 
-	for (i = 0;
-	     i < sizeof(hashtest_funcs) / sizeof(rte_hash_function);
-	     i++) {
-		for (j = 0;
-		     j < sizeof(hashtest_initvals) / sizeof(uint32_t);
-		     j++) {
-			for (k = 0;
-			     k < sizeof(hashtest_key_lens) / sizeof(uint32_t);
-			     k++) {
+	for (i = 0; i < RTE_DIM(hashtest_funcs); i++) {
+		for (j = 0; j < RTE_DIM(hashtest_initvals); j++) {
+			for (k = 0; k < RTE_DIM(hashtest_key_lens); k++) {
 				run_hash_func_test(hashtest_funcs[i],
 						hashtest_initvals[j],
 						hashtest_key_lens[k]);
@@ -1142,8 +1136,11 @@ fbk_hash_unit_test(void)
 	handle = rte_fbk_hash_create(&invalid_params_7);
 	RETURN_IF_ERROR_FBK(handle != NULL, "fbk hash creation should have failed");
 
-	handle = rte_fbk_hash_create(&invalid_params_8);
-	RETURN_IF_ERROR_FBK(handle != NULL, "fbk hash creation should have failed");
+	if (rte_eal_has_hugepages()) {
+		handle = rte_fbk_hash_create(&invalid_params_8);
+		RETURN_IF_ERROR_FBK(handle != NULL,
+					"fbk hash creation should have failed");
+	}
 
 	handle = rte_fbk_hash_create(&invalid_params_same_name_1);
 	RETURN_IF_ERROR_FBK(handle == NULL, "fbk hash creation should have succeeded");

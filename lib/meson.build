@@ -113,10 +113,10 @@ foreach l:libraries
 
 			if is_experimental != 0
 				lib_version = experimental_abi_version
-				so_version = experimental_abi_version
+				so_version = experimental_so_version
 			else
 				lib_version = abi_version
-				so_version = abi_version
+				so_version = stable_so_version
 			endif
 
 			# first build static lib
@@ -148,12 +148,16 @@ foreach l:libraries
 				command: [map_to_def_cmd, '@INPUT@', '@OUTPUT@'],
 				input: version_map,
 				output: 'rte_@0@_exports.def'.format(name))
-			lk_deps = [version_map, def_file]
-			if is_windows
+
+			if is_ms_linker
 				lk_args = ['-Wl,/def:' + def_file.full_path(),
 					'-Wl,/implib:lib\\' + implib]
 			else
 				lk_args = ['-Wl,--version-script=' + version_map]
+			endif
+
+			lk_deps = [version_map, def_file]
+			if not is_windows
 				# on unix systems check the output of the
 				# experimental syms script, using it as a
 				# dependency of the .so build

@@ -487,6 +487,21 @@ set packet types classification for a specific port::
 
    testpmd> set port (port_id) ptypes_mask (mask)
 
+show port mac addresses info
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Show mac addresses added for a specific port::
+
+   testpmd> show port (port_id) macs
+
+
+show port multicast mac addresses info
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Show multicast mac addresses added for a specific port::
+
+   testpmd> show port (port_id) mcast_macs
+
 show device info
 ~~~~~~~~~~~~~~~~
 
@@ -2302,6 +2317,16 @@ testpmd will add this value to any Tx packet sent from this port::
 
    testpmd> port config (port_id) tx_metadata (value)
 
+port config dynf
+~~~~~~~~~~~~~~~~
+
+Set/clear dynamic flag per port.
+testpmd will register this flag in the mbuf (same registration
+for both Tx and Rx). Then set/clear this flag for each Tx
+packet sent from this port. The set bit only works for Tx packet::
+
+   testpmd> port config (port_id) dynf (name) (set|clear)
+
 port config mtu
 ~~~~~~~~~~~~~~~
 
@@ -3579,6 +3604,10 @@ following sections.
 
    flow isolate {port_id} {boolean}
 
+- Dump internal representation information of all flows in hardware::
+
+   flow dump {port_id} {output_file}
+
 Validating flow rules
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -3954,6 +3983,19 @@ This section lists supported pattern items and their attributes, if any.
 
   - ``proto_id {unsigned}``: PPP protocol identifier.
 
+- ``l2tpv3oip``: match L2TPv3 over IP header.
+
+  - ``session_id {unsigned}``: L2TPv3 over IP session identifier.
+
+- ``ah``: match AH header.
+
+  - ``spi {unsigned}``: security parameters index.
+
+- ``pfcp``: match PFCP header.
+
+  - ``s_field {unsigned}``: S field.
+  - ``seid {unsigned}``: session endpoint identifier.
+
 Actions list
 ^^^^^^^^^^^^
 
@@ -4213,6 +4255,14 @@ This section lists supported actions and their attributes, if any.
 
   - ``value {unsigned}``: Value to decrease TCP acknowledgment number by.
 
+- ``set_ipv4_dscp``: Set IPv4 DSCP value with specified value
+
+  - ``dscp_value {unsigned}``: The new DSCP value to be set
+
+- ``set_ipv6_dscp``: Set IPv6 DSCP value with specified value
+
+  - ``dscp_value {unsigned}``: The new DSCP value to be set
+
 Destroying flow rules
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -4428,6 +4478,22 @@ Disabling isolated mode::
  testpmd> flow isolate 0 false
  Ingress traffic on port 0 is not restricted anymore to the defined flow rules
  testpmd>
+
+Dumping HW internal information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``flow dump`` dumps the hardware's internal representation information of
+all flows. It is bound to ``rte_flow_dev_dump()``::
+
+   flow dump {port_id} {output_file}
+
+If successful, it will show::
+
+   Flow dump finished
+
+Otherwise, it will complain error occurred::
+
+   Caught error type [...] ([...]): [...]
 
 Sample QinQ flow rules
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -4750,6 +4816,49 @@ Decapsulating VxLAN::
  testpmd> set raw_decap eth / ipv4 / udp / vxlan / end_set
  testpmd> flow create 0 ingress pattern eth / ipv4 / udp / vxlan / eth / ipv4 /
         end actions raw_decap / queue index 0 / end
+
+Sample ESP rules
+~~~~~~~~~~~~~~~~
+
+ESP rules can be created by the following commands::
+
+ testpmd> flow create 0 ingress pattern eth / ipv4 / esp spi is 1 / end actions
+        queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv4 / udp / esp spi is 1 / end
+        actions queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv6 / esp spi is 1 / end actions
+        queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv6 / udp / esp spi is 1 / end
+        actions queue index 3 / end
+
+Sample AH rules
+~~~~~~~~~~~~~~~~
+
+AH rules can be created by the following commands::
+
+ testpmd> flow create 0 ingress pattern eth / ipv4 / ah spi is 1 / end actions
+        queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv4 / udp / ah spi is 1 / end
+        actions queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv6 / ah spi is 1 / end actions
+        queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv6 / udp / ah spi is 1 / end
+        actions queue index 3 / end
+
+Sample PFCP rules
+~~~~~~~~~~~~~~~~~
+
+PFCP rules can be created by the following commands(s_field need to be 1
+if seid is set)::
+
+ testpmd> flow create 0 ingress pattern eth / ipv4 / pfcp s_field is 0 / end
+        actions queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv4 / pfcp s_field is 1
+        seid is 1 / end actions queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv6 / pfcp s_field is 0 / end
+        actions queue index 3 / end
+ testpmd> flow create 0 ingress pattern eth / ipv6 / pfcp s_field is 1
+        seid is 1 / end actions queue index 3 / end
 
 BPF Functions
 --------------

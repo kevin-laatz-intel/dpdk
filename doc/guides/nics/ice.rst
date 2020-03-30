@@ -5,7 +5,7 @@ ICE Poll Mode Driver
 ======================
 
 The ice PMD (librte_pmd_ice) provides poll mode driver support for
-10/25 Gbps Intel® Ethernet 810 Series Network Adapters based on
+10/25/50/100 Gbps Intel® Ethernet 810 Series Network Adapters based on
 the Intel Ethernet Controller E810.
 
 
@@ -53,10 +53,6 @@ Please note that enabling debugging options may affect system performance.
 - ``CONFIG_RTE_LIBRTE_ICE_DEBUG_*`` (default ``n``)
 
   Toggle display of generic debugging messages.
-
-- ``CONFIG_RTE_LIBRTE_ICE_RX_ALLOW_BULK_ALLOC`` (default ``y``)
-
-  Toggle bulk allocation for RX.
 
 - ``CONFIG_RTE_LIBRTE_ICE_16BYTE_RX_DESC`` (default ``n``)
 

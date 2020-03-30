@@ -42,8 +42,23 @@ extern "C" {
 #define RTE_STD_C11
 #endif
 
-/** Define GCC_VERSION **/
-#ifdef RTE_TOOLCHAIN_GCC
+/*
+ * RTE_TOOLCHAIN_GCC is defined if the target is built with GCC,
+ * while a host application (like pmdinfogen) may have another compiler.
+ * RTE_CC_IS_GNU is true if the file is compiled with GCC,
+ * no matter it is a target or host application.
+ */
+#define RTE_CC_IS_GNU 0
+#if defined __clang__
+#define RTE_CC_CLANG
+#elif defined __INTEL_COMPILER
+#define RTE_CC_ICC
+#elif defined __GNUC__
+#define RTE_CC_GCC
+#undef RTE_CC_IS_GNU
+#define RTE_CC_IS_GNU 1
+#endif
+#if RTE_CC_IS_GNU
 #define GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 +	\
 		__GNUC_PATCHLEVEL__)
 #endif
@@ -88,6 +103,21 @@ typedef uint16_t unaligned_uint16_t;
  * as to avoid a compiler warning
  */
 #define RTE_SET_USED(x) (void)(x)
+
+/**
+ * Check format string and its arguments at compile-time.
+ *
+ * GCC on Windows assumes MS-specific format string by default,
+ * even if the underlying stdio implementation is ANSI-compliant,
+ * so this must be overridden.
+ */
+#if RTE_CC_IS_GNU
+#define __rte_format_printf(format_index, first_arg) \
+	__attribute__((format(gnu_printf, format_index, first_arg)))
+#else
+#define __rte_format_printf(format_index, first_arg) \
+	__attribute__((format(printf, format_index, first_arg)))
+#endif
 
 #define RTE_PRIORITY_LOG 101
 #define RTE_PRIORITY_BUS 110
@@ -335,6 +365,18 @@ typedef uint64_t phys_addr_t;
 typedef uint64_t rte_iova_t;
 #define RTE_BAD_IOVA ((rte_iova_t)-1)
 
+/*********** Structure alignment markers ********/
+
+/** Generic marker for any place in a structure. */
+__extension__ typedef void    *RTE_MARKER[0];
+/** Marker for 1B alignment in a structure. */
+__extension__ typedef uint8_t  RTE_MARKER8[0];
+/** Marker for 2B alignment in a structure. */
+__extension__ typedef uint16_t RTE_MARKER16[0];
+/** Marker for 4B alignment in a structure. */
+__extension__ typedef uint32_t RTE_MARKER32[0];
+/** Marker for 8B alignment in a structure. */
+__extension__ typedef uint64_t RTE_MARKER64[0];
 
 /**
  * Combines 32b inputs most significant set bits into the least
@@ -538,6 +580,9 @@ rte_bsf32_safe(uint64_t v, uint32_t *pos)
 /**
  * Return the rounded-up log2 of a integer.
  *
+ * @note Contrary to the logarithm mathematical operation,
+ * rte_log2_u32(0) == 0 and not -inf.
+ *
  * @param v
  *     The input parameter.
  * @return
@@ -631,6 +676,9 @@ rte_fls_u64(uint64_t x)
 
 /**
  * Return the rounded-up log2 of a 64-bit integer.
+ *
+ * @note Contrary to the logarithm mathematical operation,
+ * rte_log2_u64(0) == 0 and not -inf.
  *
  * @param v
  *     The input parameter.
@@ -766,7 +814,7 @@ rte_str_to_size(const char *str)
 void
 rte_exit(int exit_code, const char *format, ...)
 	__attribute__((noreturn))
-	__attribute__((format(printf, 2, 3)));
+	__rte_format_printf(2, 3);
 
 #ifdef __cplusplus
 }
